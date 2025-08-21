@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Repair</title>
+  <meta name="description" content="Car Repair shop">
+  <meta name="keywords" content="Car, Repair">
+  <meta name="author" content="Marsel Firsov">
+  <link rel="canonical" href="/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/">
+  <meta property="og:title" content="Car Repair">
+  <meta property="og:description" content="Car Repair shop">
+  <meta property="og:image" content="images/logo.c4f5df334689705b95a8.png">
+  <meta property="og:site_name" content="Car Repair">
+  <meta property="og:locale" content="ru_RU">
+  <!-- favicon -->
+  <link rel="icon" href="assets/0424f2ea519cef02a63c.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script defer src="bundle92787fab07ef139a6188.js"></script><link href="bundle.2444b779586b383c7e94.css" rel="stylesheet"></head>
+<body>
+  <header class="header">
+    
+    <div class="container relative">
+      <div class="flex items-center justify-between py-[35px]">
+        <a href="#!">
+          <img src="images/logo.c4f5df334689705b95a8.png" alt="Logo">
+        </a>
+        <div class="hidden lg:flex">
+
+          <div class="mr-[40px]">
+            <h3 class="uppercase font-semibold mb-[8px]">EMAIL</h3>
+            <a href="mailto:companymail@sample.com" class="text-grey-2 text-[13px]">companymail@sample.com</a>
+          </div>
+          <div class="mr-[30px]">
+            <h3 class="uppercase font-semibold mb-[8px]">OPEN HOURS</h3>
+            <p class="text-grey-2 text-[13px]">Tues - Sun 9.00 am - 7.00 pm</p>
+          </div>
+          <div class="flex items-center mr-[35px]">
+            <img src="images/telephone51.2ad0413b133c41d0dd24.png" alt="Phone" class="mr-5">
+            <div>
+              <span class="block text-grey-2 text-[13px]">Call Now</span>
+              <a href="tel:+7328030103" class="text-xl leading-[25px] font-bold">(732) 803-01 03</a>
+            </div>
+          </div>
+          <ul class="header__socials-list hidden xl:flex gap-[9px] items-center">
+            <li>
+              <a href="#!" class="header__socials-item active"><img src="images/facebook.721902f8e8c638d1e1e1.png" alt="Facebook"></a>
+            </li>
+            <li>
+              <a href="#!" class="header__socials-item"><img src="images/twitter.766c99ea8e60f35b65a3.png" alt="Twitter"></a>
+            </li>
+            <li>
+              <a href="#!" class="header__socials-item"><img src="images/googleplus.4edc31f4090d10007662.png" alt="Google Plus"></a>
+            </li>
+            <li>
+              <a href="#!" class="header__socials-item"><img src="images/pinterest.99c34ee407dafe4f72db.png" alt="Pinteres"></a>
+            </li>
+          </ul>
+
+        </div>
+        <a href="#!" id="burger" class="block lg:hidden group">
+          <svg fill="#fff" class="w-7 h-7 group-active:stroke-red active:fill-red hover:fill-red hover:stroke-red" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="Menu_Button" data-name="Menu Button" class="cls-1" d="M2,13V11H14v2ZM2,9V7H14V9ZM2,5V3H14V5Z"></path> </g></svg>
+        </a>
+      </div>
+      <div class="absolute top-full inset-x-0 lg:static flex justify-between items-center bg-red lg:pl-[25px] invisible opacity-0 lg:visible lg:opacity-100 z-30" id="menu">
+        <ul class="header__menu flex-col lg:flex-row justify-center lg:justify-start w-full text-center lg:w-auto lg:text-left">
+          <li>
+            <a href="#!" class="px-[15px] py-[25px] uppercase font-bold hover:bg-red-2 transition duration-150">HOME</a>
+          </li>
+          <li>
+            <a href="#panel-1" class="accordion-toggle px-[15px] py-[25px] uppercase font-bold hover:bg-red-2 transition duration-150">
+              <div class="inline-flex items-center group">
+                <span>PAGES</span>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff" class="accordion-arrow w-4 h-4 ml-2 lg:hidden transition-transform"><g id="SVGRepo_bgCarrier2" stroke-width="0"></g><g id="SVGRepo_tracerCarrier2" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier2"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#fff"></path> </g></svg>
+              </div>
+            </a>
+            <ul class="header__submenu accordion-content" id="panel-1">
+              <li><a href="#!">Page Style One</a></li>
+              <li><a href="#!">Page Style Two</a></li>
+              <li><a href="#!">Page Style Three</a></li>
+              <li><a href="#!">Page Style Four</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#!" class="px-[15px] py-[25px] uppercase font-bold hover:bg-red-2 transition duration-150">ABOUT US</a>
+          </li>
+          <li>
+            <a href="#!" class="px-[15px] py-[25px] uppercase font-bold hover:bg-red-2 transition duration-150">SERVICE</a>
+          </li>
+          <li>
+            <a href="#!" class="px-[15px] py-[25px] uppercase font-bold hover:bg-red-2 transition duration-150">Gallery</a>
+          </li>
+          <li>
+            <a href="#!" class="px-[15px] py-[25px] uppercase font-bold hover:bg-red-2 transition duration-150">TESTIMONAIL</a>
+          </li>
+          <li>
+            <a href="#!" class="px-[15px] py-[25px] uppercase font-bold hover:bg-red-2 transition duration-150">BLOG</a>
+          </li>
+          <li>
+            <a href="#!" class="px-[15px] py-[25px] uppercase font-bold hover:bg-red-2 transition duration-150">CONTACT US</a>
+          </li>
+        </ul>
+
+        <a href="#!" class="button-1 hidden lg:flex items-center px-[40px] py-[25px]">
+          <img src="images/send4.25e9a67ea16ebb1212e0.png" alt="Telegram" class="mr-3">
+          <span>GET FREE QUOTE</span>
+        </a>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <div>
+      <!-- Slider main container -->
+      <div class="swiper slider-1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide pt-[100px] pb-[115px] lg:pt-[215px] lg:pb-[235px] text-center bg-cover bg-center slide-1">
+            <div class="mb-[5px]">
+              <span class="inline-block text-[#fefefe] text-[30px] lg:text-[45px] leading-[44px] lg:leading-[58px] uppercase skew-x-[-15deg] bg-black-3 px-[25px]"><span class="inline-block skew-x-[15deg]">Fine The Best</span></span>
+            </div>
+            <div>
+              <span class="inline-block text-[#373737] font-extrabold text-[30px] lg:text-[45px] leading-[44px] lg:leading-[58px] uppercase skew-x-[-15deg] bg-white px-[25px]"><span class="inline-block skew-x-[15deg]">Service for your car</span></span>
+            </div>
+            <p class="mt-[25px] mb-[40px] text-xl leading-[30px]">We offer guaranteed upfront pricing and savings up to 30%</p>
+            <a href="#!" class="button-2 py-[15px] px-[25px]">CONTACT NOW</a>
+          </div>
+
+          <div class="swiper-slide pt-[100px] pb-[115px] lg:pt-[215px] lg:pb-[235px] text-center bg-cover bg-center slide-2">
+            <div class="mb-[5px]">
+              <span class="inline-block text-[#fefefe] text-[30px] lg:text-[45px] leading-[44px] lg:leading-[58px] uppercase skew-x-[-15deg] bg-black-3 px-[25px]"><span class="inline-block skew-x-[15deg]">Fine The Best</span></span>
+            </div>
+            <div>
+              <span class="inline-block text-[#373737] font-extrabold text-[30px] lg:text-[45px] leading-[44px] lg:leading-[58px] uppercase skew-x-[-15deg] bg-white px-[25px]"><span class="inline-block skew-x-[15deg]">Service for your car</span></span>
+            </div>
+            <p class="mt-[25px] mb-[40px] text-xl leading-[30px]">We offer guaranteed upfront pricing and savings up to 30%</p>
+            <a href="#!" class="button-2 py-[15px] px-[25px]">CONTACT NOW</a>
+          </div>
+
+          <div class="swiper-slide pt-[100px] pb-[115px] lg:pt-[215px] lg:pb-[235px] text-center bg-cover bg-center slide-3">
+            <div class="mb-[5px]">
+              <span class="inline-block text-[#fefefe] text-[30px] lg:text-[45px] leading-[44px] lg:leading-[58px] uppercase skew-x-[-15deg] bg-black-3 px-[25px]"><span class="inline-block skew-x-[15deg]">Fine The Best</span></span>
+            </div>
+            <div>
+              <span class="inline-block text-[#373737] font-extrabold text-[30px] lg:text-[45px] leading-[44px] lg:leading-[58px] uppercase skew-x-[-15deg] bg-white px-[25px]"><span class="inline-block skew-x-[15deg]">Service for your car</span></span>
+            </div>
+            <p class="mt-[25px] mb-[40px] text-xl leading-[30px]">We offer guaranteed upfront pricing and savings up to 30%</p>
+            <a href="#!" class="button-2 py-[15px] px-[25px]">CONTACT NOW</a>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <section class="lg:pt-[90px] lg:pb-[70px] pt-[45px] pb-[35px] bg-white">
+      <div class="container">
+
+        <div class="max-w-[710px] mx-auto">
+          <h2 class="headline-1 lg:mb-[25px] mb-5">Our Service</h2>
+          <p class="headline-1-description lg:mb-[60px] mb-[30px]">Keeping a well-maintained vehicle is paramount to your safety. That is why our team of nearly 500 professional technicians are ready to make your vehicle safe and </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-[55px]">
+
+          <div class="relative group">
+            <img src="images/alex-burback-chop-04.ec2fd251a0d61393a4dd.jpg" alt="Service 1" class="w-full object-cover h-[320px]">
+            <div class="absolute top-[10px] left-[10px] right-[10px] bottom-[10px] bg-red px-[33px] pt-[80px] pb-[70px] text-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+              <h3 class="text-lg leading-[25px] font-bold">Inspection</h3>
+              <p class="my-[25px] leading-[25px] font-semibold">Nunc placerat phareta lorem onec benean porttitor</p>
+              <a href="#!" class="button-3 py-[10px] px-[15px]">Read More</a>
+            </div>
+          </div>
+
+          <div class="relative">
+            <img src="assets/1b1c21e1d2414ae853ec.webp" alt="Service 1" class="w-full object-cover h-[320px]">
+            <a href="#!" class="button-4 flex items-center justify-center absolute bottom-0 left-0 w-full py-[18px]">
+              <span>Car Cleaning</span>
+              <img src="images/right11.c113e5e59407bddf1cc0.svg" alt="Right arrow" class="ml-2 w-3 h-3">
+            </a>
+          </div>
+
+          <div class="relative">
+            <img src="images/alex-burback-gas-station-02.d56573062b94867506ef.jpg" alt="Service 1" class="w-full object-cover h-[320px]">
+            <a href="#!" class="button-4 flex items-center justify-center absolute bottom-0 left-0 w-full py-[18px]">
+              <span>Car Repair</span>
+              <img src="images/right11.c113e5e59407bddf1cc0.svg" alt="Right arrow" class="ml-2 w-3 h-3">
+            </a>
+          </div>
+
+          <div class="relative">
+            <img src="images/alex-burback-printery-01.934395cdd8206e6be36b.jpg" alt="Service 1" class="w-full object-cover h-[320px]">
+            <a href="#!" class="button-4 flex items-center justify-center absolute bottom-0 left-0 w-full py-[18px]">
+              <span>Upgrades</span>
+              <img src="images/right11.c113e5e59407bddf1cc0.svg" alt="Right arrow" class="ml-2 w-3 h-3">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="mt-[53px] text-center">
+          <a href="#!" class="button-2 py-[15px] px-[25px] text-black-4 !border-red">See all Service</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="lg:pt-[90px] lg:pb-[82px] pt-[45px] pb-[40px] bg-[#f9f9f9]">
+
+      <div class="container">
+        <div class="flex flex-col lg:flex-row lg:items-stretch gap-[35px] lg:gap-[70px]">
+          <div class="video-area flex items-center justify-center shrink-0 w-full lg:w-[480px] h-[350px] lg:h-auto self-stretch">
+            <a href="#!" class="group">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 48" width="41" height="48">
+                <path fill-rule="evenodd" class="s0 fill-white group-hover:fill-red transition-colors duration-150" d="m1 45.4c0-2.2 0-40.3 0-41.7 0-2 1.9-3.4 3.9-2.3 1.5 0.9 32.2 19.3 34.8 20.8 1.7 1.1 1.7 3.5 0 4.6-1.9 1.1-32.7 19.6-34.9 20.9-1.7 0.9-3.8-0.1-3.8-2.3z"/>
+              </svg>
+            </a>
+          </div>
+          <div>
+            <h2 class="text-[32px] leading-[40px] font-bold text-black-6 uppercase">WE ARE THE MOST PROFFESIONALS CAR REPAIR COMPANY IN AMERICA!!</h2>
+            <p class="my-[30px] text-red text-base leading-[25px] font-semibold">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</p>
+            <p class="text-grey-3 leading-[20px] mb-[20px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+            <a href="#!" class="button-5 px-5 py-[10px]">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="pt-[40px] lg:pt-[100px] pb-[60px] lg:pb-[140px] bg-white relative">
+      <div class="absolute inset-0 bg-grey-4/70"></div>
+      <div class="container relative">
+
+        <div class="max-w-[710px] mx-auto text-center">
+          <h2 class="headline-1 lg:mb-[25px] mb-5 !text-white">WORK GALLERY</h2>
+          <p class="headline-1-description mb-[35px] !text-grey-5">Keeping a well-maintained vehicle is paramount to your safety. That is why our team of nearly 500 professional technicians are ready to make your vehicle safe and </p>
+          <div class="inline-flex gap-[8px]">
+            <a href="#!" class="swiper-button-prev-2 w-[30px] h-[30px] flex items-center justify-center border border-white hover:bg-red hover:border-transparent transition-colors duration-150">
+              <img src="images/left-arrow.fdbb4668739e14e88cec.png" alt="Left Arrow">
+            </a>
+            <a href="#!" class="swiper-button-next-2 w-[30px] h-[30px] flex items-center justify-center border border-white hover:bg-red hover:border-transparent transition-colors duration-150">
+              <img src="images/right-arrow.c104aacde4cc70a11b56.png" alt="Right Arrow">
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper slider-2 mt-[40px]">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide relative group">
+              <img src="assets/dcd7529084ef32765528.webp" alt="Image 1" class="w-auto h-[350px] object-cover">
+              <a href="#!" class="block absolute inset-0 bg-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <img src="images/plus79.02bec981e094b7610b9f.png" alt="Plus">
+              </a>
+            </div>
+
+            <div class="swiper-slide relative group">
+              <img src="assets/55741812fe9d9913fdd7.webp" alt="Image 1" class="w-auto h-[350px] object-cover">
+              <a href="#!" class="block absolute inset-0 bg-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <img src="images/plus79.02bec981e094b7610b9f.png" alt="Plus">
+              </a>
+            </div>
+
+            <div class="swiper-slide relative group">
+              <img src="assets/190a818ce444446ee70f.webp" alt="Image 1" class="w-auto h-[350px] object-cover">
+              <a href="#!" class="block absolute inset-0 bg-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <img src="images/plus79.02bec981e094b7610b9f.png" alt="Plus">
+              </a>
+            </div>
+
+            <div class="swiper-slide relative group">
+              <img src="assets/cc0f9120f176e811ab92.webp" alt="Image 1" class="w-auto h-[350px] object-cover">
+              <a href="#!" class="block absolute inset-0 bg-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <img src="images/plus79.02bec981e094b7610b9f.png" alt="Plus">
+              </a>
+            </div>
+
+            <!-- Next block -->
+
+            <div class="swiper-slide relative group">
+              <img src="assets/dcd7529084ef32765528.webp" alt="Image 1" class="w-auto h-[350px] object-cover">
+              <a href="#!" class="block absolute inset-0 bg-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <img src="images/plus79.02bec981e094b7610b9f.png" alt="Plus">
+              </a>
+            </div>
+
+            <div class="swiper-slide relative group">
+              <img src="assets/55741812fe9d9913fdd7.webp" alt="Image 1" class="w-auto h-[350px] object-cover">
+              <a href="#!" class="block absolute inset-0 bg-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <img src="images/plus79.02bec981e094b7610b9f.png" alt="Plus">
+              </a>
+            </div>
+
+            <div class="swiper-slide relative group">
+              <img src="assets/190a818ce444446ee70f.webp" alt="Image 1" class="w-auto h-[350px] object-cover">
+              <a href="#!" class="block absolute inset-0 bg-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <img src="images/plus79.02bec981e094b7610b9f.png" alt="Plus">
+              </a>
+            </div>
+
+            <div class="swiper-slide relative group">
+              <img src="assets/cc0f9120f176e811ab92.webp" alt="Image 1" class="w-auto h-[350px] object-cover">
+              <a href="#!" class="block absolute inset-0 bg-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <img src="images/plus79.02bec981e094b7610b9f.png" alt="Plus">
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="bg-white pt-[35px] lg:pt-[110px] pb-[45px] lg:pb-[95px]">
+
+      <div class="container">
+
+        <div class="max-w-[710px] mx-auto">
+          <h2 class="headline-1 lg:mb-[25px] mb-5">OUR EXPERT TEAM</h2>
+          <p class="headline-1-description lg:mb-[85px] mb-[40px]">Keeping a well-maintained vehicle is paramount to your safety. That is why our team of nearly 500</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-[48px]">
+
+          <div>
+            <div class="relative h-[250px] group">
+              <img src="assets/06593925fff73c87cea3.webp" alt="Expert 1" class="w-full h-full object-cover">
+              <a href="#!" class="block absolute inset-0 bg-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <img src="images/plus79.02bec981e094b7610b9f.png" alt="Plus">
+              </a>
+            </div>
+            <h3 class="mt-[25px] text-lg font-bold text-black-4 mb-[8px]">Benson Cesaro</h3>
+            <p class="text-[13px] text-grey-5 mb-[15px]">Body Expert</p>
+            <div class="h-[1px] bg-[#ececec] mb-5"></div>
+            <ul class="flex gap-[10px]">
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/facebook.721902f8e8c638d1e1e1.png" alt="Facebook"></a></li>
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/twitter.766c99ea8e60f35b65a3.png" alt="Twitter"></a></li>
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/googleplus.4edc31f4090d10007662.png" alt="Google Plus"></a></li>
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/pinterest.99c34ee407dafe4f72db.png" alt="Pinterest"></a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="relative h-[250px] group">
+              <img src="assets/43482d17c9853606a580.webp" alt="Expert 1" class="w-full h-full object-cover">
+              <a href="#!" class="block absolute inset-0 bg-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <img src="images/plus79.02bec981e094b7610b9f.png" alt="Plus">
+              </a>
+            </div>
+            <h3 class="mt-[25px] text-lg font-bold text-black-4 mb-[8px]">Alberto Del Rio</h3>
+            <p class="text-[13px] text-grey-5 mb-[15px]">Car Cleaner</p>
+            <div class="h-[1px] bg-[#ececec] mb-5"></div>
+            <ul class="flex gap-[10px]">
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/facebook.721902f8e8c638d1e1e1.png" alt="Facebook"></a></li>
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/twitter.766c99ea8e60f35b65a3.png" alt="Twitter"></a></li>
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/googleplus.4edc31f4090d10007662.png" alt="Google Plus"></a></li>
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/pinterest.99c34ee407dafe4f72db.png" alt="Pinterest"></a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="relative h-[250px] group">
+              <img src="assets/719004214885a88ff464.webp" alt="Expert 1" class="w-full h-full object-cover">
+              <a href="#!" class="block absolute inset-0 bg-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <img src="images/plus79.02bec981e094b7610b9f.png" alt="Plus">
+              </a>
+            </div>
+            <h3 class="mt-[25px] text-lg font-bold text-black-4 mb-[8px]">Masum Rana</h3>
+            <p class="text-[13px] text-grey-5 mb-[15px]">Storage Manager</p>
+            <div class="h-[1px] bg-[#ececec] mb-5"></div>
+            <ul class="flex gap-[10px]">
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/facebook.721902f8e8c638d1e1e1.png" alt="Facebook"></a></li>
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/twitter.766c99ea8e60f35b65a3.png" alt="Twitter"></a></li>
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/googleplus.4edc31f4090d10007662.png" alt="Google Plus"></a></li>
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/pinterest.99c34ee407dafe4f72db.png" alt="Pinterest"></a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="relative h-[250px] group">
+              <img src="assets/029e0d5389b7a25d25b8.webp" alt="Expert 1" class="w-full h-full object-cover">
+              <a href="#!" class="block absolute inset-0 bg-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <img src="images/plus79.02bec981e094b7610b9f.png" alt="Plus">
+              </a>
+            </div>
+            <h3 class="mt-[25px] text-lg font-bold text-black-4 mb-[8px]">Stefan Cio</h3>
+            <p class="text-[13px] text-grey-5 mb-[15px]">Mechanic Worker</p>
+            <div class="h-[1px] bg-[#ececec] mb-5"></div>
+            <ul class="flex gap-[10px]">
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/facebook.721902f8e8c638d1e1e1.png" alt="Facebook"></a></li>
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/twitter.766c99ea8e60f35b65a3.png" alt="Twitter"></a></li>
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/googleplus.4edc31f4090d10007662.png" alt="Google Plus"></a></li>
+              <li><a href="#!" class="w-[30px] h-[30px] flex items-center justify-center bg-red"><img src="images/pinterest.99c34ee407dafe4f72db.png" alt="Pinterest"></a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section-reviews relative bg-[#212121] pt-[45px] lg:pt-[90px] pb-[35px] lg:pb-[65px]">
+      <div class="absolute inset-0 section-reviews__bg opacity-5"></div>
+      <div class="container relative">
+
+        <div class="max-w-[710px] mx-auto text-center">
+          <h2 class="headline-1 lg:mb-[25px] mb-5 !text-white">Client’s love us</h2>
+          <p class="headline-1-description !text-[#bdbdbd]">Keeping a well-maintained vehicle is paramount to your safety.</p>
+        </div>
+
+        <div class="swiper slider-3 lg:mt-[75px] mt-[35px]">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="relative pl-5 mb-[25px]">
+                <div class="w-[10px] h-[2px] bg-red absolute top-[12px] left-0"></div>
+                <h3 class="uppercase text-lg leading-[28px] font-bold">smith cesaro</h3>
+                <span class="text-red leading-[28px]">Gold user from 2 years</span>
+              </div>
+              <p class="text-base leading-[28px] font-arvo">On the other hand, we denounce  righteous indignation and dislike men who are so is beguiled and demoralized</p>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative pl-5 mb-[25px]">
+                <div class="w-[10px] h-[2px] bg-red absolute top-[12px] left-0"></div>
+                <h3 class="uppercase text-lg leading-[28px] font-bold">smith cesaro</h3>
+                <span class="text-red leading-[28px]">Gold user from 2 years</span>
+              </div>
+              <p class="text-base leading-[28px] font-arvo">On the other hand, we denounce  righteous indignation and dislike men who are so is beguiled and demoralized</p>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative pl-5 mb-[25px]">
+                <div class="w-[10px] h-[2px] bg-red absolute top-[12px] left-0"></div>
+                <h3 class="uppercase text-lg leading-[28px] font-bold">smith cesaro</h3>
+                <span class="text-red leading-[28px]">Gold user from 2 years</span>
+              </div>
+              <p class="text-base leading-[28px] font-arvo">On the other hand, we denounce  righteous indignation and dislike men who are so is beguiled and demoralized</p>
+            </div>
+
+             <div class="swiper-slide">
+              <div class="relative pl-5 mb-[25px]">
+                <div class="w-[10px] h-[2px] bg-red absolute top-[12px] left-0"></div>
+                <h3 class="uppercase text-lg leading-[28px] font-bold">smith cesaro</h3>
+                <span class="text-red leading-[28px]">Gold user from 2 years</span>
+              </div>
+              <p class="text-base leading-[28px] font-arvo">On the other hand, we denounce  righteous indignation and dislike men who are so is beguiled and demoralized</p>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative pl-5 mb-[25px]">
+                <div class="w-[10px] h-[2px] bg-red absolute top-[12px] left-0"></div>
+                <h3 class="uppercase text-lg leading-[28px] font-bold">smith cesaro</h3>
+                <span class="text-red leading-[28px]">Gold user from 2 years</span>
+              </div>
+              <p class="text-base leading-[28px] font-arvo">On the other hand, we denounce  righteous indignation and dislike men who are so is beguiled and demoralized</p>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative pl-5 mb-[25px]">
+                <div class="w-[10px] h-[2px] bg-red absolute top-[12px] left-0"></div>
+                <h3 class="uppercase text-lg leading-[28px] font-bold">smith cesaro</h3>
+                <span class="text-red leading-[28px]">Gold user from 2 years</span>
+              </div>
+              <p class="text-base leading-[28px] font-arvo">On the other hand, we denounce  righteous indignation and dislike men who are so is beguiled and demoralized</p>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative pl-5 mb-[25px]">
+                <div class="w-[10px] h-[2px] bg-red absolute top-[12px] left-0"></div>
+                <h3 class="uppercase text-lg leading-[28px] font-bold">smith cesaro</h3>
+                <span class="text-red leading-[28px]">Gold user from 2 years</span>
+              </div>
+              <p class="text-base leading-[28px] font-arvo">On the other hand, we denounce  righteous indignation and dislike men who are so is beguiled and demoralized</p>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative pl-5 mb-[25px]">
+                <div class="w-[10px] h-[2px] bg-red absolute top-[12px] left-0"></div>
+                <h3 class="uppercase text-lg leading-[28px] font-bold">smith cesaro</h3>
+                <span class="text-red leading-[28px]">Gold user from 2 years</span>
+              </div>
+              <p class="text-base leading-[28px] font-arvo">On the other hand, we denounce  righteous indignation and dislike men who are so is beguiled and demoralized</p>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative pl-5 mb-[25px]">
+                <div class="w-[10px] h-[2px] bg-red absolute top-[12px] left-0"></div>
+                <h3 class="uppercase text-lg leading-[28px] font-bold">smith cesaro</h3>
+                <span class="text-red leading-[28px]">Gold user from 2 years</span>
+              </div>
+              <p class="text-base leading-[28px] font-arvo">On the other hand, we denounce  righteous indignation and dislike men who are so is beguiled and demoralized</p>
+            </div>
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination static lg:mt-[55px] mt-[35px]"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="pt-[40px] pb-[50px] lg:pt-[105px] lg:pb-[120px] bg-white">
+
+      <div class="container">
+
+        <div class="max-w-[710px] mx-auto">
+          <h2 class="headline-1 lg:mb-[25px] mb-5">Membership plan</h2>
+          <p class="headline-1-description mb-[35px] lg:mb-[75px]">Keeping a well-maintained vehicle is paramount to your safety. That is why our team of nearly 500</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+          <div class="border border-[#ececec]">
+            <div class="relative h-[200px]">
+              <img src="images/019946.0f0e228ea1fd736cb933.jpg" alt="Plan 1" class="w-full h-full object-cover">
+              <div class="absolute inset-0 z-20 bg-[#ff5757]/30 text-center">
+                <h3 class="pt-6 pb-5 uppercase text-2xl leading-[28px] font-bold">REGULER</h3>
+                <div class="bg-white h-[1px]"></div>
+                <div class="py-[28px]">
+                  <div class="inline-block">
+                    <div class="text-[30px] lg:text-[60px] leading-[28px] font-bold mb-[14px]">58</div>
+                    <span class="text-lg leading-[28px]">$ / month</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-[45px] pt-[35px] pb-[30px]">
+              <ul class="space-y-5 text-[#7e7f7f] text-[15px] mb-[25px]">
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>yearly car inspection</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>outside car wash</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>speed drive and test</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>full polishing</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+              </ul>
+              <a href="#!" class="button-6 py-[15px]">PURCHASE NOW</a>
+            </div>
+          </div>
+
+          <div class="border border-[#ececec]">
+            <div class="relative h-[200px]">
+              <img src="images/11307v_DELneIPKXG1X5jZCrpOoAkqy6ZtvbdlL_2LSQ2EFQnBI-tMclplzrN6xK_bsybsiIvRfKwtppLM9nReXw850eBAfd.07192b62c22da076d2c6.jpg" alt="Plan 1" class="w-full h-full object-cover">
+              <div class="absolute inset-0 z-20 bg-[#ff5757]/30 text-center">
+                <h3 class="pt-6 pb-5 uppercase text-2xl leading-[28px] font-bold">Standard</h3>
+                <div class="bg-white h-[1px]"></div>
+                <div class="py-[28px]">
+                  <div class="inline-block">
+                    <div class="text-[30px] lg:text-[60px] leading-[28px] font-bold mb-[14px]">75</div>
+                    <span class="text-lg leading-[28px]">$ / month</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-[45px] pt-[35px] pb-[30px]">
+              <ul class="space-y-5 text-[#7e7f7f] text-[15px] mb-[25px]">
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>yearly car inspection</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>outside car wash</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>speed drive and test</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>full polishing</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+              </ul>
+              <a href="#!" class="button-6 py-[15px]">PURCHASE NOW</a>
+            </div>
+          </div>
+
+          <div class="border border-[#ececec]">
+            <div class="relative h-[200px]">
+              <img src="images/113070irRALII01Vfg3WzdCI_S810VXWLwM_lyyDOfnYn4sA3F9iQknwsfGLqkdMfwjSQtYODVqTzwBWtBAeK1Tntl00afWV.1a6d149faa996243a710.jpg" alt="Plan 1" class="w-full h-full object-cover">
+              <div class="absolute inset-0 z-20 bg-[#ff5757]/30 text-center">
+                <h3 class="pt-6 pb-5 uppercase text-2xl leading-[28px] font-bold">Premium</h3>
+                <div class="bg-white h-[1px]"></div>
+                <div class="py-[28px]">
+                  <div class="inline-block">
+                    <div class="text-[30px] lg:text-[60px] leading-[28px] font-bold mb-[14px]">422</div>
+                    <span class="text-lg leading-[28px]">$ / month</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-[45px] pt-[35px] pb-[30px]">
+              <ul class="space-y-5 text-[#7e7f7f] text-[15px] mb-[25px]">
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>yearly car inspection</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>outside car wash</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>speed drive and test</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>full polishing</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+              </ul>
+              <a href="#!" class="button-6 py-[15px]">PURCHASE NOW</a>
+            </div>
+          </div>
+
+          <div class="border border-[#ececec]">
+            <div class="relative h-[200px]">
+              <img src="images/11307IqvZUMT19q_gT-fhSWKBwWdQ9R2Kw2pTaBs8-jtgUHIn-gkLgX3Kl6_F49KMLJPsBcd9dvIpntx1kbVCeV47BQu9eil.a15aef66471fdaabf27d.jpg" alt="Plan 1" class="w-full h-full object-cover">
+              <div class="absolute inset-0 z-20 bg-[#ff5757]/30 text-center">
+                <h3 class="pt-6 pb-5 uppercase text-2xl leading-[28px] font-bold">Gold</h3>
+                <div class="bg-white h-[1px]"></div>
+                <div class="py-[28px]">
+                  <div class="inline-block">
+                    <div class="text-[30px] lg:text-[60px] leading-[28px] font-bold mb-[14px]">785</div>
+                    <span class="text-lg leading-[28px]">$ / month</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-[45px] pt-[35px] pb-[30px]">
+              <ul class="space-y-5 text-[#7e7f7f] text-[15px] mb-[25px]">
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>yearly car inspection</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>outside car wash</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>speed drive and test</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+                <li class="flex justify-between items-center pb-5 border-b border-b-[#d9d9d9]">
+                  <span>full polishing</span>
+                  <img src="images/check-60.a8d60209fb9146cd3024.png" alt="Check">
+                </li>
+              </ul>
+              <a href="#!" class="button-6 py-[15px]">PURCHASE NOW</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="flex flex-col lg:flex-row max-w-[1390px]">
+
+      <div class="w-full lg:w-[600px] h-[605px] lg:h-auto self-stretch">
+        <img src="images/031677.a0cd76f4b3c3fa383747.png" alt="Contact Us" class="w-full h-full object-cover">
+      </div>
+
+      <div class="lg:pt-[75px] px-[45px] xl:pr-0 xl:pl-[90px] lg:pb-[80px] pt-[35px] pb-[40px]">
+        <h2 class="text-[30px] leading-[55px] mb-6">Get Free appointment</h2>
+        <p class="text-[15px] font-semibold mb-[50px]">Keeping a well-maintained vehicle is paramount to your safety.</p>
+        <form>
+          <div class="grid lg:grid-cols-3 gap-5 mb-6">
+            <div>
+              <input type="text" name="username" class="input-field" placeholder="Username">
+            </div>
+
+            <div>
+              <input type="email" name="email" class="input-field" placeholder="Email">
+            </div>
+
+            <div>
+              <input type="tel" name="phone" class="input-field" placeholder="Phone Number">
+            </div>
+
+            <div class="lg:col-span-3">
+              <textarea name="message" class="input-field resize-none h-[188px] align-middle" placeholder="Message"></textarea>
+            </div>
+          </div>
+
+          <a href="#!" class="button-5 !px-[30px] py-[10px]">SEND</a>
+        </form>
+      </div>
+    </section>
+
+    <section class="pt-[40px] pb-[50px] lg:pt-[105px] lg:pb-[120px] bg-white">
+
+      <div class="container">
+
+        <div class="max-w-[710px] mx-auto">
+          <h2 class="headline-1 lg:mb-[25px] mb-5">LATEST NEWS</h2>
+          <p class="headline-1-description mb-[35px] lg:mb-[75px]">Keeping a well-maintained vehicle is paramount to your safety. That is why our team of nearly 500</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-[48px]">
+
+          <div>
+            <a href="#!">
+              <img src="images/1518795271151011313.b7dfa54e2ebbebd57a76.jpg" alt="News 1" class="w-full h-[250px] object-cover">
+            </a>
+
+            <div class="flex items-center my-[30px]">
+              <div class="inline-block mr-[15px] px-5 py-[15px] font-bold bg-red text-center">
+                <div class="mb-[10px] text-2xl leading-[18px]">22</div>
+                <span class="uppercase leading-[18px]">Mar</span>
+              </div>
+              <div>
+                <a href="#!">
+                  <h3 class="text-xl font-semibold text-black-2 mb-[5px]">There will be short heading with image</h3>
+                </a>
+                <div class="flex text-[#a9a9a9]">
+                  <div class="flex items-center gap-[10px] mr-[18px]">
+                    <img src="images/connection.86baf40cd433879633a4.png" alt="Connection" class="">
+                    <span class="text-[13px] leading-[35px]">2,106</span>
+                  </div>
+                  <div class="flex items-center gap-[10px]">
+                    <img src="images/speech117.1b8a4987b9f0e0baf1b8.png" alt="Connection" class="">
+                    <span class="text-[13px] leading-[35px]">17 comments</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-grey-3 leading-[26px] mb-[30px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered ...</p>
+            <a href="#!" class="flex items-center text-[13px] text-black-4 font-semibold hover:text-red transition duration-150 group">
+              <span>Read More</span>
+              <img src="images/right11.e8f45ada6b93b6c7888a.png" alt="Right Arrow" class="ml-2 w-[10px] group-hover:filter group-hover:[filter:brightness(0)_saturate(100%)_invert(38%)_sepia(69%)_saturate(2780%)_hue-rotate(337deg)_brightness(104%)_contrast(88%)] transition duration-150">
+            </a>
+          </div>
+
+          <div>
+            <a href="#!">
+              <img src="images/151879524416260183.cb4da81524d93bc226ec.jpg" alt="News 2" class="w-full h-[250px] object-cover">
+            </a>
+
+            <div class="flex items-center my-[30px]">
+              <div class="inline-block mr-[15px] px-5 py-[15px] font-bold bg-red text-center">
+                <div class="mb-[10px] text-2xl leading-[18px]">19</div>
+                <span class="uppercase leading-[18px]">Mar</span>
+              </div>
+              <div>
+                <a href="#!">
+                  <h3 class="text-xl font-semibold text-black-2 mb-[5px]">There will be short heading with image</h3>
+                </a>
+                <div class="flex text-[#a9a9a9]">
+                  <div class="flex items-center gap-[10px] mr-[18px]">
+                    <img src="images/connection.86baf40cd433879633a4.png" alt="Connection" class="">
+                    <span class="text-[13px] leading-[35px]">2,106</span>
+                  </div>
+                  <div class="flex items-center gap-[10px]">
+                    <img src="images/speech117.1b8a4987b9f0e0baf1b8.png" alt="Connection" class="">
+                    <span class="text-[13px] leading-[35px]">17 comments</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-grey-3 leading-[26px] mb-[30px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered ...</p>
+            <a href="#!" class="flex items-center text-[13px] text-black-4 font-semibold hover:text-red transition duration-150 group">
+              <span>Read More</span>
+              <img src="images/right11.e8f45ada6b93b6c7888a.png" alt="Right Arrow" class="ml-2 w-[10px] group-hover:filter group-hover:[filter:brightness(0)_saturate(100%)_invert(38%)_sepia(69%)_saturate(2780%)_hue-rotate(337deg)_brightness(104%)_contrast(88%)] transition duration-150">
+            </a>
+          </div>
+
+          <div>
+            <a href="#!">
+              <img src="images/ss_ceaaa39640fb02e7949568432b0157a3a4280125.1920x1080.335495527d2c7fde98fd.jpg" alt="News 3" class="w-full h-[250px] object-cover">
+            </a>
+
+            <div class="flex items-center my-[30px]">
+              <div class="inline-block mr-[15px] px-5 py-[15px] font-bold bg-red text-center">
+                <div class="mb-[10px] text-2xl leading-[18px]">09</div>
+                <span class="uppercase leading-[18px]">Feb</span>
+              </div>
+              <div>
+                <a href="#!">
+                  <h3 class="text-xl font-semibold text-black-2 mb-[5px]">There will be short heading with image</h3>
+                </a>
+                <div class="flex text-[#a9a9a9]">
+                  <div class="flex items-center gap-[10px] mr-[18px]">
+                    <img src="images/connection.86baf40cd433879633a4.png" alt="Connection" class="">
+                    <span class="text-[13px] leading-[35px]">2,106</span>
+                  </div>
+                  <div class="flex items-center gap-[10px]">
+                    <img src="images/speech117.1b8a4987b9f0e0baf1b8.png" alt="Connection" class="">
+                    <span class="text-[13px] leading-[35px]">17 comments</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-grey-3 leading-[26px] mb-[30px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered ...</p>
+            <a href="#!" class="flex items-center text-[13px] text-black-4 font-semibold hover:text-red transition duration-150 group">
+              <span>Read More</span>
+              <img src="images/right11.e8f45ada6b93b6c7888a.png" alt="Right Arrow" class="ml-2 w-[10px] group-hover:filter group-hover:[filter:brightness(0)_saturate(100%)_invert(38%)_sepia(69%)_saturate(2780%)_hue-rotate(337deg)_brightness(104%)_contrast(88%)] transition duration-150">
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="bg-red">
+
+      <div class="container py-5 lg:py-0 gap-5 lg:gap-0 lg:h-[120px] flex flex-col lg:flex-row items-center justify-between">
+
+        <img src="images/Layer5.cc2862d6377f0ed5f648.png" alt="Layer 1">
+
+        <img src="images/Layer4.0d7ca061cd989250c0a9.png" alt="Layer 2">
+
+        <img src="images/Layer3.5e0fb8b0c52cd4da8d09.png" alt="Layer 3">
+
+        <img src="images/Layer2.e7761534c42059f99aa7.png" alt="Layer 4">
+
+        <img src="images/Layer7.0d7ca061cd989250c0a9.png" alt="Layer 5">
+
+      </div>
+
+    </div>
+  </main>
+  <footer class="footer">
+
+    <div class="pt-[45px] pb-[35px] lg:pt-[90px] lg:pb-[70px]">
+
+      <div class="container grid md:grid-cols-2 lg:flex items-start justify-between gap-[30px] lg:gap-0">
+
+        <div class="md:w-1/2 lg:max-w-[270px]">
+          <a href="#!">
+            <img src="images/logo.c4f5df334689705b95a8.png" alt="Logo Footer">
+          </a>
+          <p class="mt-[30px] mb-[35px] text-[13px] tracking-[0.02em] text-[#bebebe] leading-[25px]">Lorem Ipsum is simply dummy text of the had a printing and typesetting industry. Ipsum hasbeen the industry's  printing and type seting the industry's  printing and ting industry. Lorem Ipsum is simply dummy</p>
+
+          <ul class="flex gap-[16px]">
+            <li><a href="#!" class="group"><img src="images/facebook.721902f8e8c638d1e1e1.png" alt="Facebook" class="w-[15px] group-hover:filter group-hover:[filter:brightness(0)_saturate(100%)_invert(38%)_sepia(69%)_saturate(2780%)_hue-rotate(337deg)_brightness(104%)_contrast(88%)]"></a></li>
+            <li><a href="#!" class="group"><img src="images/twitter.766c99ea8e60f35b65a3.png" alt="Twitter" class="group-hover:filter group-hover:[filter:brightness(0)_saturate(100%)_invert(38%)_sepia(69%)_saturate(2780%)_hue-rotate(337deg)_brightness(104%)_contrast(88%)]"></a></li>
+            <li><a href="#!" class="group"><img src="images/googleplus.4edc31f4090d10007662.png" alt="Google Plus" class="group-hover:filter group-hover:[filter:brightness(0)_saturate(100%)_invert(38%)_sepia(69%)_saturate(2780%)_hue-rotate(337deg)_brightness(104%)_contrast(88%)]"></a></li>
+            <li><a href="#!" class="group"><img src="images/linkedin.24a87ef86a6bbd49772e.png" alt="LinkedIn" class="group-hover:filter group-hover:[filter:brightness(0)_saturate(100%)_invert(38%)_sepia(69%)_saturate(2780%)_hue-rotate(337deg)_brightness(104%)_contrast(88%)]"></a></li>
+            <li><a href="#!" class="group"><img src="images/pinterest.99c34ee407dafe4f72db.png" alt="Pinterest" class="group-hover:filter group-hover:[filter:brightness(0)_saturate(100%)_invert(38%)_sepia(69%)_saturate(2780%)_hue-rotate(337deg)_brightness(104%)_contrast(88%)]"></a></li>
+          </ul>
+        </div>
+
+        <div class="md:w-1/2 lg:max-w-[270px]">
+          <h3 class="mb-[25px] text-lg leading-[24px] font-poppins">Latest News</h3>
+          <ul class="space-y-[15px]">
+            <li class="flex items-start">
+              <a href="#!" class="mr-[25px] shrink-0 relative top-[5px]">
+                <img src="images/1518795271151011313.b7dfa54e2ebbebd57a76.jpg" alt="News 1" class="w-[55px] h-[55px] object-cover">
+              </a>
+              <div>
+                <a href="#!" class="text-[#bebebe] hover:text-white transition-colors duration-150">
+                  <h4 class="text-[13px] leading-[23px] mb-1">Lorem Ipsum is simply dumm text of the and useble</h4>
+                </a>
+                <time datetime="2015-06-17" class="text-[12px] italic font-arvo leading-[25px] text-[#ff4848]">17 jun, 2015</time>
+              </div>
+            </li>
+
+            <li class="flex items-start">
+              <a href="#!" class="mr-[25px] shrink-0 relative top-[5px]">
+                <img src="images/151879524416260183.cb4da81524d93bc226ec.jpg" alt="News 1" class="w-[55px] h-[55px] object-cover">
+              </a>
+              <div>
+                <a href="#!" class="text-[#bebebe] hover:text-white transition-colors duration-150">
+                  <h4 class="text-[13px] leading-[23px] mb-1">Lorem Ipsum is simply dumm text of the and useble</h4>
+                </a>
+                <time datetime="2015-06-17" class="text-[12px] italic font-arvo leading-[25px] text-[#ff4848]">17 jun, 2015</time>
+              </div>
+            </li>
+
+            <li class="flex items-start">
+              <a href="#!" class="mr-[25px] shrink-0 relative top-[5px]">
+                <img src="images/ss_ceaaa39640fb02e7949568432b0157a3a4280125.1920x1080.335495527d2c7fde98fd.jpg" alt="News 1" class="w-[55px] h-[55px] object-cover">
+              </a>
+              <div>
+                <a href="#!" class="text-[#bebebe] hover:text-white transition-colors duration-150">
+                  <h4 class="text-[13px] leading-[23px] mb-1">Lorem Ipsum is simply dumm text of the and useble</h4>
+                </a>
+                <time datetime="2015-06-17" class="text-[12px] italic font-arvo leading-[25px] text-[#ff4848]">17 jun, 2015</time>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="md:w-1/2 lg:w-auto">
+          <h3 class="mb-[25px] text-lg leading-[24px] font-poppins">Quick Links</h3>
+          <ul class="text-[13px] text-[#bebebe] leading-[32px]">
+            <li><a href="#!" class="hover:text-red transition-colors duration-150">About us</a></li>
+            <li><a href="#!" class="hover:text-red transition-colors duration-150">Shortcode</a></li>
+            <li><a href="#!" class="hover:text-red transition-colors duration-150">Contact us</a></li>
+            <li><a href="#!" class="hover:text-red transition-colors duration-150">Portfolio</a></li>
+            <li><a href="#!" class="hover:text-red transition-colors duration-150">Our service</a></li>
+            <li><a href="#!" class="hover:text-red transition-colors duration-150">Attorneys</a></li>
+            <li><a href="#!" class="hover:text-red transition-colors duration-150">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="md:w-1/2 lg:w-auto">
+          <h3 class="mb-[30px] text-lg leading-[24px] font-poppins">Quick Links</h3>
+          <ul class="flex gap-[6px] mb-[40px]">
+            <li>
+              <a href="#!" class="shrink-0 group overflow-hidden w-[60px] h-[55px] inline-block">
+                <img src="assets/dcd7529084ef32765528.webp" alt="Gallery Image 1" class="w-full h-full object-cover group-hover:scale-[1.2] transition-transform duration-150">
+              </a>
+            </li>
+
+            <li>
+              <a href="#!" class="shrink-0 group overflow-hidden w-[60px] h-[55px] inline-block">
+                <img src="assets/55741812fe9d9913fdd7.webp" alt="Gallery Image 2" class="w-full h-full object-cover group-hover:scale-[1.2] transition-transform duration-150">
+              </a>
+            </li>
+
+            <li>
+              <a href="#!" class="shrink-0 group overflow-hidden w-[60px] h-[55px] inline-block">
+                <img src="assets/190a818ce444446ee70f.webp" alt="Gallery Image 3" class="w-full h-full object-cover group-hover:scale-[1.2] transition-transform duration-150">
+              </a>
+            </li>
+
+            <li>
+              <a href="#!" class="shrink-0 group overflow-hidden w-[60px] h-[55px] inline-block">
+                <img src="assets/cc0f9120f176e811ab92.webp" alt="Gallery Image 4" class="w-full h-full object-cover group-hover:scale-[1.2] transition-transform duration-150">
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="mb-5 text-lg leading-[24px] font-bold">Subcribe</h3>
+          <p class="text-[13px] leading-[23px] text-[#bebebe] mb-5">Subcribe now and get all the latest news instantly</p>
+          <form class="flex h-[50px]">
+            <input type="email" name="email" class="px-5 h-full leading-[50px] bg-white w-full border-0 outline-0 text-[13px] text-[#cccccc] placeholder-[#cccccc]" placeholder="Enter you email here">
+            <button type="submit" class="inline-block w-[60px] h-full text-center leading-[46px] bg-red">
+              <img src="images/send4.25e9a67ea16ebb1212e0.png" alt="Send" class="inline-block align-middle">
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="border-t border-t-[#2a2828] pt-5 pb-[15px] text-center">
+      <p class="text-[12px] leading-[24px] text-[#474747]">Theme Created By <span class="text-red uppercase font-poppins font-medium">Marsel Firsov</span> with love</p>
+    </div>
+    
+  </footer>
+</body>
+</html>

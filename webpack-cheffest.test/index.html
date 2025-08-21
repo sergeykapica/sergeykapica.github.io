@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheffest Food</title>
+  <meta name="description" content="Cheffest Food restaurant">
+  <meta name="keywords" content="Cheffest, Food">
+  <meta name="author" content="Marsel Firsov">
+  <link rel="canonical" href="/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/">
+  <meta property="og:title" content="Cheffest Food">
+  <meta property="og:description" content="Cheffest Food restaurant">
+  <meta property="og:image" content="images/logo.e8a3fd8cb45ef2517744.png">
+  <meta property="og:site_name" content="Cheffest Food">
+  <meta property="og:locale" content="ru_RU">
+  <!-- favicon -->
+  <link rel="icon" href="assets/fb851797a1be40a8b7fa.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<script defer src="bundle1a75894f42cc36cc5b24.js"></script><link href="bundle.351073bf65627a13ba6a.css" rel="stylesheet"></head>
+<body>
+  <header class="header absolute inset-x-0 top-0 lg:bg-black z-50">
+    <div class="container flex justify-between items-center lg:min-h-[128px] pt-[99px] lg:pt-0 relative">
+      <a href="#!" id="burger" class="lg:hidden group">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 6.99951H25M4 13.9995H25M4 20.9995H25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-dark-white group-active:stroke-dark-white transition"/>
+        </svg>
+      </a>
+      <ul class="header__menu flex flex-col lg:flex-row gap-[6px] xl:mr-[54px] absolute inset-x-0 top-full invisible opacity-0 lg:visible lg:opacity-100 lg:static transition bg-black lg:bg-transparent py-5 lg:py-0 text-center lg:text-left" id="menu">
+        <li class="px-[18px] hover:text-dark-white transition-colors"><a href="#!">Welcome</a></li>
+        <li class="px-[18px] hover:text-dark-white transition-colors"><a href="#!">Our Menu</a></li>
+        <li class="px-[18px] hover:text-dark-white transition-colors"><a href="#!">Franchise</a></li>
+        <li class="px-[18px] hover:text-dark-white transition-colors"><a href="#!">Contact</a></li>
+      </ul>
+      <a href="#!" class="xl:mr-auto absolute top-[30px] left-1/2 -translate-x-1/2 lg:static lg:top-0 lg:left-0 lg:translate-x-0">
+        <img src="images/logo.e8a3fd8cb45ef2517744.png" alt="Logo" class="w-[59px] lg:w-[100px]">
+      </a>
+      <div class="flex items-center gap-[30px]">
+
+        <a href="#!" class="relative group">
+          <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.4102 33.9999C23.8111 33.9999 24.9468 32.8159 24.9468 31.3554C24.9468 29.8949 23.8111 28.7109 22.4102 28.7109C21.0093 28.7109 19.8737 29.8949 19.8737 31.3554C19.8737 32.8159 21.0093 33.9999 22.4102 33.9999Z" fill="white" class="group-hover:fill-dark-white transition-colors"/>
+          <path d="M10.8126 33.9999C12.2135 33.9999 13.3492 32.8159 13.3492 31.3554C13.3492 29.8949 12.2135 28.7109 10.8126 28.7109C9.41167 28.7109 8.276 29.8949 8.276 31.3554C8.276 32.8159 9.41167 33.9999 10.8126 33.9999Z" fill="white" class="group-hover:fill-dark-white transition-colors"/>
+          <path d="M5.87023 5.95407L5.58034 9.65631C5.52236 10.3665 6.05867 10.9559 6.73992 10.9559H28.9313C29.5401 10.9559 30.0474 10.4723 30.0909 9.83765C30.2794 7.16296 28.3226 4.98695 25.757 4.98695H7.94298C7.79803 4.32206 7.50814 3.68739 7.0588 3.1585C6.33406 2.35761 5.31943 1.88916 4.27581 1.88916H1.75373C1.15945 1.88916 0.666626 2.40294 0.666626 3.0225C0.666626 3.64206 1.15945 4.15584 1.75373 4.15584H4.27581C4.72515 4.15584 5.1455 4.35228 5.44989 4.68473C5.75428 5.03229 5.89922 5.48562 5.87023 5.95407Z" fill="white" class="group-hover:fill-dark-white transition-colors"/>
+          <path d="M28.5858 13.2227H6.35087C5.74209 13.2227 5.24927 13.7062 5.19129 14.3258L4.66948 20.8991C4.46655 23.4832 6.40885 25.6894 8.88745 25.6894H25.0056C27.1798 25.6894 29.0931 23.8307 29.2525 21.564L29.7309 14.5071C29.7888 13.812 29.267 13.2227 28.5858 13.2227Z" fill="white" class="group-hover:fill-dark-white transition-colors"/>
+          <rect x="20.3424" width="14.3242" height="14.9334" rx="7.1621" fill="#FF0000" class="group-hover:fill-dark-white transition-colors"/>
+          <path d="M24.4235 11V9.79769L27.3789 7.19653C27.6302 6.96532 27.8411 6.75723 28.0113 6.57225C28.1843 6.38728 28.3154 6.20617 28.4046 6.0289C28.4938 5.84907 28.5384 5.65511 28.5384 5.44701C28.5384 5.2158 28.4829 5.0167 28.3721 4.84971C28.2613 4.68015 28.11 4.55042 27.9181 4.4605C27.7262 4.36802 27.5086 4.32177 27.2654 4.32177C27.0113 4.32177 26.7897 4.37058 26.6005 4.46821C26.4113 4.56583 26.2654 4.70584 26.1627 4.88825C26.06 5.07065 26.0086 5.28773 26.0086 5.5395H24.3424C24.3424 5.02312 24.4654 4.57482 24.7113 4.19461C24.9573 3.81439 25.3019 3.52023 25.7451 3.31214C26.1884 3.10405 26.6992 3 27.2775 3C27.8721 3 28.3897 3.10019 28.8302 3.30058C29.2735 3.49839 29.6181 3.77328 29.864 4.12524C30.11 4.4772 30.2329 4.88054 30.2329 5.33526C30.2329 5.63327 30.1708 5.92742 30.0465 6.21773C29.9248 6.50803 29.7073 6.83044 29.3938 7.18497C29.0802 7.53693 28.6384 7.95954 28.0681 8.45279L26.8559 9.58189V9.63584H30.3424V11H24.4235Z" fill="white" class="group-hover:fill-dark-white transition-colors"/>
+          </svg>
+          <span class="inline-block absolute top-0 right-0 text-[10px] text-center bg-red w-[15px] h-[15px] leading-[15px] rounded-full">2</span>
+        </a>
+        <a href="#!" class="group hidden lg:inline-block">
+          <svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.125 29.7502C23.5578 29.7502 29.5833 23.7247 29.5833 16.2918C29.5833 8.859 23.5578 2.8335 16.125 2.8335C8.69213 2.8335 2.66663 8.859 2.66663 16.2918C2.66663 23.7247 8.69213 29.7502 16.125 29.7502Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-dark-white transition-colors"/>
+          <path d="M31 31.1668L28.1666 28.3335" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-dark-white transition-colors"/>
+          </svg>
+        </a>
+
+        <a href="#!" class="button-1 py-5 px-[34px] hover:bg-dark-white transition hidden lg:inline-block !font-bold">Become a Member</a>
+
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-welcome pt-[180px] pb-[43px] lg:pt-[215px] lg:pb-[246px]">
+
+      <div class="container">
+
+        <div class="max-w-[650px]">
+          <h1 class="font-black text-[36px] lg:text-[66px] leading-[46px] lg:leading-[96px] mb-[10px]">Welcome!<br>We Made Delicious Food for You</h1>
+          <p class="text-xl leading-[30px] mb-[40px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <a href="#!" class="button-1 py-5 px-[50px] w-full sm:w-auto text-center sm:text-left hover:bg-dark-white transition inline-block">Order Online</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section-about pt-[47px] pb-[90px] lg:py-[150px]">
+
+      <div class="container">
+        <div class="text-center mb-5 lg:mb-[70px] mx-auto max-w-[820px]">
+          <h2 class="section__headline mb-4">Why We are Best Food Maker</h2>
+          <p class="section__subheadline">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem scrambled it to make a type specimen book.</p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-[30px] lg:gap-[87px]">
+          <div class="lg:w-1/2">
+            <p class="text-lg leading-[30px] text-grey-1">It is a long established fact that a reader will be distracted layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The normal distribution of letters, as opposed to using 'Content  Many desktop publishing packages and web page editors search for 'lorem ipsum' will uncover many web sites still in  humour and the like. <a href="#!" class="text-white font-bold">Read More</a></p>
+          </div>
+          <div class="section-about__image rounded-[12px] lg:w-1/2 relative h-[430px] lg:h-auto">
+            <div class="bg-[#191919]/40 absolute inset-0 flex justify-center items-center">
+              <a href="#!" class="relative rounded-full group">
+                <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="92" height="92" rx="46" transform="matrix(-1 0 0 1 92 0)" fill="url(#paint0_linear_1_450)"/>
+                <path d="M66 46L36 63.3205L36 28.6795L66 46Z" fill="black"/>
+                <defs>
+                <linearGradient id="paint0_linear_1_450" x1="23.3286" y1="-58.5454" x2="147.635" y2="-13.0266" gradientUnits="userSpaceOnUse">
+                <stop offset="0.110103" stop-color="white"/>
+                <stop offset="1" stop-color="white"/>
+                </linearGradient>
+                </defs>
+                </svg>
+
+                <span class="absolute inset-0 rounded-full bg-dark-white/30 scale-0 group-hover:scale-150 opacity-0 group-hover:opacity-100 transition-transform duration-500 ease-out"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section-our-menu">
+
+      <div class="container">
+
+        <div class="text-center mb-[10px] lg:mb-[40px]">
+          <h2 class="section__headline !font-semibold">Our Best & Delicious Menu</h2>
+        </div>
+
+        <div class="overflow-x-auto whitespace-nowrap">
+          <ul class="tab-links flex gap-[40px] lg:justify-between lg:gap-0 mb-[40px] lg:mb-[80px]">
+            <li><a href="#tab1">All</a></li>
+            <li><a href="#tab2">Bread</a></li>
+            <li><a href="#tab3">Chiffon & Rolls</a></li>
+            <li><a href="#tab4">Donut</a></li>
+            <li><a href="#tab5">Pastry & Danish</a></li>
+            <li><a href="#tab6">Cakes</a></li>
+            <li><a href="#tab7">Cookies</a></li>
+          </ul>
+        </div>
+
+        <div class="tab-content">
+          <div id="tab1" class="tab-pane">
+
+            <div class="section-our-menu__food-list grid lg:grid-cols-3 gap-[30px]">
+
+              <div class="section-our-menu__food-item">
+                <img src="images/food1.691e37121cddf3338a71.png" alt="Food 1">
+                <h3 class="mt-5 mb-[10px] text-2xl leading-[34px] font-bold">Naan Burger</h3>
+                <p class="text-base leading-[26px] mb-[10px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl leading-[34px] font-bold">$1.85</span>
+                  <a href="#!" class="group">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="white" class="group-hover:stroke-dark-white transition"/>
+                    <path d="M11.6667 11.6667H13.1168C14.0168 11.6667 14.7251 12.4417 14.6501 13.3334L13.9584 21.6334C13.8417 22.9917 14.9167 24.1584 16.2834 24.1584H25.1584C26.3584 24.1584 27.4084 23.1751 27.5001 21.9834L27.9501 15.7334C28.0501 14.3501 27.0001 13.2251 25.6084 13.2251H14.8501" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23.5417 28.3333C24.117 28.3333 24.5833 27.867 24.5833 27.2917C24.5833 26.7164 24.117 26.25 23.5417 26.25C22.9664 26.25 22.5 26.7164 22.5 27.2917C22.5 27.867 22.9664 28.3333 23.5417 28.3333Z" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.8749 28.3333C17.4502 28.3333 17.9166 27.867 17.9166 27.2917C17.9166 26.7164 17.4502 26.25 16.8749 26.25C16.2996 26.25 15.8333 26.7164 15.8333 27.2917C15.8333 27.867 16.2996 28.3333 16.8749 28.3333Z" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5 16.6667H27.5" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="section-our-menu__food-item">
+                <img src="images/food2.b55c7dac4c4779cc656a.png" alt="Food 2">
+                <h3 class="mt-5 mb-[10px] text-2xl leading-[34px] font-bold">Butter Chicken Taco</h3>
+                <p class="text-base leading-[26px] mb-[10px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl leading-[34px] font-bold">$1.15</span>
+                  <a href="#!" class="group">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="white" class="group-hover:stroke-dark-white transition"/>
+                    <path d="M11.6667 11.6667H13.1168C14.0168 11.6667 14.7251 12.4417 14.6501 13.3334L13.9584 21.6334C13.8417 22.9917 14.9167 24.1584 16.2834 24.1584H25.1584C26.3584 24.1584 27.4084 23.1751 27.5001 21.9834L27.9501 15.7334C28.0501 14.3501 27.0001 13.2251 25.6084 13.2251H14.8501" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23.5417 28.3333C24.117 28.3333 24.5833 27.867 24.5833 27.2917C24.5833 26.7164 24.117 26.25 23.5417 26.25C22.9664 26.25 22.5 26.7164 22.5 27.2917C22.5 27.867 22.9664 28.3333 23.5417 28.3333Z" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.8749 28.3333C17.4502 28.3333 17.9166 27.867 17.9166 27.2917C17.9166 26.7164 17.4502 26.25 16.8749 26.25C16.2996 26.25 15.8333 26.7164 15.8333 27.2917C15.8333 27.867 16.2996 28.3333 16.8749 28.3333Z" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5 16.6667H27.5" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="section-our-menu__food-item">
+                <img src="images/food3.45cf33b05f55f07f97f1.png" alt="Food 3">
+                <h3 class="mt-5 mb-[10px] text-2xl leading-[34px] font-bold">Chicken Burger</h3>
+                <p class="text-base leading-[26px] mb-[10px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl leading-[34px] font-bold">$2.00</span>
+                  <a href="#!" class="group">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="white" class="group-hover:stroke-dark-white transition"/>
+                    <path d="M11.6667 11.6667H13.1168C14.0168 11.6667 14.7251 12.4417 14.6501 13.3334L13.9584 21.6334C13.8417 22.9917 14.9167 24.1584 16.2834 24.1584H25.1584C26.3584 24.1584 27.4084 23.1751 27.5001 21.9834L27.9501 15.7334C28.0501 14.3501 27.0001 13.2251 25.6084 13.2251H14.8501" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23.5417 28.3333C24.117 28.3333 24.5833 27.867 24.5833 27.2917C24.5833 26.7164 24.117 26.25 23.5417 26.25C22.9664 26.25 22.5 26.7164 22.5 27.2917C22.5 27.867 22.9664 28.3333 23.5417 28.3333Z" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.8749 28.3333C17.4502 28.3333 17.9166 27.867 17.9166 27.2917C17.9166 26.7164 17.4502 26.25 16.8749 26.25C16.2996 26.25 15.8333 26.7164 15.8333 27.2917C15.8333 27.867 16.2996 28.3333 16.8749 28.3333Z" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5 16.6667H27.5" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="section-our-menu__food-item">
+                <img src="images/food4.00ca85612132144ffc01.png" alt="Food 4">
+                <h3 class="mt-5 mb-[10px] text-2xl leading-[34px] font-bold">Cheese Chicken Naan</h3>
+                <p class="text-base leading-[26px] mb-[10px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl leading-[34px] font-bold">$2.50</span>
+                  <a href="#!" class="group">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="white" class="group-hover:stroke-dark-white transition"/>
+                    <path d="M11.6667 11.6667H13.1168C14.0168 11.6667 14.7251 12.4417 14.6501 13.3334L13.9584 21.6334C13.8417 22.9917 14.9167 24.1584 16.2834 24.1584H25.1584C26.3584 24.1584 27.4084 23.1751 27.5001 21.9834L27.9501 15.7334C28.0501 14.3501 27.0001 13.2251 25.6084 13.2251H14.8501" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23.5417 28.3333C24.117 28.3333 24.5833 27.867 24.5833 27.2917C24.5833 26.7164 24.117 26.25 23.5417 26.25C22.9664 26.25 22.5 26.7164 22.5 27.2917C22.5 27.867 22.9664 28.3333 23.5417 28.3333Z" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.8749 28.3333C17.4502 28.3333 17.9166 27.867 17.9166 27.2917C17.9166 26.7164 17.4502 26.25 16.8749 26.25C16.2996 26.25 15.8333 26.7164 15.8333 27.2917C15.8333 27.867 16.2996 28.3333 16.8749 28.3333Z" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5 16.6667H27.5" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="section-our-menu__food-item">
+                <img src="images/food5.e0b7d0a63c8dc0c2b057.png" alt="Food 5">
+                <h3 class="mt-5 mb-[10px] text-2xl leading-[34px] font-bold">3 Layer Burger</h3>
+                <p class="text-base leading-[26px] mb-[10px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl leading-[34px] font-bold">$4.99</span>
+                  <a href="#!" class="group">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="white" class="group-hover:stroke-dark-white transition"/>
+                    <path d="M11.6667 11.6667H13.1168C14.0168 11.6667 14.7251 12.4417 14.6501 13.3334L13.9584 21.6334C13.8417 22.9917 14.9167 24.1584 16.2834 24.1584H25.1584C26.3584 24.1584 27.4084 23.1751 27.5001 21.9834L27.9501 15.7334C28.0501 14.3501 27.0001 13.2251 25.6084 13.2251H14.8501" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23.5417 28.3333C24.117 28.3333 24.5833 27.867 24.5833 27.2917C24.5833 26.7164 24.117 26.25 23.5417 26.25C22.9664 26.25 22.5 26.7164 22.5 27.2917C22.5 27.867 22.9664 28.3333 23.5417 28.3333Z" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.8749 28.3333C17.4502 28.3333 17.9166 27.867 17.9166 27.2917C17.9166 26.7164 17.4502 26.25 16.8749 26.25C16.2996 26.25 15.8333 26.7164 15.8333 27.2917C15.8333 27.867 16.2996 28.3333 16.8749 28.3333Z" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5 16.6667H27.5" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="section-our-menu__food-item">
+                <img src="images/food1.691e37121cddf3338a71.png" alt="Food 1">
+                <h3 class="mt-5 mb-[10px] text-2xl leading-[34px] font-bold">Sandwich</h3>
+                <p class="text-base leading-[26px] mb-[10px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl leading-[34px] font-bold">$2.80</span>
+                  <a href="#!" class="group">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="white" class="group-hover:stroke-dark-white transition"/>
+                    <path d="M11.6667 11.6667H13.1168C14.0168 11.6667 14.7251 12.4417 14.6501 13.3334L13.9584 21.6334C13.8417 22.9917 14.9167 24.1584 16.2834 24.1584H25.1584C26.3584 24.1584 27.4084 23.1751 27.5001 21.9834L27.9501 15.7334C28.0501 14.3501 27.0001 13.2251 25.6084 13.2251H14.8501" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23.5417 28.3333C24.117 28.3333 24.5833 27.867 24.5833 27.2917C24.5833 26.7164 24.117 26.25 23.5417 26.25C22.9664 26.25 22.5 26.7164 22.5 27.2917C22.5 27.867 22.9664 28.3333 23.5417 28.3333Z" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.8749 28.3333C17.4502 28.3333 17.9166 27.867 17.9166 27.2917C17.9166 26.7164 17.4502 26.25 16.8749 26.25C16.2996 26.25 15.8333 26.7164 15.8333 27.2917C15.8333 27.867 16.2996 28.3333 16.8749 28.3333Z" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5 16.6667H27.5" stroke="white" class="group-hover:stroke-dark-white transition" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="text-center mt-[40px] lg:mt-[80px]">
+          <a href="#!" class="button-1 py-5 px-5 lg:px-[54px] w-full sm:w-auto text-center sm:text-left hover:bg-dark-white transition inline-block">See All</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="py-[130px] lg:py-[180px]">
+
+      <div class="container">
+
+        <div class="text-center mb-[30px] lg:mb-[60px]">
+          <h3 class="section__headline-2">We believe in making quality food</h3>
+        </div>
+
+        <div class="grid lg:grid-cols-4 gap-[30px]">
+
+          <div class="text-center">
+            <div class="mb-3 text-[36px] lg:text-[56px] leading-[46px] lg:leading-[66px] font-bold">2M+</div>
+            <span class="text-lg leading-[30px]">Happy Customers</span>
+          </div>
+
+          <div class="text-center">
+            <div class="mb-3 text-[36px] lg:text-[56px] leading-[46px] lg:leading-[66px] font-bold">98%</div>
+            <span class="text-lg leading-[30px]">Customer Satisfaction</span>
+          </div>
+
+          <div class="text-center">
+            <div class="mb-3 text-[36px] lg:text-[56px] leading-[46px] lg:leading-[66px] font-bold">20+</div>
+            <span class="text-lg leading-[30px]">Our Branches</span>
+          </div>
+
+          <div class="text-center">
+            <div class="mb-3 text-[36px] lg:text-[56px] leading-[46px] lg:leading-[66px] font-bold">100+</div>
+            <span class="text-lg leading-[30px]">Total Employees</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+
+      <div class="container">
+
+        <div class="text-center mb-5 max-w-[900px] mx-auto">
+          <h3 class="section__headline !font-semibold">Start The Adventure Today And Become a Franchisee</h3>
+        </div>
+
+        <p class="text-xl leading-[30px] text-center mb-[30px] lg:mb-[60px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        <div class="text-center mt-[30px] lg:mt-[40px] lg:mt-[80px]">
+          <a href="#!" class="button-1 py-5 px-5 lg:px-[54px] w-full sm:w-auto text-center sm:text-left hover:bg-dark-white transition inline-block">Become a Franchisee</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section-reviews py-[90px] lg:py-[150px]">
+
+      <div class="container">
+
+        <div class="text-center mb-[30px] lg:mb-[70px]">
+          <h3 class="section__headline !font-semibold">Start The Adventure Today And Become a Franchisee</h3>
+        </div>
+
+        <div class="section-reviews__reviews-list grid lg:grid-cols-3 gap-[30px]">
+
+          <div class="section-reviews__reviews-item">
+            <div class="mb-[30px]">
+              <div class="flex items-center mb-5">
+                <img src="images/ava1.318f869545688f53cf4b.png" alt="Ava 1" class="w-[74px] h-[74px] object-cover rounded-full mr-3">
+                <div>
+                  <h4 class="text-lg leading-[28px] font-bold">Michal Gun</h4>
+                  <div class="leading-[22px] text-[14px] mb-2 text-white/70">Head of sales at Tesla</div>
+                  <div class="flex gap-[3px]">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-end">
+                <img src="images/quote.5b7653fb812c0ab12558.svg" alt="Quote">
+                <div class="w-[190px] h-[1px] bg-white/20 relative bottom-1"></div>
+              </div>
+            </div>
+
+            <p class="text-white/70 leading-[28px] font-medium">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+
+          </div>
+
+          <div class="section-reviews__reviews-item">
+            <div class="mb-[30px]">
+              <div class="flex items-center mb-5">
+                <img src="images/ava2.462bf9d3a4aedc9a7b58.png" alt="Ava 2" class="w-[74px] h-[74px] object-cover rounded-full mr-3">
+                <div>
+                  <h4 class="text-lg leading-[28px] font-bold">Aleena White</h4>
+                  <div class="leading-[22px] text-[14px] mb-2 text-white/70">Accountant of Ozone</div>
+                  <div class="flex gap-[3px]">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-end">
+                <img src="images/quote.5b7653fb812c0ab12558.svg" alt="Quote">
+                <div class="w-[190px] h-[1px] bg-white/20 relative bottom-1"></div>
+              </div>
+            </div>
+
+            <p class="text-white/70 leading-[28px] font-medium">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+
+          </div>
+
+          <div class="section-reviews__reviews-item">
+            <div class="mb-[30px]">
+              <div class="flex items-center mb-5">
+                <img src="images/ava3.5ae6035eaf5ba48b64bc.png" alt="Ava 3" class="w-[74px] h-[74px] object-cover rounded-full mr-3">
+                <div>
+                  <h4 class="text-lg leading-[28px] font-bold">Cries Lee</h4>
+                  <div class="leading-[22px] text-[14px] mb-2 text-white/70">CEO Of Montee</div>
+                  <div class="flex gap-[3px]">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-end">
+                <img src="images/quote.5b7653fb812c0ab12558.svg" alt="Quote">
+                <div class="w-[190px] h-[1px] bg-white/20 relative bottom-1"></div>
+              </div>
+            </div>
+
+            <p class="text-white/70 leading-[28px] font-medium">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+
+          </div>
+
+          <div class="section-reviews__reviews-item">
+            <div class="mb-[30px]">
+              <div class="flex items-center mb-5">
+                <img src="images/ava1.318f869545688f53cf4b.png" alt="Ava 1" class="w-[74px] h-[74px] object-cover rounded-full mr-3">
+                <div>
+                  <h4 class="text-lg leading-[28px] font-bold">Michal Gun</h4>
+                  <div class="leading-[22px] text-[14px] mb-2 text-white/70">Head of sales at Tesla</div>
+                  <div class="flex gap-[3px]">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-end">
+                <img src="images/quote.5b7653fb812c0ab12558.svg" alt="Quote">
+                <div class="w-[190px] h-[1px] bg-white/20 relative bottom-1"></div>
+              </div>
+            </div>
+
+            <p class="text-white/70 leading-[28px] font-medium">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+
+          </div>
+
+          <div class="section-reviews__reviews-item">
+            <div class="mb-[30px]">
+              <div class="flex items-center mb-5">
+                <img src="images/ava2.462bf9d3a4aedc9a7b58.png" alt="Ava 2" class="w-[74px] h-[74px] object-cover rounded-full mr-3">
+                <div>
+                  <h4 class="text-lg leading-[28px] font-bold">Aleena White</h4>
+                  <div class="leading-[22px] text-[14px] mb-2 text-white/70">Accountant of Ozone</div>
+                  <div class="flex gap-[3px]">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-end">
+                <img src="images/quote.5b7653fb812c0ab12558.svg" alt="Quote">
+                <div class="w-[190px] h-[1px] bg-white/20 relative bottom-1"></div>
+              </div>
+            </div>
+
+            <p class="text-white/70 leading-[28px] font-medium">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+
+          </div>
+
+          <div class="section-reviews__reviews-item">
+            <div class="mb-[30px]">
+              <div class="flex items-center mb-5">
+                <img src="images/ava3.5ae6035eaf5ba48b64bc.png" alt="Ava 3" class="w-[74px] h-[74px] object-cover rounded-full mr-3">
+                <div>
+                  <h4 class="text-lg leading-[28px] font-bold">Cries Lee</h4>
+                  <div class="leading-[22px] text-[14px] mb-2 text-white/70">CEO Of Montee</div>
+                  <div class="flex gap-[3px]">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                    <img src="images/star.5cf76546405b2bc0bcaf.svg" alt="Star">
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-end">
+                <img src="images/quote.5b7653fb812c0ab12558.svg" alt="Quote">
+                <div class="w-[190px] h-[1px] bg-white/20 relative bottom-1"></div>
+              </div>
+            </div>
+
+            <p class="text-white/70 leading-[28px] font-medium">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="py-[40px] lg:py-[80px] bg-white">
+
+      <div class="container">
+
+        <div class="w-full max-w-[748px] mx-auto">
+          <h2 class="text-center text-black text-[35px] lg:text-[70px] leading-[45px] lg:leading-[90px] font-bold mb-[30px] lg:mb-[50px]">For more Support</h2>
+          <div class="flex flex-col sm:flex-row gap-5">
+            <input type="email" name="email" class="input" placeholder="Enter Email">
+            <a href="#!" class="button-2 py-5 px-5 lg:px-[54px] w-full sm:w-auto text-center sm:text-left hover:bg-light-black-2 transition inline-block">Subscribe</a>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+
+    <section class="py-[90px] lg:py-[150px] bg-black">
+
+      <div class="container flex flex-col lg:flex-row justify-between items-center gap-[60px] lg:gap-[30px]">
+        <div class="w-full max-w-[542px]">
+          <h2 class="section__headline mb-4">Our Restaurants. Where to Find Us?</h2>
+          <p class="text-xl mb-[30px] lg:mb-[70px]">Want to have a superb meal in an exceptional setting with family, friends or work colleagues, here are the addresses of our restaurants.</p>
+          <a href="#!" class="button-1 py-5 px-5 lg:px-[54px] w-full sm:w-auto text-center sm:text-left hover:bg-dark-white transition inline-block">Find The Nearest Cheffest</a>
+        </div>
+        <div class="rounded-[12px] w-full lg:w-[483px] h-[470px]">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23244.010261997268!2d6.667091149999999!3d43.261872950000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cec7148316e747%3A0x912a1b632d84b9df!2zODM5OTAg0KHQtdC9LdCi0YDQvtC_0LUsINCk0YDQsNC90YbQuNGP!5e0!3m2!1sru!2sua!4v1751550007538!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full object-cover"></iframe>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <footer class="footer py-[80px]">
+    
+    <div class="container">
+
+      <div class="flex flex-col lg:flex-row justify-between items-start gap-[60px] lg:gap-0 mb-[50px] lg:mb-[100px]">
+
+        <div>
+          <h4 class="text-2xl leading-[24px] font-semibold mb-[30px]">Our Products</h4>
+          <ul class="space-y-6 leading-[18px]">
+            <li><a href="#!">Our menus</a></li>
+            <li><a href="#!">Our burgers</a></li>
+            <li><a href="#!">Our times sides</a></li>
+            <li><a href="#!">Our naandwiches</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-2xl leading-[24px] font-semibold mb-[30px]">Legal information</h4>
+          <ul class="space-y-6 leading-[18px]">
+            <li><a href="#!">Legal Notice</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-2xl leading-[24px] font-semibold mb-[30px]">Contact us</h4>
+          <ul class="space-y-6 leading-[18px]">
+            <li><a href="#!">Contacts</a></li>
+            <li><a href="#!">Our addresses</a></li>
+            <li><a href="#!">Become a Times Square franchisee</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-2xl leading-[24px] font-semibold mb-[30px]">We accept</h4>
+          <img src="images/card.4e39c7ae685ce1b65448.png" alt="Card">
+        </div>
+
+      </div>
+
+      <div class="pt-[28px] border-t border-[#4F4F4F] flex flex-col sm:flex-row justify-between gap-[30px] text-center lg:text-left">
+
+        <div class="flex gap-5 justify-center items-center">
+          <a href="#!" class="group">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_752)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15.0838C0 22.5413 5.41625 28.7425 12.5 30V19.1663H8.75V15H12.5V11.6663C12.5 7.91625 14.9163 5.83375 18.3337 5.83375C19.4163 5.83375 20.5837 6 21.6663 6.16625V10H19.75C17.9163 10 17.5 10.9163 17.5 12.0837V15H21.5L20.8337 19.1663H17.5V30C24.5837 28.7425 30 22.5425 30 15.0838C30 6.7875 23.25 0 15 0C6.75 0 0 6.7875 0 15.0838Z" fill="white" class="group-hover:fill-dark-white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_752">
+            <rect width="30" height="30" fill="white" class="group-hover:fill-dark-white"/>
+            </clipPath>
+            </defs>
+            </svg>
+          </a>
+          <a href="#!" class="group">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.5539 6.17049C28.5101 6.63299 27.3889 6.94549 26.2101 7.08674C27.4264 6.35898 28.3363 5.21357 28.7701 3.86424C27.6274 4.54298 26.3768 5.02074 25.0726 5.27674C24.1956 4.34032 23.034 3.71965 21.768 3.51108C20.5021 3.30252 19.2028 3.51773 18.0717 4.12331C16.9406 4.72888 16.0411 5.69094 15.5128 6.86012C14.9846 8.0293 14.8571 9.34018 15.1501 10.5892C12.8347 10.473 10.5697 9.87118 8.50192 8.82287C6.43416 7.77457 4.60994 6.30319 3.14764 4.50424C2.64764 5.36674 2.36014 6.36674 2.36014 7.43174C2.35958 8.39049 2.59568 9.33454 3.04748 10.1802C3.49929 11.0258 4.15284 11.7468 4.95014 12.2792C4.02548 12.2498 3.12123 12 2.31264 11.5505V11.6255C2.31254 12.9702 2.77768 14.2735 3.62912 15.3142C4.48055 16.355 5.66585 17.0692 6.98389 17.3355C6.12612 17.5676 5.22681 17.6018 4.35389 17.4355C4.72576 18.5925 5.45013 19.6043 6.4256 20.3291C7.40106 21.054 8.57878 21.4557 9.79389 21.478C7.73118 23.0973 5.18375 23.9756 2.56139 23.9717C2.09686 23.9719 1.63273 23.9447 1.17139 23.8905C3.83323 25.602 6.93181 26.5103 10.0964 26.5067C20.8089 26.5067 26.6651 17.6342 26.6651 9.93924C26.6651 9.68924 26.6589 9.43674 26.6476 9.18674C27.7868 8.36296 28.77 7.34286 29.5514 6.17424L29.5539 6.17049Z" fill="white" class="group-hover:fill-dark-white"/>
+            </svg>
+          </a>
+          <a href="#!" class="group">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_756)">
+            <path d="M25.3964 5.61423C23.4839 4.75173 21.4339 4.11423 19.2901 3.75173C19.271 3.74807 19.2513 3.75043 19.2336 3.75849C19.2159 3.76656 19.2011 3.77992 19.1914 3.79673C18.9289 4.25798 18.6364 4.85923 18.4314 5.33423C16.1577 4.99453 13.8462 4.99453 11.5726 5.33423C11.3443 4.80781 11.0868 4.29451 10.8014 3.79673C10.7917 3.77971 10.7771 3.76605 10.7594 3.75756C10.7418 3.74907 10.722 3.74617 10.7026 3.74923C8.56011 4.11173 6.51011 4.74923 4.59636 5.61298C4.5799 5.61989 4.56594 5.63167 4.55636 5.64673C0.666363 11.3655 -0.399888 16.943 0.123863 22.4505C0.12532 22.464 0.129507 22.477 0.136169 22.4888C0.14283 22.5007 0.151828 22.511 0.162613 22.5192C2.4331 24.1723 4.96553 25.4315 7.65386 26.2442C7.6726 26.25 7.69265 26.25 7.71138 26.2442C7.73011 26.2384 7.74666 26.2271 7.75886 26.2117C8.33736 25.4381 8.84999 24.6173 9.29136 23.758C9.29749 23.7462 9.30102 23.7333 9.30172 23.7201C9.30241 23.7068 9.30026 23.6936 9.2954 23.6813C9.29054 23.669 9.28309 23.6578 9.27355 23.6486C9.26401 23.6394 9.25261 23.6324 9.24011 23.628C8.43262 23.3239 7.65022 22.9569 6.90011 22.5305C6.88663 22.5228 6.87528 22.5119 6.86706 22.4987C6.85884 22.4855 6.85402 22.4705 6.85303 22.4551C6.85204 22.4396 6.85491 22.4241 6.86138 22.41C6.86785 22.3959 6.87773 22.3836 6.89011 22.3742C7.04761 22.258 7.20511 22.1367 7.35511 22.0155C7.36862 22.0046 7.38488 21.9976 7.40209 21.9954C7.41931 21.9932 7.4368 21.9958 7.45261 22.003C12.3614 24.208 17.6776 24.208 22.5289 22.003C22.5447 21.9954 22.5624 21.9925 22.5799 21.9944C22.5973 21.9964 22.6139 22.0033 22.6276 22.0142C22.7776 22.1367 22.9339 22.258 23.0926 22.3742C23.1051 22.3834 23.1152 22.3955 23.1218 22.4095C23.1285 22.4235 23.1316 22.4389 23.1309 22.4544C23.1301 22.4699 23.1256 22.4849 23.1176 22.4982C23.1096 22.5115 23.0984 22.5226 23.0851 22.5305C22.3376 22.9605 21.5601 23.3242 20.7439 23.6267C20.7313 23.6313 20.7199 23.6385 20.7104 23.6478C20.7008 23.6571 20.6934 23.6683 20.6885 23.6808C20.6837 23.6932 20.6815 23.7065 20.6822 23.7198C20.6829 23.7331 20.6865 23.7461 20.6926 23.758C21.1426 24.6167 21.6576 25.4342 22.2239 26.2105C22.2356 26.2264 22.252 26.2383 22.2708 26.2446C22.2896 26.2508 22.3099 26.2512 22.3289 26.2455C25.0218 25.435 27.5584 24.1752 29.8314 22.5192C29.8425 22.5115 29.8518 22.5014 29.8587 22.4898C29.8656 22.4782 29.8699 22.4652 29.8714 22.4517C30.4964 16.0842 28.8239 10.5517 25.4351 5.64923C25.4268 5.6333 25.4131 5.62088 25.3964 5.61423ZM10.0251 19.0967C8.54761 19.0967 7.32886 17.7605 7.32886 16.1217C7.32886 14.4817 8.52386 13.1467 10.0251 13.1467C11.5376 13.1467 12.7451 14.493 12.7214 16.1217C12.7214 17.7617 11.5264 19.0967 10.0251 19.0967ZM19.9939 19.0967C18.5151 19.0967 17.2976 17.7605 17.2976 16.1217C17.2976 14.4817 18.4914 13.1467 19.9939 13.1467C21.5064 13.1467 22.7139 14.493 22.6901 16.1217C22.6901 17.7617 21.5076 19.0967 19.9939 19.0967Z" fill="white" class="group-hover:fill-dark-white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_756">
+            <rect width="30" height="30" fill="white" class="group-hover:fill-dark-white"/>
+            </clipPath>
+            </defs>
+            </svg>
+          </a>
+          <a href="#!" class="group">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 3.5475C1.25 2.93817 1.49206 2.35379 1.92292 1.92293C2.35379 1.49206 2.93817 1.25 3.5475 1.25H26.45C26.752 1.24951 27.0511 1.30858 27.3302 1.42384C27.6093 1.53909 27.8629 1.70827 28.0766 1.92167C28.2902 2.13508 28.4597 2.38853 28.5752 2.66752C28.6908 2.9465 28.7502 3.24553 28.75 3.5475V26.45C28.7503 26.752 28.6911 27.0512 28.5757 27.3303C28.4603 27.6094 28.291 27.863 28.0775 28.0766C27.864 28.2903 27.6105 28.4597 27.3314 28.5752C27.0524 28.6908 26.7533 28.7502 26.4513 28.75H3.5475C3.24568 28.75 2.94682 28.6905 2.668 28.575C2.38917 28.4595 2.13584 28.2901 1.92248 28.0766C1.70912 27.8632 1.53991 27.6097 1.42453 27.3309C1.30914 27.052 1.24984 26.7531 1.25 26.4513V3.5475ZM12.135 11.735H15.8588V13.605C16.3963 12.53 17.7713 11.5625 19.8375 11.5625C23.7988 11.5625 24.7375 13.7038 24.7375 17.6325V24.91H20.7288V18.5275C20.7288 16.29 20.1913 15.0275 18.8263 15.0275C16.9325 15.0275 16.145 16.3888 16.145 18.5275V24.91H12.135V11.735ZM5.26 24.7388H9.27V11.5625H5.26V24.7375V24.7388ZM9.84375 7.265C9.85131 7.60835 9.79022 7.94974 9.66405 8.26915C9.53789 8.58856 9.34919 8.87955 9.10904 9.12504C8.86889 9.37054 8.58213 9.5656 8.26557 9.69876C7.94902 9.83193 7.60905 9.90053 7.26563 9.90053C6.9222 9.90053 6.58224 9.83193 6.26568 9.69876C5.94913 9.5656 5.66236 9.37054 5.42221 9.12504C5.18206 8.87955 4.99337 8.58856 4.8672 8.26915C4.74104 7.94974 4.67994 7.60835 4.6875 7.265C4.70234 6.59107 4.98048 5.94974 5.46236 5.47836C5.94423 5.00698 6.59153 4.74303 7.26563 4.74303C7.93972 4.74303 8.58702 5.00698 9.0689 5.47836C9.55077 5.94974 9.82891 6.59107 9.84375 7.265Z" fill="white" class="group-hover:fill-dark-white"/>
+            </svg>
+          </a>
+        </div>
+
+        <p>© 2025 Marsel Firsov. All rights reserved.</p>
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+</html>

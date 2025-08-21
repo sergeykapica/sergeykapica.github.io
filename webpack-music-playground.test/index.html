@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel='stylesheet' id='shuffle-edge-google-fonts-css' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COswald%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDosis%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CQuicksand%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;ver=1.0.0' type='text/css' media='all' />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jplayer@2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jplayer@2.9.2/dist/add-on/jplayer.playlist.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/skin/blue.monday/jplayer.blue.monday.min.css" rel="stylesheet" />
+<script defer src="bundleb2d7de9262f3cacb90be.js"></script><link href="bundle.ffe63b4e4f15cb3b8d54.css" rel="stylesheet"></head>
+<body>
+  <div class="wrapper bg-white relative transition-all duration-300">
+    <div class="wrapper__cover absolute inset-0 bg-black/40 z-10 invisible opacity-0 transition-all duration-300" onclick="toggle_sidebar()"></div>
+    <header class="header lg:h-[80px] lg:leading-[80px] bg-white lg:bg-black/30 absolute inset-x-0 top-0 z-30">
+      <div class="container flex flex-col lg:flex-row justify-between items-center">
+        <div class="h-[100px] leading-[100px] lg:h-auto lg:leading-none text-center w-full lg:w-auto lg:text-left">
+          <a href="#panel-menu" class="accordion-toggle float-left mt-[5px] lg:hidden">
+            <span class="text-black">
+              <i class="fa fa-bars"></i>
+            </span>
+          </a>
+          <img src="images/logo-dark-a.6d48b868d6c0d8ce7bb8.png" alt="Logo" class="inline-block dark-logo w-[108px] lg:hidden">
+          <img src="images/logo-loght-a.ab660101ceca6452e7ae.png" alt="Logo" class="lg:inline-block light-logo w-[108px] hidden">
+        </div>
+
+        <div class="accordion-content flex w-full lg:w-auto overflow-hidden lg:overflow-visible max-h-0 duration-500 ease-in-out lg:max-h-none" id="panel-menu">
+
+          <ul class="header__menu w-full h-full flex flex-col lg:flex-row leading-[17px] lg:leading-[78px]">
+            <li class="h-full">
+              <a href="#panel-1" class="accordion-toggle align-middle lg:px-[15px] lg:text-white text-dark-grey flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none font-semibold py-[9px] lg:py-0 py-[9px"><span class="lg:uppercase">Home</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+              <div id="panel-1" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[25px] lg:opacity-0 lg:invisible lg:absolute lg:top-full lg:inset-x-0 lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none">
+                <div class="container grid lg:grid-cols-4">
+                  <div>
+
+                    <a href="#panel-2" class="accordion-toggle align-middle lg:mr-[37px]  py-[9px] lg:py-[8px] lg:leading-[18px] ml-0 text-dark-grey lg:text-white lg:font-semibold flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span class="lg:uppercase">Artists Homes</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+                    <ul class="lg:pt-[10px] accordion-content pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none transition-0" id="panel-2">
+                      <li><a href="#!" class="group lg:mr-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Arcade</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Band Home</span></span></a></li>
+                      <li><a href="#!" class="group lg:mr-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Armin</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Angled Home</span></span></a></li>
+                      <li><a href="#!" class="group lg:mr-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Muse</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Black & White Home</span></span></a></li>
+                      <li><a href="#!" class="group lg:mr-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">A$AP</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Parallax Home</span></span></a></li>
+                      <li><a href="#!" class="group lg:mr-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Ellie</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Artist Home</span></span></a></li>
+                      <li><a href="#!" class="group lg:mr-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Enya</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Record Home</span></span></a></li>
+                    </ul>
+
+                  </div>
+
+                  <div class="border-l border-l-white/25">
+
+                    <a href="#panel-3" class="accordion-toggle lg:mx-[37px]  py-[9px] lg:py-[8px] lg:leading-[18px] ml-0 text-dark-grey lg:text-white lg:font-semibold flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span class="lg:uppercase">Presentational Homes</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+                    <ul class="lg:pt-[10px] accordion-content pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none transition-0" id="panel-3">
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Katy</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light">  Vertical Slider</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Selena</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Shop Home</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Miles</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Split Slider</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Keith</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Boxed Home</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Landing</span></span></a></li>
+                    </ul>
+
+                  </div>
+                  <div class="border-l border-l-white/25">
+
+                    <a href="#panel-4" class="accordion-toggle lg:mx-[37px]  py-[9px] lg:py-[8px] lg:leading-[18px] ml-0 text-dark-grey lg:text-white lg:font-semibold flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span class="lg:uppercase">Industry Homes</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+                    <ul class="lg:pt-[10px] accordion-content pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none transition-0" id="panel-4">
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Exit</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Festival Home</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Abbey</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Studio Home</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Aftermath</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Label Home</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Lars</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Blog Home</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Spin</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Blog Pinboard</span></span></a></li>
+                    </ul>
+
+                  </div>
+                  <div class="border-l border-l-white/25">
+
+                    <a href="#panel-5" class="accordion-toggle lg:ml-[37px]  py-[9px] lg:py-[8px] lg:leading-[18px] ml-0 text-dark-grey lg:text-white lg:font-semibold flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span class="lg:uppercase">Intro Homes</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+                    <ul class="lg:pt-[10px] accordion-content pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none transition-0" id="panel-5">
+                      <li><a href="#!" class="group lg:ml-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Mura</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Intro Home</span></span></a></li>
+                      <li><a href="#!" class="group lg:ml-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Jessie</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Video Intro</span></span></a></li>
+                      <li><a href="#!" class="group lg:ml-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Fiona</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Album Intro</span></span></a></li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="h-full">
+
+              <a href="#panel-6" class="accordion-toggle align-middle lg:px-[15px] lg:text-white text-dark-grey flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none font-semibold py-[9px] lg:py-0"><span class="lg:uppercase">Discography</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+              <div id="panel-6" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[25px] lg:opacity-0 lg:invisible lg:absolute lg:top-full lg:inset-x-0 lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none">
+                <div class="container grid lg:grid-cols-4">
+                  <div>
+
+                    <a href="#panel-7" class="accordion-toggle align-middle lg:mr-[37px]  py-[9px] lg:py-[8px] lg:leading-[18px] ml-0 text-dark-grey lg:text-white lg:font-semibold flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span class="lg:uppercase">Standard</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+                    <ul class="lg:pt-[10px] accordion-content pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none transition-0" id="panel-7">
+                      <li><a href="#!" class="group lg:mr-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery Button</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 2 Columns</span></span></a></li>
+                      <li><a href="#!" class="group lg:mr-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery Button</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 3 Columns</span></span></a></li>
+                      <li><a href="#!" class="group lg:mr-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery Button</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 3 Columns Wide</span></span></a></li>
+                      <li><a href="#!" class="group lg:mr-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery Button</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 4 Columns Wide</span></span></a></li>
+                      <li><a href="#!" class="group lg:mr-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Standard</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 2 Columns</span></span></a></li>
+                      <li><a href="#!" class="group lg:mr-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Standard</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 3 Columns Wide</span></span></a></li>
+                    </ul>
+
+                  </div>
+
+                  <div class="border-l border-l-white/25">
+
+                    <a href="#panel-8" class="accordion-toggle lg:mx-[37px]  py-[9px] lg:py-[8px] lg:leading-[18px] ml-0 text-dark-grey lg:text-white lg:font-semibold flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span class="lg:uppercase">Gallery</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+                    <ul class="lg:pt-[10px] accordion-content pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none transition-0" id="panel-8">
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 2 Columns</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 3 Columns</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 3 Columns Wide</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 3 Columns Joined/Wide</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 4 Columns Wide</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 4 Columns Joined/Wide</span></span></a></li>
+                    </ul>
+
+                  </div>
+                  <div class="border-l border-l-white/25">
+
+                    <a href="#panel-9" class="accordion-toggle lg:mx-[37px]  py-[9px] lg:py-[8px] lg:leading-[18px] ml-0 text-dark-grey lg:text-white lg:font-semibold flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span class="lg:uppercase">Albums</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+                    <ul class="lg:pt-[10px] accordion-content pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none transition-0" id="panel-9">
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Comperhensive</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Minimal</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Compact Dark</span></span></a></li>
+                      <li><a href="#!" class="group lg:mx-[37px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Compact Light</span></span></a></li>
+                    </ul>
+
+                  </div>
+                  <div class="border-l border-l-white/25">
+
+                    <a href="#panel-10" class="accordion-toggle lg:ml-[37px]  py-[9px] lg:py-[8px] lg:leading-[18px] ml-0 text-dark-grey lg:text-white lg:font-semibold flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span class="lg:uppercase">Latest Album</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+                    <div class="accordion-content overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none transition-0" id="panel-10">
+
+                      <div class="lg:ml-[23px] mt-[24px] mb-[11px]">
+                        <img src="images/dropdown-image-b.abd6241c81de6ecda19a.jpg" alt="Adam Martin Album">
+                      </div>
+
+                      <a href="#!" class="group lg:ml-[23px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Adam Martin - The Knowing</span></span></a>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </li>
+            <li class="h-full">
+
+              <a href="#panel-11" class="accordion-toggle align-middle lg:px-[15px] lg:text-white text-dark-grey flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none font-semibold py-[9px] lg:py-0"><span class="lg:uppercase">Tours</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+              <ul id="panel-11" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:top-full lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none">
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Tour Dates Light</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Tour Dates Dark</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Event Single</span></span></a></li>
+              
+              </ul>
+
+            </li>
+            <li class="h-full">
+
+              <a href="#panel-12" class="accordion-toggle align-middle lg:px-[15px] lg:text-white text-dark-grey flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none font-semibold py-[9px] lg:py-0"><span class="lg:uppercase">Pages</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+              <ul id="panel-12" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:top-full lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none">
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">About</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">About Me</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">About Us</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">About Us 2</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Contact Page 1</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Contact Page 2</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">404 Page</span></span></a></li>
+              
+              </ul>
+
+            </li>
+            <li class="h-full">
+
+              <a href="#panel-13" class="accordion-toggle align-middle lg:px-[15px] lg:text-white text-dark-grey flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none font-semibold py-[9px] lg:py-0"><span class="lg:uppercase">Gallery</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+              <ul id="panel-13" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:top-full lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden lg:overflow-visible max-h-0 duration-500 ease-in-out lg:max-h-none">
+
+                <li class="relative">
+                  <a href="#subpanel-1" class="accordion-toggle group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery layouts 1</span></span><i class="arrow-icon text-dark-grey lg:text-light-grey lg:group-hover:text-white fa fa-angle-right text-[12px] transition duration-300"></i></a>
+
+                  <ul id="subpanel-1" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none lg:right-[-100%] lg:top-[-15px]">
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 2 Columns</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 3 Columns</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 3 Columns Wide</span></span></a></li>
+
+                  </ul>
+
+                </li>
+
+                <li class="relative">
+                  <a href="#subpanel-2" class="accordion-toggle group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery layouts 2</span></span><i class="arrow-icon text-dark-grey lg:text-light-grey lg:group-hover:text-white fa fa-angle-right text-[12px] transition duration-300"></i></a>
+
+                  <ul id="subpanel-2" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none lg:right-[-100%] lg:top-[-15px]">
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 3 Col. Joined</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 3 Col. Wide/Joined</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 4 Columns</span></span></a></li>
+
+                  </ul>
+
+                </li>
+
+                <li class="relative">
+                  <a href="#subpanel-3" class="accordion-toggle group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery layouts 3</span></span><i class="arrow-icon text-dark-grey lg:text-light-grey lg:group-hover:text-white fa fa-angle-right text-[12px] transition duration-300"></i></a>
+
+                  <ul id="subpanel-3" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none lg:right-[-100%] lg:top-[-15px]">
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 4 Columns Wide</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 4 Col. Wide/Joined</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 4 Col. Joined</span></span></a></li>
+
+                  </ul>
+
+                </li>
+
+                <li class="relative">
+                  <a href="#subpanel-4" class="accordion-toggle group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery layouts 4</span></span><i class="arrow-icon text-dark-grey lg:text-light-grey lg:group-hover:text-white fa fa-angle-right text-[12px] transition duration-300"></i></a>
+
+                  <ul id="subpanel-4" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none lg:right-[-100%] lg:top-[-15px]">
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 5 Columns Wide</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> 5 Col. Wide/Joined</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span><span class="text-dark-grey lg:group-hover:text-white transition italic font-light"> Masonry</span></span></a></li>
+
+                  </ul>
+
+                </li>
+              
+              </ul>
+
+            </li>
+            <li class="h-full text-right">
+
+              <a href="#panel-14" class="accordion-toggle align-middle lg:px-[15px] lg:text-white text-dark-grey flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none font-semibold py-[9px] lg:py-0"><span class="lg:uppercase">Blog</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+              <ul id="panel-14" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:top-full lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden lg:overflow-visible max-h-0 duration-500 ease-in-out lg:max-h-none">
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Standard</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Standard Dark</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Standard Right Sidebar</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Standard Left Sidebar</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Masonry</span></span></a></li>
+
+                <li class="relative">
+                  <a href="#subpanel-5" class="accordion-toggle group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center border-b border-b-light-grey-3 lg:border-none"><i class="arrow-icon lg:rotate-180 text-dark-grey lg:text-light-grey lg:group-hover:text-white fa fa-angle-right text-[12px] transition duration-300"></i><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Post Types</span></span></a>
+
+                  <ul id="subpanel-5" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none lg:left-[-100%] lg:top-[-15px]">
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Standard</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Gallery</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Audio</span></span></a></li>
+
+                  </ul>
+
+                </li>
+
+              </ul>
+
+            </li>
+            <li class="h-full text-right">
+
+              <a href="#panel-15" class="accordion-toggle align-middle lg:px-[15px] lg:text-white text-dark-grey flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none font-semibold py-[9px] lg:py-0"><span class="lg:uppercase">Shop</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+              <ul id="panel-15" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:top-full lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden lg:overflow-visible max-h-0 duration-500 ease-in-out lg:max-h-none">
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Shop Right Sidebar</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Shop Left Sidebar</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Shop Three Columns</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Shop Four Columns</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Shop Full Width</span></span></a></li>
+
+                <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Single Product</span></span></a></li>
+
+                <li class="relative">
+                  <a href="#subpanel-6" class="accordion-toggle group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center border-b border-b-light-grey-3 lg:border-none"><i class="arrow-icon lg:rotate-180 text-dark-grey lg:text-light-grey lg:group-hover:text-white fa fa-angle-right text-[12px] transition duration-300"></i><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Pages</span></span></a>
+
+                  <ul id="subpanel-6" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none lg:left-[-100%] lg:top-[-15px]">
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">My Account</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Checkout</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Cart</span></span></a></li>
+
+                  </ul>
+
+                </li>
+
+              </ul>
+
+            </li>
+            <li class="h-full text-right">
+
+              <a href="#panel-16" class="accordion-toggle align-middle lg:px-[15px] lg:text-white text-dark-grey flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none font-semibold py-[9px] lg:py-0"><span class="lg:uppercase">Elements</span><i class="arrow-icon fa fa-angle-right lg:hidden text-[12px] transition duration-300"></i></a>
+
+              <ul id="panel-16" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:top-full lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden lg:overflow-visible max-h-0 duration-500 ease-in-out lg:max-h-none">
+
+                <li class="relative">
+                  <a href="#subpanel-7" class="accordion-toggle group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center border-b border-b-light-grey-3 lg:border-none"><i class="arrow-icon lg:rotate-180 text-dark-grey lg:text-light-grey lg:group-hover:text-white fa fa-angle-right text-[12px] transition duration-300"></i><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Music</span></span></a>
+
+                  <ul id="subpanel-7" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none lg:left-[-100%] lg:top-[-15px]">
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Album</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Album Player</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Spotify Playlist</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Events List</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Video Button</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Video Player</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Soundcloud Playlist</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Bandcamp Playlist</span></span></a></li>
+
+                  </ul>
+
+                </li>
+
+                <li class="relative">
+                  <a href="#subpanel-8" class="accordion-toggle group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center border-b border-b-light-grey-3 lg:border-none"><i class="arrow-icon lg:rotate-180 text-dark-grey lg:text-light-grey lg:group-hover:text-white fa fa-angle-right text-[12px] transition duration-300"></i><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Interactive</span></span></a>
+
+                  <ul id="subpanel-8" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none lg:left-[-100%] lg:top-[-15px]">
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Device Showcase</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Parallax Presentation</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Carousel</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Image Gallery</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Banner</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Clients</span></span></a></li>
+
+                  </ul>
+
+                </li>
+
+                <li class="relative">
+                  <a href="#subpanel-9" class="accordion-toggle group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center border-b border-b-light-grey-3 lg:border-none"><i class="arrow-icon lg:rotate-180 text-dark-grey lg:text-light-grey lg:group-hover:text-white fa fa-angle-right text-[12px] transition duration-300"></i><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Classic</span></span></a>
+
+                  <ul id="subpanel-9" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none lg:left-[-100%] lg:top-[-15px]">
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Boxed Icon</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Blog Posts</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Icon With Text</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Buttons</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Team</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Tabs</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Accordions & Toggles</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Separators</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Contact Form 7</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Google Maps</span></span></a></li>
+
+                  </ul>
+
+                </li>
+
+                <li class="relative">
+                  <a href="#subpanel-10" class="accordion-toggle group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center border-b border-b-light-grey-3 lg:border-none"><i class="arrow-icon lg:rotate-180 text-dark-grey lg:text-light-grey lg:group-hover:text-white fa fa-angle-right text-[12px] transition duration-300"></i><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Charts & Diagrams</span></span></a>
+
+                  <ul id="subpanel-10" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none lg:left-[-100%] lg:top-[-15px]">
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Pricing Tables</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Counters</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Pie Charts</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Progress Bars</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Countdown</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Message Boxes</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Call To Action</span></span></a></li>
+
+                  </ul>
+
+                </li>
+
+                <li class="relative">
+                  <a href="#subpanel-11" class="accordion-toggle group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center border-b border-b-light-grey-3 lg:border-none"><i class="arrow-icon lg:rotate-180 text-dark-grey lg:text-light-grey lg:group-hover:text-white fa fa-angle-right text-[12px] transition duration-300"></i><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Typography</span></span></a>
+
+                  <ul id="subpanel-11" class="header__menu-submenu accordion-content lg:min-w-[215px] lg:py-[15px] lg:opacity-0 lg:invisible lg:absolute lg:bg-black/90 transition-all leading-[24px] pl-[35px] lg:pl-0 overflow-hidden max-h-0 duration-500 ease-in-out lg:max-h-none lg:left-[-100%] lg:top-[-15px]">
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Headings</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Columns</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Highlights</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Dropcaps</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Blockquote</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Custom Font</span></span></a></li>
+
+                    <li><a href="#!" class="group lg:mx-[27px] py-[9px] lg:py-[8px] flex justify-between items-center lg:inline-block border-b border-b-light-grey-3 lg:border-none"><span><span class="text-dark-grey lg:text-light-grey group-hover:text-dark-pink lg:group-hover:text-white transition">Lists</span></span></a></li>
+
+                  </ul>
+
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+
+          <div class="hidden lg:flex gap-[13px] items-center leading-none relative">
+            <a href="#!" class="has-submenu text-white">
+              <div class="relative pr-[10px] inline-block align-middle">
+                <i class="icon_cart_alt text-xl"></i>
+                <span class="cart-amount inline-block absolute top-0 right-0 text-[9px] bg-black align-middle rounded-full h-[15px] w-[15px] leading-[15px] text-center">0</span>
+              </div>
+              <div class="submenu accordion-content lg:min-w-[275px] lg:px-5 lg:py-[5px] lg:opacity-0 lg:invisible lg:absolute lg:top-full lg:right-0 lg:bg-black/90 transition-all leading-[24px]">
+                <ul>
+                  <li class="p-[15px]">No products in the cart.</li>
+                </ul>
+              </div>
+            </a>
+            <a href="search-modal" class="modal-button inline-block text-white hover:text-dark-pink transition-colors duration-150">
+              <span class="edgtf-icon-ico-moon icomoon-icon-search text-base"></span>
+            </a>
+            <a href="#!" class="toggle-sidebar-button inline-block mt-[5px]" onclick="toggle_sidebar()">
+              <span aria-hidden="true" class="icon_menu text-[27px] text-white"></span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="welcome h-screen relative">
+        <!-- Slider main container -->
+        <div class="swiper slider-1 h-full relative">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper h-full">
+            <!-- Slides -->
+            <div class="swiper-slide h-full relative flex items-center">
+              <img src="images/main-home-slide-1a.4d49bf8fe3190f9b297e.jpg" alt="Slide 1" class="absolute inset-0 w-full h-full object-cover z-0">
+              <div class="container relative z-10 sm:pl-[15%] font-poppins text-white">
+                <h2 class="uppercase leading-[5vw] text-[5vw] font-medium mb-2">Stream <br>Your Music</h2>
+                <p class="leading-[20px] mb-5">Shuffle comes with a selection of music players, and also lets you add<br> embedded players from the most popular music platforms.</p>
+                <div class="flex socials">
+                  <a href="#!" class="mr-2">
+                    <img src="images/itunes.864af9b95d528d000e1a.png" alt="iTunes">
+                  </a>
+                  <a href="#!">
+                    <img src="images/main-home-google-play-logo.b9a9974c2aeb18fe5be6.png" alt="Google Play">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide h-full relative flex items-center">
+              <img src="images/main-home-slide-2a.b2ce38bffd7c3bf888b6.jpg" alt="Slide 1" class="absolute inset-0 w-full h-full object-cover z-0">
+              <div class="container relative z-10 sm:pl-[15%] font-poppins text-white">
+                <h2 class="uppercase leading-[5vw] text-[5vw] font-medium mb-2">Promote <br>Your Gigs</h2>
+                <p class="leading-[20px] mb-5">With the event pages, you can make sure everyone knows about your gigs. <br>Display ticket availability, maps, dates, and more.</p>
+                <div class="flex socials">
+                  <a href="#!" class="mr-2">
+                    <img src="images/itunes.864af9b95d528d000e1a.png" alt="iTunes">
+                  </a>
+                  <a href="#!">
+                    <img src="images/main-home-google-play-logo.b9a9974c2aeb18fe5be6.png" alt="Google Play">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide h-full relative flex items-center">
+              <img src="images/main-home-slide-3a.29af02b1e6b53fb73469.jpg" alt="Slide 1" class="absolute inset-0 w-full h-full object-cover z-0">
+              <div class="container relative z-10 sm:pl-[15%] font-poppins text-white">
+                <h2 class="uppercase leading-[5vw] text-[5vw] font-medium mb-2">Enable <br>Ticket Sales</h2>
+                <p class="leading-[20px] mb-5">Make sure everyone can easily get their hands on tickets to your shows by <br>connecting your events pages to ticket sales websites.</p>
+                <div class="flex socials">
+                  <a href="#!" class="mr-2">
+                    <img src="images/itunes.864af9b95d528d000e1a.png" alt="iTunes">
+                  </a>
+                  <a href="#!">
+                    <img src="images/main-home-google-play-logo.b9a9974c2aeb18fe5be6.png" alt="Google Play">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev w-[40px] h-[40px] bg-black/50">
+            <img width="35" src="images/angle-left-svgrepo-com.d40f71df3afcba331636.svg" alt="Left Arrow" class="max-w-none">
+          </div>
+          <div class="swiper-button-next w-[40px] h-[40px] bg-black/50">
+            <img width="35" src="images/angle-right-svgrepo-com.f42ce0eb948a91e70a22.svg" alt="Right Arrow" class="max-w-none">
+          </div>
+        </div>
+
+        <div class="absolute bottom-0 inset-x-0 z-30">
+          <div class="container">
+            <!-- jPlayer контейнер (обязателен) -->
+            <div id="jquery_jplayer" class="jp-jplayer"></div>
+
+            <!-- Весь интерфейс плеера -->
+            <div class="audio-player group flex items-center h-[90px] font-poppins text-white jp-audio" role="application" aria-label="media player">
+              <!-- Обложка и название -->
+              <div class="audio-player__col w-[23%] flex items-center border-r-[2px] border-r-white/20 h-full">
+                <div class="w-[90px] h-full shrink-0 hidden 2xl:block">
+                  <img src="images/album-cover-image-17-300x300.a6c13c24e41fd1113f52.jpg" alt="Album Cover" class="w-full h-full object-cover" />
+                </div>
+                <div class="px-6">
+                  <p class="md:text-xl jp-title">Desired Feelings</p>
+                  <span class="text-white/50 text-[15px] jp-artist hidden md:block">Shuffle</span>
+                </div>
+              </div>
+
+              <!-- Кнопки управления -->
+              <div class="audio-player__col w-[43%] lg:w-[23%] h-full">
+                <div class="audio-player__controls grid grid-cols-3 h-full">
+                  <div class="flex items-center justify-center border-r-[2px] border-r-white/20">
+                    <a class="audio-player__prev-button jp-previous cursor-pointer" role="button"><i class="fa fa-fast-backward"></i></a>
+                  </div>
+                  <div class="flex items-center justify-center border-r-[2px] border-r-white/20">
+                    <a class="audio-player__play-button cursor-pointer" role="button">
+                      <i class="fa fa-play jp-play"></i>
+                      <i class="fa fa-pause jp-pause"></i>
+                    </a>
+                  </div>
+                  <div class="flex items-center justify-center border-r-[2px] border-r-white/20">
+                    <a class="audio-player__next-button jp-next cursor-pointer" role="button"><i class="fa fa-fast-forward"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Прогресс бар -->
+              <div class="audio-player__col w-[20%] lg:w-[39%] h-full px-[10px] lg:px-[50px] xl:pr-0 flex items-center border-r-[2px] border-r-white/20">
+                <div class="w-full xl:w-[60%]">
+                  <div class="seek-bar w-full h-[3px] cursor-pointer bg-white/20 jp-seek-bar">
+                    <div class="play-bar h-full bg-white jp-play-bar"></div>
+                  </div>
+                </div>
+                <div class="hidden xl:block xl:w-[40%] text-center text-white/50 text-[14px]">
+                  <span class="jp-current-time">00:00</span>/<span class="jp-duration">00:00</span>
+                </div>
+              </div>
+
+              <!-- Громкость -->
+              <div class="audio-player__col w-[15%] h-full pl-[10px] lg:pl-[20px] xl:pl-[30px] flex items-center">
+                <a class="audio-player__mute-button cursor-pointer w-[25px] pr-2 jp-mute">
+                  <i class="fa fa-volume-up group-[.jp-state-muted]:hidden"></i>
+                  <i class="fa fa-volume-off hidden group-[.jp-state-muted]:inline-block"></i>
+                </a>
+                <div class="audio-player__volume-bar w-full md:w-[44%] h-[3px] bg-white/20 jp-volume-bar cursor-pointer">
+                  <div class="audio-player__volume-bar-value h-full bg-white jp-volume-bar-value"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pt-[60px] pb-[60px] lg:pt-[120px] lg:pb-[120px]">
+
+        <div class="container">
+
+          <div class="text-center mb-[67px]">
+            <h2 class="headline-1">LATEST ALBUMS</h2>
+            <p class="sub-headline">Interdum et malesuada fames ac ante ipsum primis</p>
+          </div>
+
+          <div class="grid lg:grid-cols-3 gap-[26px]">
+
+            <div class="group">
+
+              <a href="#!" class="inline-block relative">
+                <img src="images/album-cover-image-7.ecf77a63371bffdd57c8.jpg" alt="Album 1">
+                <div class="absolute inset-0 bg-black/70 flex justify-center items-center invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
+                  <div class="uppercase font-semibold text-white font-poppins translate-y-[60px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 text-center">
+                    <h6 class="h6">Adam Martin</h6>
+                    <h5 class="h5">The Knowing</h5>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="group">
+
+              <a href="#!" class="inline-block relative">
+                <img src="images/album-cover-image-17.3bddf3943a592b33cdaf.jpg" alt="Album 1">
+                <div class="absolute inset-0 bg-black/70 flex justify-center items-center invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
+                  <div class="uppercase font-semibold text-white font-poppins translate-y-[60px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 text-center">
+                    <h6 class="h6">Adam Martin</h6>
+                    <h5 class="h5">Shuffle</h5>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="group">
+
+              <a href="#!" class="inline-block relative">
+                <img src="images/album-cover-image-18.bbd863defcef7ddc0c87.jpg" alt="Album 1">
+                <div class="absolute inset-0 bg-black/70 flex justify-center items-center invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
+                  <div class="uppercase font-semibold text-white font-poppins translate-y-[60px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 text-center">
+                    <h6 class="h6">Adam Martin</h6>
+                    <h5 class="h5">Easy Games</h5>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+        
+      </section>
+
+      <section class="section-album watch-section bg-no-repeat bg-fixed bg-center pt-[7.4%] pb-[6.4%] text-white overflow-hidden">
+
+        <div class="container">
+            <div class="grid lg:grid-cols-2 gap-[80px] lg:gap-0">
+              <div>
+                <a href="#!" class="relative inline-block">
+                  <div class="section-album__image relative z-10">
+                    <img src="images/disc-image-1.43881fccd55f2a73623e.jpg" alt="Disk Image">
+                  </div>
+                  <div class="section-album__disk">
+                    <div class="section-album__disk-holder">
+                      <div class="section-album__disk-image">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <h5 class="h5 uppercase font-poppins mt-5 mb-4">THE KNOWING – 2016</h5>
+                <p class="text-[#cfcfcf] mb-[42px]">Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et.</p>
+                <div class="flex socials justify-center lg:justify-start">
+                  <a href="#!" class="mr-5">
+                    <img src="images/main-home-google-play-logo.b9a9974c2aeb18fe5be6.png" alt="Google Play">
+                  </a>
+                  <a href="#!">
+                    <img src="images/itunes.864af9b95d528d000e1a.png" alt="iTunes">
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="section-album__tracklist font-poppins">
+                  <div class="section-album__tracklist-item border-b border-[#d2d2d2]/20 py-[15px] table w-full">
+                    <h6 class="table-cell h6 w-[68%] pr-[10px]">1. Desired Feelings</h6>
+                    <span class="table-cell w-[8%] text-center text-[#cfcfcf] current-time">0:28</span>
+                    <a href="#!" class="table-cell w-[8%] text-right hover:text-dark-pink transition-color duration-150">
+                      <audio src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/Desired_Feelings.mp3"></audio>
+                      <i class="fa fa-play"></i>
+                      <i class="fa fa-pause hidden"></i>
+                    </a>
+                    <span class="table-cell w-[8%] text-right"></span>
+                    <span class="table-cell w-[8%] text-right"></span>
+                  </div>
+
+                  <div class="section-album__tracklist-item border-b border-[#d2d2d2]/20 py-[15px] table w-full">
+                    <h6 class="table-cell h6 w-[68%] pr-[10px]">2. We Made a Deal</h6>
+                    <span class="table-cell w-[8%] text-center text-[#cfcfcf] current-time">0:28</span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="hover:text-dark-pink transition-color duration-150">
+                        <audio src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/I_Made_A_Deal_With_The_Devil.mp3"></audio>
+                        <i class="fa fa-play"></i>
+                        <i class="fa fa-pause hidden"></i>
+                      </a>
+                    </span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a class="video-button hover:text-dark-pink transition-color duration-150" href="#!">
+                        <i class="fa fa-video-camera"></i>
+                      </a>
+                    </span>
+                    <span class="table-cell w-[8%] text-right"></span>
+                  </div>
+
+                  <div class="section-album__tracklist-item border-b border-[#d2d2d2]/20 py-[15px] table w-full">
+                    <h6 class="table-cell h6 w-[68%] pr-[10px]">3. Shadows of My Dream</h6>
+                    <span class="table-cell w-[8%] text-center text-[#cfcfcf] current-time">0:28</span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="hover:text-dark-pink transition-color duration-150">
+                        <audio src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/Shadows_Of_My_Dreams.mp3"></audio>
+                        <i class="fa fa-play"></i>
+                        <i class="fa fa-pause hidden"></i>
+                      </a>
+                    </span>
+                    <span class="table-cell w-[8%] text-right">
+
+                    </span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="audio-download hover:text-dark-pink transition-color duration-150" download=""><i class="fa fa-download"></i></a>
+                    </span>
+                  </div>
+
+                  <div class="section-album__tracklist-item border-b border-[#d2d2d2]/20 py-[15px] table w-full">
+                    <h6 class="table-cell h6 w-[68%] pr-[10px]">4. Talk Of Once</h6>
+                    <span class="table-cell w-[8%] text-center text-[#cfcfcf] current-time">0:28</span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="hover:text-dark-pink transition-color duration-150">
+                        <audio src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/Talk_Of_Once.mp3"></audio>
+                        <i class="fa fa-play"></i>
+                        <i class="fa fa-pause hidden"></i>
+                      </a>
+                    </span>
+                    <span class="table-cell w-[8%] text-right"></span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="audio-download hover:text-dark-pink transition-color duration-150" download=""><i class="fa fa-download"></i></a>
+                    </span>
+                  </div>
+
+                  <div class="section-album__tracklist-item border-b border-[#d2d2d2]/20 py-[15px] table w-full">
+                    <h6 class="table-cell h6 w-[68%] pr-[10px]">5. 1 Dollar Tobacco</h6>
+                    <span class="table-cell w-[8%] text-center text-[#cfcfcf] current-time">0:28</span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="hover:text-dark-pink transition-color duration-150">
+                        <audio src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/1_Dollar_Tobacco.mp3"></audio>
+                        <i class="fa fa-play"></i>
+                        <i class="fa fa-pause hidden"></i>
+                      </a>
+                    </span>
+                    <span class="table-cell w-[8%] text-right"></span>
+                    <span class="table-cell w-[8%] text-right"></span>
+                  </div>
+
+                  <div class="section-album__tracklist-item border-b border-[#d2d2d2]/20 py-[15px] table w-full">
+                    <h6 class="table-cell h6 w-[68%] pr-[10px]">6. Basic Riff</h6>
+                    <span class="table-cell w-[8%] text-center text-[#cfcfcf] current-time">0:28</span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="hover:text-dark-pink transition-color duration-150">
+                        <audio src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/Basic_Riff.mp3"></audio>
+                        <i class="fa fa-play"></i>
+                        <i class="fa fa-pause hidden"></i>
+                      </a>
+                    </span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a class="video-button hover:text-dark-pink transition-color duration-150" href="#!">
+                        <i class="fa fa-video-camera"></i>
+                      </a>
+                    </span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="audio-download hover:text-dark-pink transition-color duration-150" download=""><i class="fa fa-download"></i></a>
+                    </span>
+                  </div>
+
+                  <div class="section-album__tracklist-item border-b border-[#d2d2d2]/20 py-[15px] table w-full">
+                    <h6 class="table-cell h6 w-[68%] pr-[10px]">7. Blue Ghost</h6>
+                    <span class="table-cell w-[8%] text-center text-[#cfcfcf] current-time">0:28</span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="hover:text-dark-pink transition-color duration-150">
+                        <audio src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/Blue_Ghost.mp3"></audio>
+                        <i class="fa fa-play"></i>
+                        <i class="fa fa-pause hidden"></i>
+                      </a>
+                    </span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a class="video-button hover:text-dark-pink transition-color duration-150" href="#!">
+                        <i class="fa fa-video-camera"></i>
+                      </a>
+                    </span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="audio-download hover:text-dark-pink transition-color duration-150" download=""><i class="fa fa-download"></i></a>
+                    </span>
+                  </div>
+
+                  <div class="section-album__tracklist-item border-b border-[#d2d2d2]/20 py-[15px] table w-full">
+                    <h6 class="table-cell h6 w-[68%] pr-[10px]">8. Fear Is Fun</h6>
+                    <span class="table-cell w-[8%] text-center text-[#cfcfcf] current-time">0:28</span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="hover:text-dark-pink transition-color duration-150">
+                        <audio src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/Fear_Is_Fun.mp3"></audio>
+                        <i class="fa fa-play"></i>
+                        <i class="fa fa-pause hidden"></i>
+                      </a>
+                    </span>
+                    <span class="table-cell w-[8%] text-right"></span>
+                    <span class="table-cell w-[8%] text-right"></span>
+                  </div>
+
+                  <div class="section-album__tracklist-item border-b border-[#d2d2d2]/20 py-[15px] table w-full">
+                    <h6 class="table-cell h6 w-[68%] pr-[10px]">9. What About Chaos</h6>
+                    <span class="table-cell w-[8%] text-center text-[#cfcfcf] current-time">0:28</span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="hover:text-dark-pink transition-color duration-150">
+                        <audio src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/What_About_Chaos.mp3"></audio>
+                        <i class="fa fa-play"></i>
+                        <i class="fa fa-pause hidden"></i>
+                      </a>
+                    </span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a class="video-button hover:text-dark-pink transition-color duration-150" href="#!">
+                        <i class="fa fa-video-camera"></i>
+                      </a>
+                    </span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="audio-download hover:text-dark-pink transition-color duration-150" download=""><i class="fa fa-download"></i></a>
+                    </span>
+                  </div>
+
+                  <div class="section-album__tracklist-item border-b border-[#d2d2d2]/20 py-[15px] table w-full">
+                    <h6 class="table-cell h6 w-[68%] pr-[10px]">10. Rich Adoration</h6>
+                    <span class="table-cell w-[8%] text-center text-[#cfcfcf] current-time">0:28</span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="hover:text-dark-pink transition-color duration-150">
+                        <audio src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/Rich_Adoration.mp3"></audio>
+                        <i class="fa fa-play"></i>
+                        <i class="fa fa-pause hidden"></i>
+                      </a>
+                    </span>
+                    <span class="table-cell w-[8%] text-right"></span>
+                    <span class="table-cell w-[8%] text-right">
+                      <a href="#!" class="audio-download hover:text-dark-pink transition-color duration-150" download=""><i class="fa fa-download"></i></a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </section>
+
+      <section class="section-video pt-[7.4%] pb-[7.6%] text-white text-center relative overflow-hidden">
+
+        <div class="lg:hidden video-poster absolute top-0 left-0 w-full h-full bg-cover bg-center"></div>
+        <div class="video-wrap hidden lg:block absolute top-0 left-0 w-full h-full">
+          <video src="assets/56037841343f20d2bf2b.webm" poster="images/parallax-2.02accc491f2295a6664b.jpg" preload="auto" class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop></video>
+        </div>
+        <div class="container relative z-10">
+          <h3 class="h3 uppercase mb-[10px]">NEXT EVENT</h3>
+          <p class="sub-headline mb-[62px] !text-white">Madison Square Garden, New York City</p>
+          <div class="section-video__date grid grid-cols-5">
+            <div class="section-video__date-item">
+              <span class="block text-[50px] lg:text-[100px] leading-none mb-2 font-semibold">03</span>
+              <span class="text-base lg:text-[22px] font-light">Months</span>
+            </div>
+
+            <div class="section-video__date-item">
+              <span class="block text-[50px] lg:text-[100px] leading-none mb-2 font-semibold">03</span>
+              <span class="text-base lg:text-[22px] font-light">Days</span>
+            </div>
+
+            <div class="section-video__date-item">
+              <span class="block text-[50px] lg:text-[100px] leading-none mb-2 font-semibold">10</span>
+              <span class="text-base lg:text-[22px] font-light">Hours</span>
+            </div>
+
+            <div class="section-video__date-item">
+              <span class="block text-[50px] lg:text-[100px] leading-none mb-2 font-semibold">45</span>
+              <span class="text-base lg:text-[22px] font-light">Minutes</span>
+            </div>
+
+            <div class="section-video__date-item">
+              <span class="block text-[50px] lg:text-[100px] leading-none mb-2 font-semibold">04</span>
+              <span class="text-base lg:text-[22px] font-light">Seconds</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section-events pt-[6.4%] pb-[7%] overflow-hidden text-white">
+
+        <div class="container">
+          <div class="section-events__list text-center lg:text-left">
+            <div class="section-events__list-item border-b-[2px] border-b-[#d2d2d2]/15 py-[25px] group flex items-center flex-col lg:flex-row justify-between gap-[15px] lg:gap-0">
+              <div class="flex flex-col lg:flex-row items-center gap-[15px] lg:gap-0 font-poppins group-hover:text-dark-pink">
+                <div>
+                  <span class="text-[60px] mr-4 leading-[1em] font-semibold">10</span>
+                  <div class="text-xl leading-[27px] font-normal inline-block lg:pr-[23px] lg:border-r-[2px] lg:border-r-[#d2d2d2]/15">
+                    <span class="block">May</span>
+                    <span class="block">Sun</span>
+                  </div>
+                </div>
+
+                <h5 class="h5 lg:pl-[23px]">
+                  <a href="#!" class="block">Gärdet Open Air Stockholm – Sweeden</a>
+                </h5>
+              </div>
+              <a href="#!" class="button-1">Buy Tickets</a>
+            </div>
+
+            <div class="section-events__list-item border-b-[2px] border-b-[#d2d2d2]/15 py-[25px] group flex items-center flex-col lg:flex-row justify-between gap-[15px] lg:gap-0">
+              <div class="flex flex-col lg:flex-row items-center gap-[15px] lg:gap-0 font-poppins group-hover:text-dark-pink">
+                <div>
+                  <span class="text-[60px] mr-4 leading-[1em] font-semibold">13</span>
+                  <div class="text-xl leading-[27px] font-normal inline-block lg:pr-[23px] lg:border-r-[2px] lg:border-r-[#d2d2d2]/15">
+                    <span class="block">May</span>
+                    <span class="block">Wed</span>
+                  </div>
+                </div>
+
+                <h5 class="h5 lg:pl-[23px]">
+                  <a href="#!" class="block">Helsinki, Finland – Hartwall Arena</a>
+                </h5>
+              </div>
+              <a href="#!" class="button-1">Buy Tickets</a>
+            </div>
+
+            <div class="section-events__list-item border-b-[2px] border-b-[#d2d2d2]/15 py-[25px] group flex items-center flex-col lg:flex-row justify-between gap-[15px] lg:gap-0">
+              <div class="flex flex-col lg:flex-row items-center gap-[15px] lg:gap-0 font-poppins group-hover:text-dark-pink">
+                <div>
+                  <span class="text-[60px] mr-4 leading-[1em] font-semibold">15</span>
+                  <div class="text-xl leading-[27px] font-normal inline-block lg:pr-[23px] lg:border-r-[2px] lg:border-r-[#d2d2d2]/15">
+                    <span class="block">May</span>
+                    <span class="block">Fri</span>
+                  </div>
+                </div>
+
+                <h5 class="h5 lg:pl-[23px]">
+                  <a href="#!" class="block">Riga, Latvia – Riga Arena</a>
+                </h5>
+              </div>
+              <a href="#!" class="button-1">Buy Tickets</a>
+            </div>
+
+            <div class="section-events__list-item border-b-[2px] border-b-[#d2d2d2]/15 py-[25px] group flex items-center flex-col lg:flex-row justify-between gap-[15px] lg:gap-0">
+              <div class="flex flex-col lg:flex-row items-center gap-[15px] lg:gap-0 font-poppins group-hover:text-dark-pink">
+                <div>
+                  <span class="text-[60px] mr-4 leading-[1em] font-semibold">17</span>
+                  <div class="text-xl leading-[27px] font-normal inline-block lg:pr-[23px] lg:border-r-[2px] lg:border-r-[#d2d2d2]/15">
+                    <span class="block">May</span>
+                    <span class="block">Sun</span>
+                  </div>
+                </div>
+
+                <h5 class="h5 lg:pl-[23px]">
+                  <a href="#!" class="block">Kaunas, Lithuania – Žalgirio Arena</a>
+                </h5>
+              </div>
+              <div class="w-[168px] text-center">
+                <span class="tracking-[2px] uppercase font-semibold">Free!</span>
+              </div>
+            </div>
+
+            <div class="section-events__list-item border-b-[2px] border-b-[#d2d2d2]/15 py-[25px] group flex items-center flex-col lg:flex-row justify-between gap-[15px] lg:gap-0">
+              <div class="flex flex-col lg:flex-row items-center gap-[15px] lg:gap-0 font-poppins group-hover:text-dark-pink">
+                <div>
+                  <span class="text-[60px] mr-4 leading-[1em] font-semibold">20</span>
+                  <div class="text-xl leading-[27px] font-normal inline-block lg:pr-[23px] lg:border-r-[2px] lg:border-r-[#d2d2d2]/15">
+                    <span class="block">May</span>
+                    <span class="block">Wed</span>
+                  </div>
+                </div>
+
+                <h5 class="h5 lg:pl-[23px]">
+                  <a href="#!" class="block">Moscow, Russia – Olimpiski</a>
+                </h5>
+              </div>
+              <a href="#!" class="button-1">Buy Tickets</a>
+            </div>
+
+            <div class="section-events__list-item border-b-[2px] border-b-[#d2d2d2]/15 py-[25px] group flex items-center flex-col lg:flex-row justify-between gap-[15px] lg:gap-0">
+              <div class="flex flex-col lg:flex-row items-center gap-[15px] lg:gap-0 font-poppins group-hover:text-dark-pink">
+                <div>
+                  <span class="text-[60px] mr-4 leading-[1em] font-semibold">22</span>
+                  <div class="text-xl leading-[27px] font-normal inline-block lg:pr-[23px] lg:border-r-[2px] lg:border-r-[#d2d2d2]/15">
+                    <span class="block">May</span>
+                    <span class="block">Fri</span>
+                  </div>
+                </div>
+
+                <h5 class="h5 lg:pl-[23px]">
+                  <a href="#!" class="block">Pilton, England – Glastonbury</a>
+                </h5>
+              </div>
+              <div class="w-[168px] text-center">
+                <span class="tracking-[2px] uppercase font-semibold">Sold out!</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="text-center">
+            <a href="#!" class="button-2">Show more</a>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section-blog pt-[60px] lg:pt-[120px] pb-[50px] lg:pb-[100px] bg-[#f4f4f4]">
+
+        <div class="container">
+
+          <div class="text-center mb-[67px]" bis_skin_checked="1">
+            <h2 class="headline-1">LATEST NEWS</h2>
+            <p class="sub-headline">Interdum et malesuada fames ac ante ipsum primis</p>
+          </div>
+
+          <div class="section-blog__list grid lg:grid-cols-3 gap-[30px]">
+
+            <div class="section-blog__list-item bg-white">
+              <a href="#!">
+                <img src="images/blog-masonry-image-16.ccba555c745e52f29d2f.jpg" alt="Blog Image 1" class="w-full h-[360px] object-cover">
+              </a>
+              <div class="px-[40px] pt-[35px] pb-[5px]">
+                <h5 class="h5 text-black font-poppins">
+                  <a href="#!">Rebirth Album</a>
+                </h5>
+                <span class="text-[#bababa]">Sep 28, 2016</span>
+
+                <p class="pt-[21px] mb-[35px] line-clamp-4 overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+
+            <div class="section-blog__list-item bg-white">
+              <a href="#!">
+                <img src="images/blog-masonry-image-15-300x260.d2fbcf3bbc32d64279cd.jpg" alt="Blog Image 1" class="w-full h-[360px] object-cover">
+              </a>
+              <div class="px-[40px] pt-[35px] pb-[5px]">
+                <h5 class="h5 text-black font-poppins">
+                  <a href="#!">Music Heals</a>
+                </h5>
+                <span class="text-[#bababa]">Sep 28, 2016</span>
+
+                <p class="pt-[21px] mb-[35px] line-clamp-4 overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+
+            <div class="section-blog__list-item bg-white">
+              <a href="#!">
+                <img src="images/evst.6ef1cb3fd12fd3a4eb75.jpeg" alt="Blog Image 1" class="w-full h-[360px] object-cover">
+              </a>
+              <div class="px-[40px] pt-[35px] pb-[5px]">
+                <h5 class="h5 text-black font-poppins">
+                  <a href="#!">Evgeniy Evstigneev</a>
+                </h5>
+                <span class="text-[#bababa]">Sep 28, 2016</span>
+
+                <p class="pt-[21px] mb-[35px] line-clamp-4 overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="section-gallery grid md:grid-cols-2 lg:grid-cols-4">
+        <a class="section-gallery-item" href="#!">
+          <img src="images/Brusels-May-2016.9efbc20240ba7fd300cf.jpg" alt="Gallety Image 1" class="w-full object-cover">
+        </a>
+        <a class="section-gallery-item" href="#!">
+          <img src="images/Budapest-July-2016.6a438cfc8b7ee892d860.jpg" alt="Gallety Image 2" class="w-full object-cover">
+        </a>
+        <a class="section-gallery-item" href="#!">
+          <img src="images/Berlin-June-2016.8a153cfdeadfb03ca796.jpg" alt="Gallety Image 3" class="w-full object-cover">
+        </a>
+        <a class="section-gallery-item" href="#!">
+          <img src="images/Munich-June-2016.f6b8703d02aaa73d2871.jpg" alt="Gallety Image 4" class="w-full object-cover">
+        </a>
+
+        <a class="section-gallery-item" href="#!">
+          <img src="images/Amsterdam-June-2016.1aa393fbb37f8218b216.jpg" alt="Gallety Image 5" class="w-full object-cover">
+        </a>
+        <a class="section-gallery-item" href="#!">
+          <img src="images/Madrid-May-2016.c115ce24e1b5310ed688.jpg" alt="Gallety Image 6" class="w-full object-cover">
+        </a>
+        <a class="section-gallery-item" href="#!">
+          <img src="images/Paris-August-2016.48971175cadfc60c0d6f.jpg" alt="Gallety Image 7" class="w-full object-cover">
+        </a>
+        <a class="section-gallery-item" href="#!">
+          <img src="images/Basel-April-2016.88a9bcdfc0cab8f9cbb3.jpg" alt="Gallety Image 8" class="w-full object-cover">
+        </a>
+      </section>
+
+      <section class="section-video-2 pt-[7.3%] pb-[7.9%] bg-cover bg-center bg-fixed">
+
+        <div class="container">
+          <h3 class="h3 uppercase mb-[76px] text-center text-white">LATEST VIDEO</h3>
+          <div class="mx-auto w-[70%]">
+            <div class="w-full pt-[56.25%] relative">
+              <iframe loading="lazy" title="Sam Roberts Band - I Feel You" src="https://player.vimeo.com/video/24759293?dnt=1&amp;app_id=122963" width="500" height="279" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" class="absolute top-0 left-0 w-full h-full" data-fluidvids="loaded" bis_size="{&quot;x&quot;:305,&quot;y&quot;:5909,&quot;w&quot;:910,&quot;h&quot;:511,&quot;abs_x&quot;:305,&quot;abs_y&quot;:5909}"></iframe>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section-shop pt-[60px] lg:pt-[120px] pb-[40px] lg:pb-[79px]">
+
+        <div class="container">
+
+          <div class="text-center mb-[80px]" bis_skin_checked="1">
+            <h2 class="headline-1">EXCLUSIVE MERCH</h2>
+            <p class="sub-headline">Nam vehicula commodo pulvinar. Morbi vel luctus dui.</p>
+          </div>
+
+          <div class="section-shop__list grid lg:grid-cols-4 gap-[30px]">
+
+            <div class="section-shop__list-item">
+              <div class="relative group overflow-hidden">
+                <a href="#!">
+                  <img src="images/product-1-300x340.19fa3677419437bfb932.jpg" alt="Goods 1" class="w-full">
+                </a>
+                <a href="#!" class="button-shop-1 block absolute bottom-[-50px] left-0 z-10 group-hover:bottom-0">
+                  <span class="mr-[25px]">Add to Cart</span>
+                  <span aria-hidden="true" class="icon_cart_alt text-[17px] top-[1px] relative"></span>
+                </a>
+              </div>
+              <div class="flex justify-between items-center mt-3">
+                <h6 class="h6 font-poppins text-black">
+                  <a href="#!">Album T-Shirt</a>
+                </h6>
+                <span class="text-[21px] text-dark-pink">$52.00</span>
+              </div>
+            </div>
+
+            <div class="section-shop__list-item">
+              <div class="relative group overflow-hidden">
+                <a href="#!">
+                  <img src="images/product-2-300x340.12a2e003be1f2d76ac9b.jpg" alt="Goods 1" class="w-full">
+                </a>
+                <a href="#!" class="button-shop-1 block absolute bottom-[-50px] left-0 z-10 group-hover:bottom-0">
+                  <span class="mr-[25px]">Add to Cart</span>
+                  <span aria-hidden="true" class="icon_cart_alt text-[17px] top-[1px] relative"></span>
+                </a>
+              </div>
+              <div class="flex justify-between items-center mt-3">
+                <h6 class="h6 font-poppins text-black">
+                  <a href="#!">The Knowing</a>
+                </h6>
+                <span class="text-[21px] text-dark-pink">$67.00</span>
+              </div>
+            </div>
+
+            <div class="section-shop__list-item">
+              <div class="relative group overflow-hidden">
+                <a href="#!">
+                  <img src="images/product-3-300x340.9507be464c76a2527248.jpg" alt="Goods 1" class="w-full">
+                </a>
+                <a href="#!" class="button-shop-1 block absolute bottom-[-50px] left-0 z-10 group-hover:bottom-0">
+                  <span class="mr-[25px]">Add to Cart</span>
+                  <span aria-hidden="true" class="icon_cart_alt text-[17px] top-[1px] relative"></span>
+                </a>
+              </div>
+              <div class="flex justify-between items-center mt-3">
+                <h6 class="h6 font-poppins text-black">
+                  <a href="#!">Tour Hoodie</a>
+                </h6>
+                <span class="text-[21px] text-dark-pink">$94.00</span>
+              </div>
+            </div>
+
+            <div class="section-shop__list-item">
+              <div class="relative group overflow-hidden">
+                <a href="#!">
+                  <img src="images/product-4-300x340.e5539686e6216b315c6d.jpg" alt="Goods 1" class="w-full">
+                </a>
+                <a href="#!" class="button-shop-1 block absolute bottom-[-50px] left-0 z-10 group-hover:bottom-0">
+                  <span class="mr-[25px]">Add to Cart</span>
+                  <span aria-hidden="true" class="icon_cart_alt text-[17px] top-[1px] relative"></span>
+                </a>
+              </div>
+              <div class="flex justify-between items-center mt-3">
+                <h6 class="h6 font-poppins text-black">
+                  <a href="#!">Shuffle T-Shirt</a>
+                </h6>
+                <span class="text-[21px] text-dark-pink">$45.00</span>
+              </div>
+            </div>
+
+            <div class="section-shop__list-item">
+              <div class="relative group overflow-hidden">
+                <a href="#!">
+                  <img src="images/product-5-300x340.425bed2b152a42354c79.jpg" alt="Goods 1" class="w-full">
+                </a>
+                <a href="#!" class="button-shop-1 block absolute bottom-[-50px] left-0 z-10 group-hover:bottom-0">
+                  <span class="mr-[25px]">Add to Cart</span>
+                  <span aria-hidden="true" class="icon_cart_alt text-[17px] top-[1px] relative"></span>
+                </a>
+              </div>
+              <div class="flex justify-between items-center mt-3">
+                <h6 class="h6 font-poppins text-black">
+                  <a href="#!">Shuffle Mug</a>
+                </h6>
+                <span class="text-[21px] text-dark-pink">$24.00</span>
+              </div>
+            </div>
+
+            <div class="section-shop__list-item">
+              <div class="relative group overflow-hidden">
+                <a href="#!">
+                  <img src="images/product-6-300x340.d5da47710db55619be4b.jpg" alt="Goods 1" class="w-full">
+                </a>
+                <a href="#!" class="button-shop-1 block absolute bottom-[-50px] left-0 z-10 group-hover:bottom-0">
+                  <span class="mr-[25px]">Add to Cart</span>
+                  <span aria-hidden="true" class="icon_cart_alt text-[17px] top-[1px] relative"></span>
+                </a>
+              </div>
+              <div class="flex justify-between items-center mt-3">
+                <h6 class="h6 font-poppins text-black">
+                  <a href="#!">Tour T-Shirt</a>
+                </h6>
+                <span class="text-[21px] text-dark-pink">$52.00</span>
+              </div>
+            </div>
+
+            <div class="section-shop__list-item">
+              <div class="relative group overflow-hidden">
+                <a href="#!">
+                  <img src="images/product-7-300x340.0afaf6d0967eb8c38e3a.jpg" alt="Goods 1" class="w-full">
+                </a>
+                <a href="#!" class="button-shop-1 block absolute bottom-[-50px] left-0 z-10 group-hover:bottom-0">
+                  <span class="mr-[25px]">Add to Cart</span>
+                  <span aria-hidden="true" class="icon_cart_alt text-[17px] top-[1px] relative"></span>
+                </a>
+              </div>
+              <div class="flex justify-between items-center mt-3">
+                <h6 class="h6 font-poppins text-black">
+                  <a href="#!">New Tour Shirt</a>
+                </h6>
+                <span class="text-[21px] text-dark-pink">$36.00</span>
+              </div>
+            </div>
+
+            <div class="section-shop__list-item">
+              <div class="relative group overflow-hidden">
+                <a href="#!">
+                  <img src="images/product-8-300x340.0bac65aa89c111dcda7c.jpg" alt="Goods 1" class="w-full">
+                </a>
+                <a href="#!" class="button-shop-1 block absolute bottom-[-50px] left-0 z-10 group-hover:bottom-0">
+                  <span class="mr-[25px]">Add to Cart</span>
+                  <span aria-hidden="true" class="icon_cart_alt text-[17px] top-[1px] relative"></span>
+                </a>
+              </div>
+              <div class="flex justify-between items-center mt-3">
+                <h6 class="h6 font-poppins text-black">
+                  <a href="#!">Shuffle Mug</a>
+                </h6>
+                <span class="text-[21px] text-dark-pink">$26.00</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="section-bio pt-[57px] lg:pt-[117px] pb-[53px] lg:pb-[106px] bg-cover bg-center">
+
+        <div class="container">
+          <div class="inline-block">
+            <div class="lg:w-1/2 lg:float-right">
+              <h3 class="h3 font-poppins mb-[10px] text-white">ARTIST BIO</h3>
+              <p class="sub-headline mb-[28px] !text-white">Nam vehicula commodo pulvinar</p>
+
+              <p class="mb-[25px] text-[#cfcfcf]">Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius id.</p>
+
+              <p class="text-[#cfcfcf]">Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Lorem ipsum dolor sit amet, te ridens gloriatur temporibus qui, per enim veritus probatus ad. Quo eu etiam exerci dolore, usu ne omnes referrentur. Ex eam diceret denique.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section-subscribe text-white pt-[114px] pb-[107px] bg-cover bg-center bg-fixed">
+
+        <div class="container">
+          <div class="max-w-[964px] mx-auto flex flex-col lg:flex-row justify-between items-start gap-5 lg:gap-0">
+            <h3 class="h3 font-poppins uppercase">SUBSCRIBE TO <br>OUR NEWS</h3>
+            <form class="flex flex-col sm:flex-row w-full lg:max-w-[501px] gap-5 lg:gap-0">
+              <input type="email" name="email" class="input px-[15px] py-[10px] placeholder-white w-full mr-[18px]" placeholder="Your Email">
+              <button type="submit" class="submit-button whitespace-nowrap">Sign Up</button>
+            </form>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section-socials grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8">
+        <a href="#!" class="section-socials__item aspect-square bg-[#171717] flex items-center justify-center group">
+          <div class="relative inline-block text-center translate-y-0 group-hover:translate-y-[-13px] section-socials__item-center">
+            <span class="social_twitter section-socials__item-icon" style="color: #55acee; font-size: 52px"></span>
+            <span class="section-socials__item-title translate-y-[13px] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  font-poppins text-light-grey-2 text-[17px] font-medium absolute bottom-[-35px] left-[50%] translate-x-[-50%]">Twitter</span>
+          </div>
+        </a>
+
+        <a href="#!" class="section-socials__item aspect-square bg-[#0d0d0d] flex items-center justify-center group">
+          <div class="relative inline-block text-center translate-y-0 group-hover:translate-y-[-13px] section-socials__item-center">
+            <img src="images/instagram-icon.b1d67a94cd56ca968f74.png" alt="Instagram" width="50" height="52" class="align-middle">
+            <span class="section-socials__item-title translate-y-[13px] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  font-poppins text-light-grey-2 text-[17px] font-medium absolute bottom-[-40px] left-[50%] translate-x-[-50%]">Instagram</span>
+          </div>
+        </a>
+
+        <a href="#!" class="section-socials__item aspect-square bg-[#171717] flex items-center justify-center group">
+          <div class="relative inline-block text-center translate-y-0 group-hover:translate-y-[-13px] section-socials__item-center">
+            <i class="fa-brands fa-spotify" style="color: #7ddc0d;font-size:59px"></i>
+            <span class="section-socials__item-title translate-y-[13px] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  font-poppins text-light-grey-2 text-[17px] font-medium absolute bottom-[-40px] left-[50%] translate-x-[-50%]">Spotify</span>
+          </div>
+        </a>
+
+        <a href="#!" class="section-socials__item aspect-square bg-[#0d0d0d] flex items-center justify-center group">
+          <div class="relative inline-block text-center translate-y-0 group-hover:translate-y-[-13px] section-socials__item-center">
+            <i class="fa-brands fa-soundcloud" style="color: #ff6000;font-size:57px"></i>
+            <span class="section-socials__item-title translate-y-[13px] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  font-poppins text-light-grey-2 text-[17px] font-medium absolute bottom-[-35px] left-[50%] translate-x-[-50%]">Soundcloud</span>
+          </div>
+        </a>
+
+         <a href="#!" class="section-socials__item aspect-square bg-[#171717] flex items-center justify-center group">
+          <div class="relative inline-block text-center translate-y-0 group-hover:translate-y-[-13px] section-socials__item-center">
+            <i class="fa-brands fa-youtube" style="color: #ce2828;font-size:59px"></i>
+            <span class="section-socials__item-title translate-y-[13px] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  font-poppins text-light-grey-2 text-[17px] font-medium absolute bottom-[-40px] left-[50%] translate-x-[-50%]">Youtube</span>
+          </div>
+        </a>
+
+         <a href="#!" class="section-socials__item aspect-square bg-[#0d0d0d] flex items-center justify-center group">
+          <div class="relative inline-block text-center translate-y-0 group-hover:translate-y-[-13px] section-socials__item-center">
+            <i class="fa-brands fa-facebook-f" style="color: #3b5998;font-size:59px"></i>
+            <span class="section-socials__item-title translate-y-[13px] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  font-poppins text-light-grey-2 text-[17px] font-medium absolute bottom-[-40px] left-[50%] translate-x-[-50%]">Facebook</span>
+          </div>
+        </a>
+
+        <a href="#!" class="section-socials__item aspect-square bg-[#171717] flex items-center justify-center group">
+          <div class="relative inline-block text-center translate-y-0 group-hover:translate-y-[-13px] section-socials__item-center">
+            <span aria-hidden="true" class="social_myspace" style="color: #0450da;font-size:54px"></span>
+            <span class="section-socials__item-title translate-y-[13px] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  font-poppins text-light-grey-2 text-[17px] font-medium absolute bottom-[-35px] left-[50%] translate-x-[-50%]">Myspace</span>
+          </div>
+        </a>
+
+        <a href="#!" class="section-socials__item aspect-square bg-[#0d0d0d] flex items-center justify-center group">
+          <div class="relative inline-block text-center translate-y-0 group-hover:translate-y-[-13px] section-socials__item-center">
+            <img src="images/google-play-store-icon.6d00f71bc60251a77acb.png" alt="Google Play" width="50" height="52" class="align-middle">
+            <span class="section-socials__item-title translate-y-[13px] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  font-poppins text-light-grey-2 text-[17px] font-medium absolute bottom-[-40px] left-[50%] translate-x-[-50%] whitespace-nowrap">Google Play</span>
+          </div>
+        </a>
+      </section>
+    </main>
+    <footer class="footer bg-black text-[#d2d2d2]">
+      <div class="pt-[54px] lg:pt-[108px] pb-[31px] lg:pb-[62px]">
+        <div class="container">
+
+          <div class="grid lg:grid-cols-4 gap-5 lg:gap-0">
+            <div>
+              <h5 class="h5 mb-[27px] text-white font-poppins">Bookings</h5>
+              <div>
+                <p class="mb-5">
+                  Max Weatherall. Productions<br>562 Sycamore Circle<br>
+                  Atlanta, GA 30342<br> T: +920364426
+                </p>
+                <p>
+                  Email: shuffle@qodeinteractive.com<br>
+                  <a href="#" class="hover:text-white transition">www.shuffle-example.com</a>
+                </p>
+              </div>
+            </div>
+            <div>
+              <h5 class="h5 mb-[27px] text-white font-poppins">Latest Posts</h5>
+              <div class="footer__post-list">
+                <div class="footer__post-item flex items-center">
+                  <a href="#!" class="footer__post-item-image relative block w-[89px] h-[50px] pr-[19px]">
+                    <img src="images/blog-image-24.3465b34f6853e6f89936.jpg" alt="Footer Image 1" class="w-full h-full object-cover">
+                  </a>
+                  <div class="font-poppins">
+                    <h6 class="h6 hover:text-white transition-colors mb-[7px]">
+                      <a href="#!">Music Heals</a>
+                    </h6>
+                    <span class="block text-[12px] text-[#868686] font-medium leading-[14px]">Sep 28, 2016</span>
+                  </div>
+                </div>
+
+                <div class="footer__post-item flex items-center pt-5">
+                  <a href="#!" class="footer__post-item-image relative block w-[89px] h-[50px] pr-[19px]">
+                    <img src="images/blog-image-22.3133409b8af52caed131.jpg" alt="Footer Image 2" class="w-full h-full object-cover">
+                  </a>
+                  <div class="font-poppins">
+                    <h6 class="h6 hover:text-white transition-colors mb-[7px]">
+                      <a href="#!">Good Vibes</a>
+                    </h6>
+                    <span class="block text-[12px] text-[#868686] font-medium leading-[14px]">Sep 28, 2016</span>
+                  </div>
+                </div>
+
+                <div class="footer__post-item flex items-center pt-5">
+                  <a href="#!" class="footer__post-item-image relative block w-[89px] h-[50px] pr-[19px]">
+                    <img src="images/blog-image-23.f8a93ec4b3bd4a62043f.jpg" alt="Footer Image 3" class="w-full h-full object-cover">
+                  </a>
+                  <div class="font-poppins">
+                    <h6 class="h6 hover:text-white transition-colors mb-[7px]">
+                      <a href="#!">Rebirth Album</a>
+                    </h6>
+                    <span class="block text-[12px] text-[#868686] font-medium leading-[14px]">Sep 28, 2016</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h5 class="h5 mb-[27px] text-white font-poppins">Record Labels</h5>
+
+              <div class="mb-5">Max Weatherall. Productions<br>562 Sycamore Circle<br>
+              Atlanta, GA 30342<br> T: +920364426 <br><a href="#">www.maxproduction.com</a>
+              </div>
+
+              <div class="text-[#a2a2a2]">
+                <a href="#!" class="mr-[30px] hover:text-white transition">
+                  <span class="icomoon-icon-instagram"></span>
+                </a>
+
+                <a href="#!" class="mr-[30px] hover:text-white transition">
+                  <span class="icomoon-icon-twitter"></span>
+                </a>
+
+                <a href="#!" class="mr-[30px] hover:text-white transition">
+                  <span class="icomoon-icon-facebook"></span>
+                </a>
+
+                <a href="#!" class="hover:text-white transition">
+                  <span class="icomoon-icon-tumblr"></span>
+                </a>
+              </div>
+            </div>
+            <div>
+              <h5 class="h5 mb-[27px] text-white font-poppins">Twitter</h5>
+
+              <p class="mb-5">For all the latest news and updates, follow us on Twitter: <a href="https://twitter.com/QodeInteractive" target="BLANK" class="hover:text-white transition">@QodeInteractive.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg-[#1c1c1c] py-[33px]">
+        <div class="container">
+          <div class="flex flex-col lg:flex-row justify-between text-[#636363]">
+            <p class="text-center lg:text-left">© 2016<a style="color:#636363;" href="https://qodeinteractive.com/" rel="nofollow noopener" target="_blank"> Qode Interactive</a>, All Rights Reserved</p>
+            <div class="text-center lg:text-right">
+              <p class="mb-5">Powered by Marsel Firsov</p>
+              <div class="text-[#242424] text-base">
+                <a class="hover:text-dark-pink mr-6 transition" href="#!" target="_blank">
+                  <span class="icomoon-icon-twitter"></span>			
+                </a>
+
+                 <a class="hover:text-dark-pink mr-6 transition" href="#!" target="_blank">
+                  <span class="icomoon-icon-facebook"></span>			
+                </a>
+
+                 <a class="hover:text-dark-pink mr-6 transition" href="#!" target="_blank">
+                  <span class="icomoon-icon-tumblr"></span>			
+                </a>
+
+                 <a class="hover:text-dark-pink transition" href="#!" target="_blank">
+                  <span class="icomoon-icon-youtube"></span>			
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="right-sidebar hidden lg:block bg-black fixed right-[-22%] top-0 transition-all duration-300 w-[22%] px-[45px] pt-[5%] pb-[45px] text-white font-poppins text-center h-full z-30 overflow-y-auto custom-scroll">
+    <span aria-hidden="true" class="icon_close absolute top-7 right-7 text-[28px] cursor-pointer hover:rotate-180 transition-transform duration-500" onclick="toggle_sidebar()"></span>
+    <h5 class="h5 text-dark-white">Latest Album</h5>
+    <p class="text-[#a7a6a6] leading-[31px] my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus risus mauris, et commodo lectus hendrerit ac.</p>
+
+    <div class="space-x-[25px] text-xl mb-[33px]">
+
+      <a href="#!" class="hover:text-dark-pink">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="#!" class="hover:text-dark-pink">
+        <i class="fa-brands fa-soundcloud"></i>
+      </a>
+      <a href="#!" class="hover:text-dark-pink">
+        <i class="fa-brands fa-spotify"></i>
+      </a>
+      <a href="#!" class="hover:text-dark-pink">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      
+    </div>
+
+    <img src="images/sidebar-album.da386216ced25a37aaf5.jpg" alt="Dora" class="inline-block object-cover">
+    <h6 class="text-lg font-medium leading-[31px]">Dora Lewis</h6>
+  </div>
+
+  <div class="modal group" id="search-modal">
+    <div class="container w-full h-full flex justify-center items-center relative">
+      <a href="#!" class="modal__close-button absolute top-[26px] right-[55px] inline-block text-white hover:text-dark-pink transition-colors duration-150 cursor-pointer">
+        <span class="icomoon-icon-cross"></span>
+      </a>
+
+      <form action="#!" class="relative border-b border-dark-pink w-[63%] translate-y-[60px] group-[.active]:translate-y-0 transition duration-500" onclick="event.stopPropagation()">
+        <input type="text" name="s" class="w-full border-none outline-none bg-transparent text-[25px] text-white leading-[1em] pb-[5px] placeholder-white font-medium font-poppins" autocomplete="off" placeholder="Search...">
+        <input type="submit" class="search-submit-button font-elegantIcons text-white absolute right-[2px] top-0 text-xl hover:text-dark-pink transition-colors duration-150 cursor-pointer" value="U">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
