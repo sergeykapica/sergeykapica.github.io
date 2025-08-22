@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Международная кинопанорама 20-го века</title>
+    <meta name="description" content="Международная кинопанорама 20-го века с разными жанрами.">
+    <meta name="keywords" content="Кино, фильмы, 20 век">
+    <meta name="author" content="Marsel Firsov">
+    <link rel="canonical" href="/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:title" content="Международная кинопанорама 20-го века">
+    <meta property="og:description" content="Международная кинопанорама 20-го века с разными жанрами.">
+    <meta property="og:image" content="./img/logo.png">
+    <meta property="og:site_name" content="cinema-panorama">
+    <meta property="og:locale" content="ru_RU">
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css?123">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="relative h-[39px] md:h-[80px] max-w-[1232px] mx-auto flex items-center px-[32px]">
+          <div class="header__top border-gradient-2 overflow-hidden">
+            <div class="header__top__bg"></div>
+          </div>
+          <a href="#!" class="shrink-0 md:hidden mr-2 active:text-blue-2 focus:text-blue-2 hover:text-blue-2" id="burger">
+            <svg class="w-5 w-5 md:w-[32px] h-[32px] transition duration-150">
+
+                  <use xlink:href="./img/sprite.svg#burger"></use>
+
+              </svg>
+          </a>
+          <a href="#!" class="shrink-0 ml-auto md:ml-0 lg:mr-[54px] order-2 md:order-1">
+            <img loading="lazy" data-src="./img/logo.png" alt="Logo" class="hidden dark:md:block" src="./img/placeholder.png">
+            <img loading="lazy" data-src="./img/logo-dark.png" alt="Logo" class="hidden dark:hidden md:block" src="./img/placeholder.png">
+            <img loading="lazy" data-src="./img/logo-mobile.png" alt="Logo" class="hidden dark:block dark:md:hidden" src="./img/placeholder.png">
+            <img loading="lazy" data-src="./img/logo-dark-mobile.png" alt="Logo" class="dark:hidden md:hidden" src="./img/placeholder.png">
+          </a>
+          <nav class="md:block order-2 absolute md:static inset-x-0 top-[53px] opacity-0 invisible md:opacity-100 md:visible" id="menu">
+            <ul class="header__menu py-5 md:py-0 text-2xl leading-[29px] font-medium rounded-lg md:rounded-0 text-white md:text-dark-blue dark:text-white">
+              <li><a href="/" class="active">Главная</a></li>
+              <li><a href="#movies">Фильмы</a></li>
+              <li><a href="#series">Сериалы</a></li>
+              <li><a href="#prices">Цены</a></li>
+              <li><a href="#collection">Коллекция</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="header__col-3 order-1 md:order-3 md:ml-auto flex items-center gap-[32px]">
+            <a href="#!" class="search-button hover:text-blue-2">
+              <svg class="w-4 w-4 md:w-[32px] h-[32px] transition duration-150">
+
+                  <use xlink:href="./img/sprite.svg#search"></use>
+
+              </svg>
+            </a>
+            <a href="#!" class="hover:text-blue-2 hidden lg:block">
+              <svg class="w-4 w-4 md:w-[32px] h-[32px] transition duration-150">
+
+                  <use xlink:href="./img/sprite.svg#bell"></use>
+
+              </svg>
+            </a>
+            <a href="#!" class="hover:text-blue-2 hidden lg:block">
+              <svg class="w-4 w-4 md:w-[32px] h-[32px] transition duration-150">
+
+                  <use xlink:href="./img/sprite.svg#user"></use>
+
+              </svg>
+            </a>
+            <a href="#!" class="hover:text-blue-2 hidden lg:block" id="change-theme-button">
+              <svg class="w-4 w-4 md:w-[32px] h-[32px] transition duration-150">
+
+                  <use xlink:href="./img/sprite.svg#sun"></use>
+
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="/" class="section section-welcome relative">
+        <div class="swiper swiper-main">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide pt-[432px] md:pt-[551px] pb-[28px] md:pb-[56px]">
+              <div class="swiper-slide__bg">
+                <div class="swiper-slide__gradient"></div>
+                <div class="swiper-slide__image" style="background-image: url('./img/films/film_1.jpg');"></div>
+              </div>
+              
+              <div class="container relative z-10">
+                <div class="relative bg-white-2 dark:bg-dark-blue md:!bg-transparent -mx-[16px] px-[16px] md:mx-0 md:px-0">
+                  <div class="swiper-slide__bottom-gradient !bottom-auto md:hidden !z-[-1] !blur-[10px] !h-[43px] -top-5"></div>
+                  <h1 class="text-[24px] leading-[29px] md:text-[48px] md:leading-[58px] font-bold mb-[10px]">Назад в будущее</h1>
+                  <p class="max-w-[553px] text-[12px] md:text-base font-light md:font-medium mb-[16px] md:mb-[18px] text-dark-blue dark:text-white">Культовая фантастическая комедия о Марти МакФлае, который случайно попадает в 1955 год на машине времени и должен исправить прошлое.</p>
+                  <div class="hidden md:flex items-center gap-[10px] mb-[18px]">
+                    <div class="rate flex items-center gap-1">
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <img loading="lazy" data-src="./img/iimdb.png" alt="IMDb" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/image41.png" alt="Netflix" src="./img/placeholder.png">
+                  </div>
+                  <div class="flex gap-[11px]">
+                    <a href="#!" class="button-3">
+                      <svg class="w-3 h-3 mr-[6px]">
+                          <use xlink:href="./img/sprite.svg#play"></use>
+                      </svg>
+                      <span>Смотреть</span>
+                    </a>
+                    <a href="#!" class="button-4">
+                      <span>Подробнее</span>
+                      <svg class="w-[14px] h-3 ml-[6px]">
+                          <use xlink:href="./img/sprite.svg#arrow-right-2"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide__bottom-gradient hidden md:block"></div>
+            </div>
+
+            <div class="swiper-slide pt-[432px] md:pt-[551px] pb-[28px] md:pb-[56px]">
+              <div class="swiper-slide__bg">
+                <div class="swiper-slide__gradient"></div>
+                <div class="swiper-slide__image lazy-bg" data-src="./img/films/film_2.jpg"></div>
+              </div>
+              <div class="container relative z-10">
+                <div class="relative bg-white-2 dark:bg-dark-blue md:!bg-transparent -mx-[16px] px-[16px] md:mx-0 md:px-0">
+                  <div class="swiper-slide__bottom-gradient !bottom-auto md:hidden !z-[-1] !blur-[10px] !h-[43px] -top-5"></div>
+                  <h2 class="text-[24px] leading-[29px] md:text-[48px] md:leading-[58px] font-bold mb-[10px]">День сурка</h2>
+                  <p class="max-w-[553px] text-[12px] md:text-base font-light md:font-medium mb-[16px] md:mb-[18px] text-dark-blue dark:text-white">Культовая комедия о телеведущем Филе Коннорсе, который застрял во временной петле и вынужден проживать один и тот же день снова и снова.</p>
+                  <div class="hidden md:flex items-center gap-[10px] mb-[18px]">
+                    <div class="rate flex items-center gap-1">
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <img loading="lazy" data-src="./img/iimdb.png" alt="IMDb" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/image41.png" alt="Netflix" src="./img/placeholder.png">
+                  </div>
+                  <div class="flex gap-[11px]">
+                    <a href="#!" class="button-3">
+                      <svg class="w-3 h-3 mr-[6px]">
+                          <use xlink:href="./img/sprite.svg#play"></use>
+                      </svg>
+                      <span>Смотреть</span>
+                    </a>
+                    <a href="#!" class="button-4">
+                      <span>Подробнее</span>
+                      <svg class="w-[14px] h-3 ml-[6px]">
+                          <use xlink:href="./img/sprite.svg#arrow-right-2"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide__bottom-gradient hidden md:block"></div>
+            </div>
+
+            <div class="swiper-slide pt-[432px] md:pt-[551px] pb-[28px] md:pb-[56px]">
+              <div class="swiper-slide__bg">
+                <div class="swiper-slide__gradient"></div>
+                <div class="swiper-slide__image lazy-bg" data-src="./img/films/film_3.png"></div>
+              </div>
+              <div class="container relative z-10">
+                <div class="relative bg-white-2 dark:bg-dark-blue md:!bg-transparent -mx-[16px] px-[16px] md:mx-0 md:px-0">
+                  <div class="swiper-slide__bottom-gradient !bottom-auto md:hidden !z-[-1] !blur-[10px] !h-[43px] -top-5"></div>
+                  <h2 class="text-[24px] leading-[29px] md:text-[48px] md:leading-[58px] font-bold mb-[10px]">Голый пистолет</h2>
+                  <p class="max-w-[553px] text-[12px] md:text-base font-light md:font-medium mb-[16px] md:mb-[18px] text-dark-blue dark:text-white">Пародийная комедия о неуклюжем детективе Фрэнке Дребине, который пытается предотвратить покушение на королеву Великобритании.</p>
+                  <div class="hidden md:flex items-center gap-[10px] mb-[18px]">
+                    <div class="rate flex items-center gap-1">
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <img loading="lazy" data-src="./img/iimdb.png" alt="IMDb" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/image41.png" alt="Netflix" src="./img/placeholder.png">
+                  </div>
+                  <div class="flex gap-[11px]">
+                    <a href="#!" class="button-3">
+                      <svg class="w-3 h-3 mr-[6px]">
+                          <use xlink:href="./img/sprite.svg#play"></use>
+                      </svg>
+                      <span>Смотреть</span>
+                    </a>
+                    <a href="#!" class="button-4">
+                      <span>Подробнее</span>
+                      <svg class="w-[14px] h-3 ml-[6px]">
+                          <use xlink:href="./img/sprite.svg#arrow-right-2"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide__bottom-gradient hidden md:block"></div>
+            </div>
+
+            <div class="swiper-slide pt-[432px] md:pt-[551px] pb-[28px] md:pb-[56px]">
+              <div class="swiper-slide__bg">
+                <div class="swiper-slide__gradient"></div>
+                <div class="swiper-slide__image lazy-bg" data-src="./img/films/film_4.jpg"></div>
+              </div>
+              <div class="container relative z-10">
+                <div class="relative bg-white-2 dark:bg-dark-blue md:!bg-transparent -mx-[16px] px-[16px] md:mx-0 md:px-0">
+                  <div class="swiper-slide__bottom-gradient !bottom-auto md:hidden !z-[-1] !blur-[10px] !h-[43px] -top-5"></div>
+                  <h2 class="text-[24px] leading-[29px] md:text-[48px] md:leading-[58px] font-bold mb-[10px]">Куда приводят мечты</h2>
+                  <p class="max-w-[553px] text-[12px] md:text-base font-light md:font-medium mb-[16px] md:mb-[18px] text-dark-blue dark:text-white">Философская драма о мужчине, который после смерти попадает в загробный мир и отправляется в путешествие сквозь рай и ад.</p>
+                  <div class="hidden md:flex items-center gap-[10px] mb-[18px]">
+                    <div class="rate flex items-center gap-1">
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="w-5 h-5">
+                          <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <img loading="lazy" data-src="./img/iimdb.png" alt="IMDb" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/image41.png" alt="Netflix" src="./img/placeholder.png">
+                  </div>
+                  <div class="flex gap-[11px]">
+                    <a href="#!" class="button-3">
+                      <svg class="w-3 h-3 mr-[6px]">
+                          <use xlink:href="./img/sprite.svg#play"></use>
+                      </svg>
+                      <span>Смотреть</span>
+                    </a>
+                    <a href="#!" class="button-4">
+                      <span>Подробнее</span>
+                      <svg class="w-[14px] h-3 ml-[6px]">
+                          <use xlink:href="./img/sprite.svg#arrow-right-2"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide__bottom-gradient hidden md:block"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="container relative">
+          <div class="absolute left-1/2 md:left-auto -translate-x-1/2 md:transform-none bottom-[180px] [@media(max-width:430px)]:bottom-[200px] md:bottom-[26px] z-20 md:right-[16px] w-[244px] h-[76px] md:w-[428px] md:h-[122px]">
+            <!-- Thumbnails -->
+            <div class="swiper swiper-thumbs !overflow-visible h-full">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide cursor-pointer">
+                  <img loading="lazy" data-src="./img/films/film_1.jpg" alt="Thumbnail 1" class="w-full h-full object-cover" src="./img/placeholder.png"/>
+                </div>
+                <div class="swiper-slide cursor-pointer">
+                  <img loading="lazy" data-src="./img/films/film_2.jpg" alt="Thumbnail 2" class="w-full h-full object-cover" src="./img/placeholder.png"/>
+                </div>
+                <div class="swiper-slide cursor-pointer">
+                  <img loading="lazy" data-src="./img/films/film_3.png" alt="Thumbnail 3" class="w-full h-full object-cover" src="./img/placeholder.png"/>
+                </div>
+                <div class="swiper-slide cursor-pointer">
+                  <img loading="lazy" data-src="./img/films/film_4.jpg" alt="Thumbnail 4" class="w-full h-full object-cover" src="./img/placeholder.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section md:mt-[30px] mb-[28px] md:mb-[97px]">
+        <div class="container">
+          <div class="flex items-center justify-between mb-4 md:mb-[22px]">
+            <h2 class="section__headline">Популярные</h2>
+            <a href="#!" class="section__link">
+              <span>Смотреть все</span>
+              <svg class="w-3 h-3 md:w-5 md:h-[17px] ml-[10px]">
+                  <use xlink:href="./img/sprite.svg#arrow-right-3"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="swiper swiper-trends">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card">
+                <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                  <div class="flex items-center justify-center absolute inset-0">
+                    <svg class="shrink-0 w-[40%] h-[40%]">
+                        <use xlink:href="./img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="mask-wrapper">
+                  <img loading="lazy" data-src="./img/films/film_5.jpg" alt="Movie 1" src="./img/placeholder.png">
+                </div>
+              </div>
+
+              <div class="swiper-slide card">
+                <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                  <div class="flex items-center justify-center absolute inset-0">
+                    <svg class="shrink-0 w-[40%] h-[40%]">
+                        <use xlink:href="./img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="mask-wrapper">
+                  <img loading="lazy" data-src="./img/films/film_6.webp" alt="Movie 2" src="./img/placeholder.png">
+                </div>
+              </div>
+
+              <div class="swiper-slide card">
+                <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                  <div class="flex items-center justify-center absolute inset-0">
+                    <svg class="shrink-0 w-[40%] h-[40%]">
+                        <use xlink:href="./img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="mask-wrapper">
+                  <img loading="lazy" data-src="./img/films/film_7.jpg" alt="Movie 3" src="./img/placeholder.png">
+                </div>
+              </div>
+
+              <div class="swiper-slide card">
+                <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                  <div class="flex items-center justify-center absolute inset-0">
+                    <svg class="shrink-0 w-[40%] h-[40%]">
+                        <use xlink:href="./img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="mask-wrapper">
+                  <img loading="lazy" data-src="./img/films/film_8.jpg" alt="Movie 4" src="./img/placeholder.png">
+                </div>
+              </div>
+
+              <div class="swiper-slide card">
+                <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                  <div class="flex items-center justify-center absolute inset-0">
+                    <svg class="shrink-0 w-[40%] h-[40%]">
+                        <use xlink:href="./img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="mask-wrapper">
+                  <img loading="lazy" data-src="./img/films/film_9.webp" alt="Movie 9" src="./img/placeholder.png">
+                </div>
+              </div>
+
+              <div class="swiper-slide card">
+                <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                  <div class="flex items-center justify-center absolute inset-0">
+                    <svg class="shrink-0 w-[40%] h-[40%]">
+                        <use xlink:href="./img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="mask-wrapper">
+                  <img loading="lazy" data-src="./img/films/film_10.webp" alt="Movie 10" src="./img/placeholder.png">
+                </div>
+              </div>
+
+              <div class="swiper-slide card">
+                <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                  <div class="flex items-center justify-center absolute inset-0">
+                    <svg class="shrink-0 w-[40%] h-[40%]">
+                        <use xlink:href="./img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="mask-wrapper">
+                  <img loading="lazy" data-src="./img/films/film_11.jpg" alt="Movie 11" src="./img/placeholder.png">
+                </div>
+              </div>
+
+              <div class="swiper-slide card">
+                <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                  <div class="flex items-center justify-center absolute inset-0">
+                    <svg class="shrink-0 w-[40%] h-[40%]">
+                        <use xlink:href="./img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="mask-wrapper">
+                  <img loading="lazy" data-src="./img/films/film_12.webp" alt="Movie 12" src="./img/placeholder.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="movies" class="section relative md:pt-[21px] pb-[38px] md:pb-[67px] mb-[28px] md:mb-[104px] swiper-block overflow-hidden">
+        <div class="absolute -inset-x-[27px] top-0 bottom-0 bg-[linear-gradient(259.2deg,#EC5BAA_-29.16%,#030A1B_10.26%,#030A1B_92.29%,#0CC2FF_129.27%)] blur-[10px] hidden dark:block"></div>
+        <div class="container relative z-10">
+          <div class="flex items-center justify-between mb-4 md:mb-[24px]">
+            <h2 class="section__headline">Фильмы</h2>
+            <a href="#!" class="section__link">
+              <span>Смотреть все</span>
+              <svg class="w-3 h-3 md:w-5 md:h-[17px] ml-[10px]">
+                  <use xlink:href="./img/sprite.svg#arrow-right-3"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="px-[22px] md:px-[67px] mb-[17px] md:mb-[53px] swiper-sections-wrapper relative">
+            <button class="swiper-sections-wrapper__prev-button">
+              <svg class="w-[10px] h-[19px] hidden md:block">
+                  <use xlink:href="./img/sprite.svg#arrow-left"></use>
+              </svg>
+              <svg class="w-[14px] h-[26px] md:hidden">
+                  <use xlink:href="./img/sprite.svg#arrow-left-mobile"></use>
+              </svg>
+            </button>
+            <div class="swiper swiper-sections">
+              <div class="swiper-wrapper">
+                <button class="swiper-slide swiper-slide__category" data-filter="action">Экшн</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="comedy">Комедия</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="drama">Драма</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="sci-fi">Научный</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="romance">Романтика</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="thriller">Триллер</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="family">Семейный</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="mystic">Мистика</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="detective">Детектив</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="underground">Андеграунд</button>
+              </div>
+            </div>
+            <button class="swiper-sections-wrapper__next-button">
+              <svg class="w-[10px] h-[19px] hidden md:block">
+                  <use xlink:href="./img/sprite.svg#arrow-right"></use>
+              </svg>
+              <svg class="w-[6px] h-[18px] md:hidden">
+                  <use xlink:href="./img/sprite.svg#arrow-right-mobile"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="swiper-movies-wrapper">
+            <div class="swiper swiper-movies">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide__movie card" data-category="action">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/film_13.jpg" alt="Movie 1" src="./img/placeholder.png">
+                  </div>  
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="drama">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/film_14.webp" alt="Movie 2" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="comedy">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/film_15.webp" alt="Movie 3" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="comedy">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/film_16.webp" alt="Movie 4" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="romance">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/film_17.webp" alt="Movie 5" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="family">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/film_18.webp" alt="Movie 6" src="./img/placeholder.png">
+                  </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide__movie card" data-category="detective">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/film_19.jpg" alt="Movie 7" src="./img/placeholder.png">
+                  </div>  
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="sci-fi">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/film_20.jpg" alt="Movie 8" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="drama">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/film_21.jpg" alt="Movie 9" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="romance">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/film_22.jpg" alt="Movie 10" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="mystic">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/film_23.jpg" alt="Movie 11" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="comedy">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/films24.jpg" alt="Movie 12" src="./img/placeholder.png">
+                  </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide__movie card" data-category="thriller">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/films25.webp" alt="Movie 13" src="./img/placeholder.png">
+                  </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide__movie card" data-category="underground">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/films/films26.png" alt="Movie 13" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden mb-[28px] md:mb-[104px] text-white-2">
+        <div class="py-[2px]">
+          <div class="relative py-[70px] md:py-[42px] md:py-[72px] bg-yellow-2">
+            <div class="h-[80px] md:h-[76px] absolute -top-[50px] -left-[60px] md:-left-[30px] -right-[60px] md:-right-[30px] blur-[15px] md:blur-[10px] z-20 bg-white-2 dark:bg-dark-blue"></div>
+            <div class="container flex items-center">
+              <div class="relative z-20">
+                <img loading="lazy" data-src="./img/image200.png" alt="Awards" src="./img/placeholder.png">
+              </div>
+              <div class="relative overflow-hidden z-10">
+                <img loading="lazy" data-src="./img/Group63.png" alt="Awards Films" class="hidden md:block" src="./img/placeholder.png">
+                <img loading="lazy" data-src="./img/Frame235.png" alt="Awards Films" class="md:hidden" src="./img/placeholder.png">
+              </div>
+            </div>
+            <div class="h-[80px] md:h-[76px] absolute -bottom-[50px] -left-[60px] md:-left-[30px] -right-[60px] md:-right-[30px]  blur-[15px] md:blur-[10px] z-20 bg-white-2 dark:bg-dark-blue"></div>
+            <a href="#!" class="absolute bottom-[36px] md:bottom-[61px] left-1/2 -translate-x-1/2 text[10px] leading-[12px] md:text-[48px] md:leading-[58px] text-center font-light md:font-bold z-20 md:max-w-[970px] md:w-full w-[310px] rounded-[50px] border border-white-2 py-[8px] md:py-[31px] bg-[linear-gradient(267.78deg,rgba(0,0,0,0.8)_0.35%,rgba(0,0,0,0.4)_99.15%)] px-5 hover:border-blue-2 transition duration-150">Смотреть фильмы Золотой Глобус</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="series" class="relative section md:pt-[21px] pb-[38px] md:pb-[67px] mb-[28px] md:mb-[104px] swiper-block overflow-hidden">
+        <div class="absolute -inset-x-[27px] top-0 bottom-0 bg-[linear-gradient(259.2deg,#EC5BAA_-29.16%,#030A1B_10.26%,#030A1B_92.29%,#0CC2FF_129.27%)] blur-[10px] hidden dark:block"></div>
+        <div class="container relative z-10">
+          <div class="flex items-center justify-between mb-4 md:mb-[24px]">
+            <h2 class="section__headline">Сериалы</h2>
+            <a href="#!" class="section__link">
+              <span>Смотреть все</span>
+              <svg class="w-3 h-3 md:w-5 md:h-[17px] ml-[10px]">
+                  <use xlink:href="./img/sprite.svg#arrow-right-3"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="px-[22px] md:px-[67px] mb-[17px] md:mb-[53px] swiper-sections-wrapper relative">
+            <button class="swiper-sections-wrapper__prev-button">
+              <svg class="w-[10px] h-[19px] hidden md:block">
+                  <use xlink:href="./img/sprite.svg#arrow-left"></use>
+              </svg>
+              <svg class="w-[14px] h-[26px] md:hidden">
+                  <use xlink:href="./img/sprite.svg#arrow-left-mobile"></use>
+              </svg>
+            </button>
+
+            <div class="swiper swiper-sections">
+              <div class="swiper-wrapper">
+                <button class="swiper-slide swiper-slide__category" data-filter="action">Экшн</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="comedy">Комедия</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="drama">Драма</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="sci-fi">Научный</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="musical">Мюзикл</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="romance">Романтика</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="thriller">Триллер</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="family">Семейный</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="mystic">Мистика</button>
+                <button class="swiper-slide swiper-slide__category" data-filter="adventures">Приключения</button>
+              </div>
+            </div>
+            <button class="swiper-sections-wrapper__next-button">
+              <svg class="w-[10px] h-[19px] hidden md:block">
+                  <use xlink:href="./img/sprite.svg#arrow-right"></use>
+              </svg>
+              <svg class="w-[6px] h-[18px] md:hidden">
+                  <use xlink:href="./img/sprite.svg#arrow-right-mobile"></use>
+              </svg>
+            </button>
+
+          </div>
+
+          <div class="swiper-movies-wrapper">
+            <div class="swiper swiper-movies">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide__movie card" data-category="action">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/series/series_1_1.png" alt="Series 1" src="./img/placeholder.png">
+                  </div>  
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="comedy">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/series/series_2_2.jpg" alt="Series 2" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="comedy">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/series/series_3_1.jpg" alt="Series 3" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="family">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/series/series_4_1.jpg" alt="Series 4" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="mystic">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/series/series_5_1.webp" alt="Series 5" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="detective">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/series/series_6_1.jpg" alt="Series 6" src="./img/placeholder.png">
+                  </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide__movie card" data-category="sci-fi">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/series/series_7_3.webp" alt="Series 7" src="./img/placeholder.png">
+                  </div>  
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="sci-fi">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/series/series_8_1.jpg" alt="Series 8" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="mystic">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/series/series_9_1.jpg" alt="Series 9" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="comedy">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/series/series_10_2.webp" alt="Series 10" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="adventures">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/series/series_11_1.webp" alt="Series 11" src="./img/placeholder.png">
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide__movie card" data-category="action">
+                  <a href="#!" class="card__button top-0 left-0 overflow-hidden">
+                    <div class="flex items-center justify-center absolute inset-0">
+                      <svg class="shrink-0 w-[40%] h-[40%]">
+                          <use xlink:href="./img/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="mask-wrapper">
+                    <img loading="lazy" data-src="./img/series/series_12_1.jpg" alt="Series 12" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="prices" class="section md:pb-[100px] mb-[28px] md:mb-[104px]">
+        <div class="container flex items-center justify-between gap-2 md:gap-5 max-w-[470px] md:max-w-[1184px]">
+          
+          <div class="feature-card min-h-[245px] w-[130px] md:w-[320px] relative px-[10px] md:px-[30px] pt-[35px] pb-[35px] md:pt-[70px] md:pb-[77px] text-center text-blue-2 bg-cover bg-center bg-no-repeat dark:bg-[url('../img/Group28-mobile.png')] dark:md:bg-[url('../img/Group28.png')] bg-[url('../img/subtract2-mobile.png')] md:bg-[url('../img/subtract2.png')]">
+              <h2 class="font-medium md:font-bold text-base leading-[19px] md:text-[48px] md:leading-[58px] text-shadow-[0px_8px_42px_rgba(112,144,176,0.1)] mb-[13px] md:mb-5">Базовый</h2>
+              <span class="text-[10px] leading-[12px] md:text-2xl md:leading-[29px] md:font-medium">3 месяца</span>
+
+              <div class="border-blue-2 border-b-[2px] border-dashed md:h-[1px] mt-[15px] mb-[15px] md:mt-[50px] md:mb-[50px] mx-auto w-[90%] md:w-[102%] md:-ml-2"></div>
+
+              <div class="mb-[15px] md:mb-[18px] text-[14px] leading-[17px] md:text-[48px] md:leading-[58px] font-light md:font-bold">$15.140</div>
+
+              <ul class="list-disc inline-block mb-[11px] md:mb-[58px] text-[8px] leading-[10px] md:text-base leading-[19px] font-light text-white-2 dark:text-dark-blue">
+                <li>Отмена в любое время</li>
+              </ul>
+
+              <div>
+                <a href="#!" class="button-5">
+                  <svg class="w-2 h-2 md:w-3 md:h-3 md:w-5 md:h-5 mr-1 -mt-[2px] md:mt-0">
+                      <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  <span>П О Д Р О Б Н Е Е</span>
+                </a>
+              </div>
+          </div>
+
+          <div class="feature-card w-[160px] md:w-[400px] relative px-[10px] md:px-[30px] pt-[100px] pb-[100px] md:pt-[160px] md:pb-[160px] text-center text-white-2 bg-cover bg-center bg-no-repeat bg-[url('../img/Subtract-2.png')] md:bg-[url('../img/Subtract.png')]">
+              <h2 class="font-bold text-xl leading-[24px] md:text-[48px] md:leading-[58px] text-shadow-[0px_8px_42px_rgba(112,144,176,0.1)] mb-[5px] md:mb-5">Стандарт</h2>
+              <span class="text-[12px] md:text-[32px] leading-[1em] md:leading-[38px]">6 месяцев</span>
+              
+              <div class="border-dark-blue border-b-[2px] border-dashed mt-[20px] mb-[15px] md:my-[42px] mx-auto w-[90%] md:w-[93%]"></div>
+
+              <div class="feature-card__old-price inline-block mb-[2px] md:mb-[18px] text-[14px] leading-[17px] md:text-[48px] md:leading-[58px] md:font-bold">$24.990</div>
+              <div class="mb-[10px] md:mb-[18px] text-[14px] leading-[17px] md:text-[48px] md:leading-[58px] md:font-bold">$24.990</div>
+
+              <ul class="list-disc inline-block text-dark-blue mb-[9px] md:mb-[42px] text-[10px] md:text-base leading-[19px] font-light">
+                <li>Отмена в любое время</li>
+              </ul>
+
+              <div>
+                <a href="#!" class="button-2 border-gradient">
+                  <svg class="w-3 h-3 md:w-5 md:h-5 mr-1">
+                      <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  <span>П О Д Р О Б Н Е Е</span>
+                </a>
+              </div>
+          </div>
+
+          <div class="feature-card min-h-[245px] w-[130px] md:w-[320px] relative px-[10px] md:px-[30px] pt-[35px] pb-[35px] md:pt-[70px] md:pb-[77px] text-center text-blue-2 bg-cover bg-center bg-no-repeat dark:bg-[url('../img/Group28-mobile.png')] dark:md:bg-[url('../img/Group28.png')] bg-[url('../img/subtract2-mobile.png')] md:bg-[url('../img/subtract2.png')]">
+              <h2 class="font-medium md:font-bold text-base leading-[19px] md:text-[48px] md:leading-[58px] text-shadow-[0px_8px_42px_rgba(112,144,176,0.1)] mb-[13px] md:mb-5">Премиум</h2>
+              <span class="text-[10px] leading-[12px] md:text-2xl md:leading-[29px] md:font-medium">12 месяцев</span>
+
+              <div class="border-blue-2 border-b-[2px] border-dashed md:h-[1px] mt-[15px] mb-[15px] md:mt-[50px] md:mb-[50px] mx-auto w-[90%] md:w-[102%] md:-ml-2"></div>
+
+              <div class="mb-[15px] md:mb-[18px] text-[14px] leading-[17px] md:text-[48px] md:leading-[58px] font-light md:font-bold">$35.199</div>
+
+              <ul class="list-disc inline-block mb-[11px] md:mb-[58px] text-[8px] leading-[10px] md:text-base leading-[19px] font-light text-white-2 dark:text-dark-blue">
+                <li>Отмена в любое время</li>
+              </ul>
+
+              <div>
+                <a href="#!" class="button-5">
+                  <svg class="w-2 h-2 md:w-3 md:h-3 md:w-5 md:h-5 mr-1 -mt-[2px] md:mt-0">
+                      <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  <span>П О Д Р О Б Н Е Е</span>
+                </a>
+              </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="collection" class="section pb-[55px] md:pb-[66px] mb-[28px] md:mb-[104px]">
+        <div class="container tabs-block">
+          <div class="flex items-center justify-between mb-4 md:mb-[40px]">
+            <h2 class="section__headline">Коллекция</h2>
+            <div class="tabs">
+              <input type="radio" name="toggle1" id="series-2" class="peer/series-2 hidden">
+              <label for="series-2" class="flex-1 cursor-pointer text-center py-2 rounded-full transition-all text-[#9DA1A3] md:text-[#808080] font-light peer-checked/series-2:bg-blue-2 peer-checked/series-2:text-white-2">
+                Сериалы
+              </label>
+
+              <input type="radio" name="toggle1" id="movies-2" class="peer/movies-2 hidden" checked>
+              <label for="movies-2" class="flex-1 cursor-pointer text-center py-2 rounded-full transition-all text-[#9DA1A3] md:text-[#808080] font-light peer-checked/movies-2:bg-blue-2 peer-checked/movies-2:text-white-2">
+                Фильмы
+              </label>
+            </div>
+          </div>
+
+          <!-- Табы -->
+          <div class="text-white-2">
+            <div id="tab-series-2" class="tab hidden">
+              <div class="swiper-block-2">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Экшн</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_1_2.webp" alt="Collection 1" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_1_3.jpg" alt="Collection 1" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_1_1.png" alt="Collection 1" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Комедия</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_2_3.webp" alt="Collection 2" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_2_1.jpg" alt="Collection 2" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_2_2.jpg" alt="Collection 2" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Комедия</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_3_3.webp" alt="Collection 3" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_3_2.jpg" alt="Collection 3" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_3_1.jpg" alt="Collection 3" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Семейный</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_4_3.webp" alt="Collection 4" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_4_2.webp" alt="Collection 4" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_4_1.jpg" alt="Collection 4" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Мистика</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_5_2.webp" alt="Collection 5" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_5_3.webp" alt="Collection 5" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_5_1.webp" alt="Collection 5" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Детектив</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_6_3.webp" alt="Collection 6" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_6_2.jpg" alt="Collection 6" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_6_1.jpg" alt="Collection 6" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Научный</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_7_2.png" alt="Collection 7" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_7_1.jpg" alt="Collection 7" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_7_3.webp" alt="Collection 7" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Научный</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_8_2.jpg" alt="Collection 8" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_8_1.jpg" alt="Collection 8" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_8_3.png" alt="Collection 8" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Мистика</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_9_3.jpg" alt="Collection 9" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_9_2.jpg" alt="Collection 9" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_9_1.jpg" alt="Collection 9" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Комедия</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_10_3.jpg" alt="Collection 10" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_10_1.jpg" alt="Collection 10" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_10_2.webp" alt="Collection 10" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Приключения</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_11_2.jpg" alt="Collection 11" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_11_1.webp" alt="Collection 11" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_11_3.jpg" alt="Collection 11" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Экшн</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_12_3.jpg" alt="Collection 12" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_12_2.webp" alt="Collection 12" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_12_1.jpg" alt="Collection 12" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-movies-2" class="tab">
+              <div class="swiper-block-2">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Экшн</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/film_13.jpg" alt="Movie 1" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_1_1.png" alt="Movie 2" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_12_3.jpg" alt="Movie 3" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Комедия</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/film_15.webp" alt="Movie 1" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/film_16.webp" alt="Movie 2" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/films24.jpg" alt="Movie 3" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Научный</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_7_3.webp" alt="Movie 1" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/film_20.jpg" alt="Movie 2" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_8_1.jpg" alt="Movie 3" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Семейный</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/film_18.webp" alt="Movie 1" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_3_1.jpg" alt="Movie 2" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/film_11.jpg" alt="Movie 3" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Мистика</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/film_29.jpg" alt="Movie 1" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/film_23.jpg" alt="Movie 2" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_9_1.jpg" alt="Movie 3" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Детектив</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/film_32.jpg" alt="Movie 1" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/film_19.jpg" alt="Movie 2" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/series/series_6_3.webp" alt="Movie 3" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide pt-[28px] pl-[28px]">
+                      <a href="#!" class="absolute inset-0 z-20 hover:text-orange-2 transition duration-150">
+                        <h3 class="absolute top-1/2 -translate-y-1/2 w-full text-center font-bold md:font-black text-2xl leading-[29px] md:text-[35px] md:leading-[58px] text-shadow-[0px_4px_5px_rgba(0,0,0,0.15)]">Романтика</h3>
+                      </a>
+                      <div class="relative pb-[150%] z-10">
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[28px] -top-[28px] z-20">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/film_22.jpg" alt="Movie 1" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full -left-[14px] -top-[14px] z-10">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/film_17.webp" alt="Movie 2" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                        <div class="swiper-slide__image-bg absolute w-full h-full z-0">
+                          <div class="absolute inset-0 z-10 bg-[linear-gradient(227.66deg,rgba(0,0,0,0.52)_-15.08%,rgba(0,0,0,0.22)_90.95%),url('../img/Noise.png')]"></div>
+                          <img loading="lazy" data-src="./img/films/film_31.jpg" alt="Movie 3" class="w-full h-full object-cover" src="./img/placeholder.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section mb-[28px] md:mb-[104px]">
+        <div class="container">
+          <div class="flex items-center justify-between mb-4 md:mb-[24px]">
+            <h2 class="section__headline">Продолжить просмотр</h2>
+            <a href="#!" class="section__link">
+              <span>Смотреть все</span>
+              <svg class="w-3 h-3 md:w-5 md:h-[17px] ml-[10px]">
+                  <use xlink:href="./img/sprite.svg#arrow-right-3"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="swiper swiper-watch-list">
+            <div class="swiper-wrapper" id="videos-watch-list">
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section mb-[28px] md:mb-[104px]">
+        <div class="container tabs-block">
+          <div class="flex items-center justify-between mb-4 md:mb-[24px]">
+            <h2 class="section__headline">Действующие лица</h2>
+            <div class="tabs">
+              <input type="radio" name="toggle_2" id="directors" class="peer/series hidden">
+              <label for="directors" class="flex-1 cursor-pointer text-center py-2 rounded-full transition-all text-[#9DA1A3] md:text-[#808080] font-light peer-checked/series:bg-blue-2 peer-checked/series:text-white-2">
+                Режиссёры
+              </label>
+
+              <input type="radio" name="toggle_2" id="actors" class="peer/movies hidden" checked>
+              <label for="actors" class="flex-1 cursor-pointer text-center py-2 rounded-full transition-all text-[#9DA1A3] md:text-[#808080] font-light peer-checked/movies:bg-blue-2 peer-checked/movies:text-white-2">
+                Актёры
+              </label>
+            </div>
+          </div>
+
+          <!-- Табы -->
+          <div>
+            <div id="tab-directors" class="tab hidden swiper-block-3">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/directors/spilberg.jpg" alt="Director 1" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/directors/peoplewxiCAp_345x345.jpg" alt="Director 2" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/directors/George_Lucas_by_Gage_Skidmore.jpg" alt="Director 3" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/directors/garyross.webp" alt="Director 4" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/directors/Donald_Petrie.jpg" alt="Director 5" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/directors/director_1.jpg" alt="Director 6" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/directors/Columbus_a_0.webp" alt="Director 7" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/directors/86615_v9_ba.jpg" alt="Director 8" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/directors/645a3d6e43bad.webp" alt="Director 9" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/directors/500px-Vincent_Ward.jpg" alt="Director 10" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-actors" class="tab swiper-block-3">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/actors/Robin_Williams_Happy_Feet_premiere.jpg" alt="Charactor 1" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/actors/lloyd.webp" alt="Charactor 2" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/actors/nDeGE5Yo8t3YcatubJmBpjLLCHq.webp" alt="Charactor 3" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/actors/Richard_Gere,_December_2017.jpg" alt="Charactor 4" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/actors/anthony-hopkins-gty-jt-221230_1672418793708_hpMain_1x1.jpg" alt="Charactor 5" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/actors/SamBeckett.webp" alt="Charactor 6" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/actors/Billmurray.webp" alt="Charactor 7" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/actors/60385_v9_bc.jpg" alt="Charactor 8" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/actors/40007-uolter-mettau.webp" alt="Charactor 9" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading="lazy" data-src="./img/actors/99.jpg" alt="Charactor 10" class="w-[57px] h-[57px] min-w-[57px] h-[57px] md:w-[166px] min-h-[57px] md:min-w-[166px] md:min-h-[166px] rounded-full object-cover" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pt-4 md:pt-[129px] bg-blue-2 text-white-2">
+        <div class="container text-center">
+          <div class="inline-block text-center mb-5 md:mb-[90px] font-medium md:font-bold max-w-[842px]">
+            <h2 class="text-xl leading-[24px] md:text-[48px] md:leading-[58px] mb-[6px] md:mb-[47px]">Классика французского кино</h2>
+            <p class="text-[10px] leading-[12px] md:text-2xl md:leading-[29px]">Эти картины определили лицо европейского кино на десятилетия вперёд и сделали 60-е, 70-е «золотым временем» французского кинематографа.</p>
+          </div>
+
+          <div class="grid grid-cols-3 gap-2 md:gap-5">
+            <div>
+              <img loading="lazy" data-src="./img/films/fd01fe90878c4dc8a0e80bd16062.jpg" alt="Film 1" class="w-full h-full object-cover" src="./img/placeholder.png">
+            </div>
+
+            <div>
+              <img loading="lazy" data-src="./img/films/jean-paul-belmondo-ce-jour-ou-il-a-decide-de-trainer-alain-delon-en-justice.jpeg" alt="Film 2" class="w-full h-full object-cover" src="./img/placeholder.png">
+            </div>
+
+            <div>
+              <img loading="lazy" data-src="./img/films/7-19.jpg" alt="Film 3" class="w-full h-full object-cover" src="./img/placeholder.png">
+            </div>
+          </div>
+          <div class="relative text-center pt-5 md:pt-[90px] overflow-hidden mt-2 md:mt-5 pb-[14px] md:pb-[56px]">
+            <div class="absolute top-0 left-0 scale-y-[-1] grid grid-cols-3 gap-2 md:gap-5 opacity-40">
+              <div class="absolute inset-0 bg-gradient-to-b from-blue-2/90 to-transparent"></div>
+              <div>
+                <img loading="lazy" data-src="./img/films/fd01fe90878c4dc8a0e80bd16062.jpg" alt="Film 1" class="w-full h-full object-cover" src="./img/placeholder.png">
+              </div>
+
+              <div>
+                <img loading="lazy" data-src="./img/films/jean-paul-belmondo-ce-jour-ou-il-a-decide-de-trainer-alain-delon-en-justice.jpeg" alt="Film 2" class="w-full h-full object-cover" src="./img/placeholder.png">
+              </div>
+
+              <div>
+                <img loading="lazy" data-src="./img/films/7-19.jpg" alt="Film 3" class="w-full h-full object-cover" src="./img/placeholder.png">
+              </div>
+            </div>
+            <a href="#!" class="relative inline-block bg-dark-blue rounded-[8px] md:rounded-[12px] py-[5px] px-2 md:py-4 md:px-[64px] text-center font-bold text-[10px] leading-[12px] md:text-2xl md:leading-[29px] border border-white-2 hover:bg-orange-2 transition-colors duration-150">Смотреть французское кино</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer dark:bg-[linear-gradient(248.7deg,#030A1B_68.64%,#9747FF_206.69%)]">
+      <div id="faq" class="section pt-[28px] md:pt-[104px] pb-4 md:pb-[110px]">
+        <div class="container">
+          <h2 class="md:text-[48px] md:leading-[58px] md:font-bold mb-[128px] text-center hidden md:block">Часто задаваемые вопросы</h2>
+          <div class="space-y-[12px] md:space-y-[36px]">
+            <div class="accordion">
+              <button class="accordion__button" data-target="section1">
+                <span>Что такое международная кинематография?</span>
+                <svg class="accordion__icon w-3 h-3 md:w-[40px] md:h-[40px] ml-4 rotate-90 transform">
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+              <div id="section1" class="accordion__content">
+                <p class="pt-2">Это мировое киноискусство, которое объединяет фильмы разных стран, культур и школ. Оно отражает разнообразие традиций и стилей, формируя единое культурное пространство.</p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <button class="accordion__button" data-target="section2">
+                <span>Какие направления и жанры наиболее популярны?</span>
+                <svg class="accordion__icon w-3 h-3 md:w-[40px] md:h-[40px] ml-4 rotate-90 transform">
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+              <div id="section2" class="accordion__content">
+                <p class="pt-2">От классики и артхауса до блокбастеров и документального кино. В разных странах свои приоритеты: во Франции — драма и авторское кино, в США — массовое жанровое кино, в Азии — боевики и анимация.</p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <button class="accordion__button" data-target="section3">
+                <span>Где можно смотреть фильмы международных режиссёров?</span>
+                <svg class="accordion__icon w-3 h-3 md:w-[40px] md:h-[40px] ml-4 rotate-90 transform">
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+              <div id="section3" class="accordion__content">
+                <p class="pt-2">Фестивали (Каннский, Берлинале, Венецианский), онлайн-платформы, ретроспективы в кинотеатрах и культурных центрах.</p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <button class="accordion__button" data-target="section4">
+                <span>Почему важно изучать мировое кино?</span>
+                <svg class="accordion__icon w-3 h-3 md:w-[40px] md:h-[40px] ml-4 rotate-90 transform">
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+              <div id="section4" class="accordion__content">
+                <p class="pt-2">Знакомство с фильмами разных стран расширяет кругозор, помогает понять культуру и историю народов, а также вдохновляет на творчество и новые идеи.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pt-3 md:pt-0 pb-[48px] md:pb-[120px]">
+        <div class="container">
+          <div class="mb-[54px] md:mb-[77px]">
+            <h2 class="md:text-[48px] md:leading-[58px] md:font-bold mb-[14px] md:mb-[50px] text-center">Студии</h2>
+            <div class="grid grid-cols-5 gap-y-6 md:gap-y-[36px] text-center">
+              <div>
+                <div class="relative inline-flex w-[46px] h-[46px] md:w-[160px] md:h-[160px] items-center justify-center rounded-[8px] md:rounded-[40px] group cursor-pointer overflow-hidden bg-dark-blue dark:bg-white-2">
+                  <div class="hidden md:block">
+                    <img loading="lazy" data-src="./img/brands/image187.png" alt="Brand 1" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image187-white.png" alt="Brand 1" class="dark:hidden dark:group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image187-hover.png" alt="Brand 1" class="hidden dark:block absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                  <div class="md:hidden">
+                    <img loading="lazy" data-src="./img/brands/image187-mobile.png" alt="Brand 1" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image187-white-mobile.png" alt="Brand 1" class="dark:hidden dark:group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image187-mobile-hover.png" alt="Brand 1" class="hidden dark:block absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="relative inline-flex w-[46px] h-[46px] md:w-[160px] md:h-[160px] items-center justify-center rounded-[8px] md:rounded-[40px] group cursor-pointer overflow-hidden bg-dark-blue dark:bg-white-2">
+                  <div class="hidden md:block">
+                    <img loading="lazy" data-src="./img/brands/image188.png" alt="Brand 2" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image188-white.png" alt="Brand 2" class="dark:hidden group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image188-hover.png" alt="Brand 2" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                  <div class="md:hidden">
+                    <img loading="lazy" data-src="./img/brands/image188-mobile.png" alt="Brand 2" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image188-white-mobile.png" alt="Brand 2" class="dark:hidden group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image188-mobile-hover.png" alt="Brand 2" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class=" relative inline-flex w-[46px] h-[46px] md:w-[160px] md:h-[160px] items-center justify-center rounded-[8px] md:rounded-[40px] group cursor-pointer overflow-hidden bg-dark-blue dark:bg-white-2 ">
+                  <div class="hidden md:block">
+                    <img loading="lazy" data-src="./img/brands/image189.png" alt="Brand 3" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image189-white.png" alt="Brand 3" class="dark:hidden group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image189-hover.png" alt="Brand 3" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                  <div class="md:hidden">
+                    <img loading="lazy" data-src="./img/brands/image189-mobile.png" alt="Brand 3" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image189-white-mobile.png" alt="Brand 3" class="dark:hidden group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image189-mobile-hover.png" alt="Brand 3" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class=" relative inline-flex w-[46px] h-[46px] md:w-[160px] md:h-[160px] items-center justify-center rounded-[8px] md:rounded-[40px] group cursor-pointer overflow-hidden bg-dark-blue dark:bg-white-2 ">
+                  <div class="hidden md:block">
+                    <img loading="lazy" data-src="./img/brands/image191.png" alt="Brand 4" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image191-white.png" alt="Brand 4" class="dark:hidden group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image191-hover.png" alt="Brand 4" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                  <div class="md:hidden">
+                    <img loading="lazy" data-src="./img/brands/image191-mobile.png" alt="Brand 4" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image191-white-mobile.png" alt="Brand 4" class="dark:hidden group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image191-mobile-hover.png" alt="Brand 4" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class=" relative inline-flex w-[46px] h-[46px] md:w-[160px] md:h-[160px] items-center justify-center rounded-[8px] md:rounded-[40px] group cursor-pointer overflow-hidden bg-dark-blue dark:bg-white-2 ">
+                  <div class="hidden md:block">
+                    <img loading="lazy" data-src="./img/brands/image192.png" alt="Brand 5" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image192-white.png" alt="Brand 5" class="dark:hidden group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image192-hover.png" alt="Brand 5" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                  <div class="md:hidden">
+                    <img loading="lazy" data-src="./img/brands/image192-mobile.png" alt="Brand 5" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image192-white-mobile.png" alt="Brand 5" class="dark:hidden group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image192-mobile-hover.png" alt="Brand 5" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class=" relative inline-flex w-[46px] h-[46px] md:w-[160px] md:h-[160px] items-center justify-center rounded-[8px] md:rounded-[40px] group cursor-pointer overflow-hidden bg-dark-blue dark:bg-white-2 ">
+                  <div class="hidden md:block">
+                    <img loading="lazy" data-src="./img/brands/image198.png" alt="Brand 6" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image198-white.png" alt="Brand 6" class="dark:hidden group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image198-hover.png" alt="Brand 6" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                  <div class="md:hidden">
+                    <img loading="lazy" data-src="./img/brands/image198-mobile.png" alt="Brand 6" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image198-white-mobile.png" alt="Brand 6" class="dark:hidden group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image198-mobile-hover.png" alt="Brand 6" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class=" relative inline-flex w-[46px] h-[46px] md:w-[160px] md:h-[160px] items-center justify-center rounded-[8px] md:rounded-[40px] group cursor-pointer overflow-hidden bg-dark-blue dark:bg-white-2 ">
+                  <div class="hidden md:block">
+                    <img loading="lazy" data-src="./img/brands/image199.png" alt="Brand 7" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image199-white.png" alt="Brand 7" class="dark:hidden group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image199-hover.png" alt="Brand 7" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                  <div class="md:hidden">
+                    <img loading="lazy" data-src="./img/brands/image199-mobile.png" alt="Brand 7" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image199-white-mobile.png" alt="Brand 7" class="dark:hidden group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image199-mobile-hover.png" alt="Brand 7" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class=" relative inline-flex w-[46px] h-[46px] md:w-[160px] md:h-[160px] items-center justify-center rounded-[8px] md:rounded-[40px] group cursor-pointer overflow-hidden bg-dark-blue dark:bg-white-2 ">
+                  <div class="hidden md:block">
+                    <img loading="lazy" data-src="./img/brands/image195.png" alt="Brand 8" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image195-white.png" alt="Brand 8" class="dark:hidden" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image195-hover.png" alt="Brand 8" class="hidden dark:block absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                  <div class="md:hidden">
+                    <img loading="lazy" data-src="./img/brands/image195-mobile.png" alt="Brand 8" class="hidden dark:block group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image195-white-mobile.png" alt="Brand 8" class="dark:hidden dark:group-hover:opacity-0 transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image195-mobile-hover.png" alt="Brand 8" class="hidden dark:block absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-150" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="relative inline-flex w-[46px] h-[46px] md:w-[160px] md:h-[160px] items-center justify-center rounded-[8px] md:rounded-[40px] cursor-pointer overflow-hidden bg-dark-blue dark:bg-white-2">
+                  <div class="hidden md:block">
+                    <img loading="lazy" data-src="./img/brands/image194.png" alt="Brand 9" class="hidden dark:block transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image194-white.png" alt="Brand 9" class="dark:hidden" src="./img/placeholder.png">
+                  </div>
+                  <div class="md:hidden">
+                    <img loading="lazy" data-src="./img/brands/image194-mobile.png" alt="Brand 9" class="hidden dark:block transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image194-white-mobile.png" alt="Brand 9" class="dark:hidden transition duration-150" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="relative inline-flex w-[46px] h-[46px] md:w-[160px] md:h-[160px] items-center justify-center rounded-[8px] md:rounded-[40px] cursor-pointer overflow-hidden bg-dark-blue dark:bg-white-2">
+                  <div class="hidden md:block">
+                    <img loading="lazy" data-src="./img/brands/image193.png" alt="Brand 10" class="hidden dark:block transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image193-white.png" alt="Brand 10" class="dark:hidden transition duration-150" src="./img/placeholder.png">
+                  </div>
+                  <div class="md:hidden">
+                    <img loading="lazy" data-src="./img/brands/image193-mobile.png" alt="Brand 10" class="hidden dark:block transition duration-150" src="./img/placeholder.png">
+                    <img loading="lazy" data-src="./img/brands/image193-white-mobile.png" alt="Brand 10" class="dark:hidden transition duration-150" src="./img/placeholder.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-[83px]">
+            <ul class="flex justify-center flex-wrap gap-[34px] md:gap-[40px] mb-[54px] md:mb-[157px]">
+              <li>
+                <a href="#!" class="flex items-center justify-between gap-1 text-[14px] leading-[17px] md:text-2xl md:leading-[29px] font-medium md:font-bold hover:text-orange-2 transition-colors duration-150">
+                <span>Скачать приложения</span>
+                <svg class="w-4 h-4 md:w-6 md:h-6 ml-[2px] mt-[2px] md:ml-1 md:mt-1">
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+              </li>
+              <li>
+                <a href="#!" class="flex items-center justify-between gap-1 text-[14px] leading-[17px] md:text-2xl md:leading-[29px] font-medium md:font-bold hover:text-orange-2 transition-colors duration-150">
+                <span>Помощь</span>
+                <svg class="w-4 h-4 md:w-6 md:h-6 ml-[2px] mt-[2px] md:ml-1 md:mt-1">
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+              </li>
+              <li>
+                <a href="#!" class="flex items-center justify-between gap-1 text-[14px] leading-[17px] md:text-2xl md:leading-[29px] font-medium md:font-bold hover:text-orange-2 transition-colors duration-150">
+                <span>Карта сайта</span>
+                <svg class="w-4 h-4 md:w-6 md:h-6 ml-[2px] mt-[2px] md:ml-1 md:mt-1">
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+              </li>
+              <li>
+                <a href="#!" class="flex items-center justify-between gap-1 text-[14px] leading-[17px] md:text-2xl md:leading-[29px] font-medium md:font-bold hover:text-orange-2 transition-colors duration-150">
+                <span>Версия Pro</span>
+                <svg class="w-4 h-4 md:w-6 md:h-6 ml-[2px] mt-[2px] md:ml-1 md:mt-1">
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+              </li>
+              <li>
+                <a href="#!" class="flex items-center justify-between gap-1 text-[14px] leading-[17px] md:text-2xl md:leading-[29px] font-medium md:font-bold hover:text-orange-2 transition-colors duration-150">
+                <span>Реклама</span>
+                <svg class="w-4 h-4 md:w-6 md:h-6 ml-[2px] mt-[2px] md:ml-1 md:mt-1">
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+              </li>
+              <li>
+                <a href="#!" class="flex items-center justify-between gap-1 text-[14px] leading-[17px] md:text-2xl md:leading-[29px] font-medium md:font-bold hover:text-orange-2 transition-colors duration-150">
+                <span>Разработчик</span>
+                <svg class="w-4 h-4 md:w-6 md:h-6 ml-[2px] mt-[2px] md:ml-1 md:mt-1">
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+              </li>
+              <li>
+                <a href="#!" class="flex items-center justify-between gap-1 text-[14px] leading-[17px] md:text-2xl md:leading-[29px] font-medium md:font-bold hover:text-orange-2 transition-colors duration-150">
+                <span>Вакансии</span>
+                <svg class="w-4 h-4 md:w-6 md:h-6 ml-[2px] mt-[2px] md:ml-1 md:mt-1">
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+              </li>
+              <li>
+                <a href="#!" class="flex items-center justify-between gap-1 text-[14px] leading-[17px] md:text-2xl md:leading-[29px] font-medium md:font-bold hover:text-orange-2 transition-colors duration-150">
+                <span>Политика конфиденциальности</span>
+                <svg class="w-4 h-4 md:w-6 md:h-6 ml-[2px] mt-[2px] md:ml-1 md:mt-1">
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+              </li>
+            </ul>
+            
+            <ul class="flex justify-center gap-5 md:gap-[56px]">
+              <li><a href="#!" class="hover:text-orange-2 transition-colors duration-150">
+                <svg class="w-[28px] h-[28px] md:w-[48px] md:h-[48px]">
+                    <use xlink:href="./img/sprite.svg#facebook"></use>
+                </svg>
+              </a></li>
+              <li><a href="#!" class="hover:text-orange-2 transition-colors duration-150">
+                <svg class="w-[28px] h-[28px] md:w-[48px] md:h-[48px]">
+                    <use xlink:href="./img/sprite.svg#instagram"></use>
+                </svg>
+              </a></li>
+              <li><a href="#!" class="hover:text-orange-2 transition-colors duration-150">
+                <svg class="w-[28px] h-[28px] md:w-[48px] md:h-[48px]">
+                    <use xlink:href="./img/sprite.svg#linkedin"></use>
+                </svg>
+              </a></li>
+              <li><a href="#!" class="hover:text-orange-2 transition-colors duration-150">
+                <svg class="w-[28px] h-[28px] md:w-[48px] md:h-[48px]">
+                    <use xlink:href="./img/sprite.svg#youtube"></use>
+                </svg>
+              </a></li>
+              <li><a href="#!" class="hover:text-orange-2 transition-colors duration-150">
+                <svg class="w-[28px] h-[28px] md:w-[48px] md:h-[48px]">
+                    <use xlink:href="./img/sprite.svg#telegram"></use>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="videoModal" class="modal">
+      <button id="closeModal" class="absolute top-2 right-2 text-white text-xl hover:text-orange-2 transition duration-150 z-50">✖</button>
+      <div id="modalContainer" class="relative w-[90%] max-w-[900px] mx-auto"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
